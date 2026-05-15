@@ -11,6 +11,15 @@
 >
 > **Report errors:** open an issue against this repository or flag inline with a `[verify-au]` tag in skill output.
 
+## For the reviewing practitioner
+
+Two documents support the practitioner review:
+
+- **[`references/au-localisation/VERIFICATION-CHECKLIST.md`](references/au-localisation/VERIFICATION-CHECKLIST.md)** — every `[verify-au]` claim grouped by primary source needed (Federal Register of Legislation, AustLII case law, regulator websites, state legislation, time-sensitive thresholds, pending reforms). Use as a structured audit sweep.
+- **[`references/au-localisation/SELF-AUDIT.md`](references/au-localisation/SELF-AUDIT.md)** — the AI author's own list of "places I am most likely wrong": specific commencement dates, section numbers, dollar amounts, and case citations that warrant priority spot-checking. AI hallucination on these is the failure mode this document is designed to surface.
+
+A first-pass review using these documents takes roughly 12-18 hours; the checklist exists to make that time efficient.
+
 This document tracks the Australian localisation of Claude for Legal. The original repository assumes United States law as default. This localisation adds Australian regulatory, statutory, procedural, and terminology content and flags where US-specific framing remains.
 
 ## What localisation means here
