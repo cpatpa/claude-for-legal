@@ -125,6 +125,22 @@ activities need a PIA regardless of internal policy.
 
 For each regime in `~/.claude/plugins/config/claude-for-legal/privacy-legal/CLAUDE.md` → `## Regulatory footprint`, **research the currently operative mandatory privacy/data-protection assessment triggers**. Cite controlling statute, regulation, or regulator guidance with pinpoint references. Note effective dates — national and state regulators publish and update trigger lists regularly; do not rely on a static checklist. Flag uncertainty for attorney verification rather than guess.
 
+**Australian framework (if Privacy Act 1988 (Cth) / APPs in footprint).** AI-generated; verify against the Privacy Act and current OAIC guidance.
+
+> The Privacy Act does not currently impose a statutory PIA trigger on the private sector. Commonwealth agencies must conduct a PIA for any high privacy risk project (Privacy (Australian Government Agencies — Governance) APP Code 2017). For private sector APP entities, classify based on the following AU-specific triggers:
+>
+> 1. **APP 3 collection necessity test fails** (collection not reasonably necessary for one of the entity's functions or activities, or sensitive information collected without consent): STOP, redesign required.
+> 2. **APP 6 secondary use without lawful basis** (use for a purpose other than the primary purpose of collection without consent, without a related-purpose justification the individual would reasonably expect, or without a permitted general/health/legal-enforcement situation): STOP, redesign or refresh consent.
+> 3. **APP 8 cross-border disclosure** to a recipient where the entity is not satisfied a substantially similar law applies, and no informed-consent fallback or other s 16C exception applies: PIA REQUIRED with contractual measures, or STOP.
+> 4. **APP 11 security**: where the proposed activity creates a step-change in the type or volume of personal information held, or introduces a new vendor/system handling personal information without an existing security baseline: PIA REQUIRED.
+> 5. **High privacy risk activity** under OAIC guidance: PIA REQUIRED. Examples in OAIC guidance include large-scale processing of sensitive information, systematic monitoring of public spaces, automated decision-making affecting individuals, processing of children's data, new tracking/profiling activities.
+> 6. **Consumer Data Right (CDR) data**: the CDR Privacy Safeguards apply in priority to the APPs; a separate assessment under the CDR Rules is typically required.
+> 7. **My Health Record system** or sector-specific health records legislation: separate assessment under the relevant Act may be required.
+> 8. **Automated decision-making with significant effect on individuals** (from December 2026 `[verify-au]`): notice obligations attach under tranche 1 reforms; PIA REQUIRED to scope the disclosures.
+> 9. **Tranche 2 reforms** may introduce a mandatory PIA trigger for "high privacy risk" activities. Until enacted, default to PIA REQUIRED whenever an activity would trigger a GDPR Art 35 DPIA.
+>
+> AU does not have a "DPIA MANDATORY" tier in current statute. Map to PIA REQUIRED with a flag that this would have been a mandatory DPIA under GDPR and that tranche 2 may impose a similar AU obligation.
+
 If **any** applicable regime's mandatory trigger is met → **DPIA MANDATORY** (or the equivalent regime-specific mandate), regardless of house trigger.
 
 **Strong indicators (not necessarily mandatory but do one anyway):**
@@ -179,6 +195,7 @@ proceeds.
 
 **House trigger met?** [Yes / No]
 **GDPR mandatory DPIA trigger?** [Yes — [trigger] / No / N/A (GDPR not in footprint)]
+**AU PIA trigger (APPs, CDR, sector overlay)?** [Yes — [trigger] / No / N/A (AU not in footprint)]
 **Privacy policy conflict?** [None / Yes — [specific conflict]]
 
 **Reasoning:**

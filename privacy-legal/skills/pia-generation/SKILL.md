@@ -78,6 +78,42 @@ Read `~/.claude/plugins/config/claude-for-legal/privacy-legal/CLAUDE.md` → `##
 
 If the seed PIA structure is in the config CLAUDE.md, **use it**. The point is that this PIA looks like the other PIAs this team produces, not like a generic one.
 
+## Australian framework (if Privacy Act in footprint)
+
+> AI-generated. Verify against the Privacy Act 1988 (Cth), current OAIC guidance, and any APP code applicable to the entity. PIA methodology in Australia follows the OAIC "Guide to Undertaking Privacy Impact Assessments".
+
+**PIA stages (OAIC methodology):**
+
+1. **Threshold assessment**: does the project involve handling personal information? If no, no PIA needed. If yes, proceed.
+2. **Project description**: scope, objectives, stakeholders, data flows.
+3. **Mapping of information flows**: collection points, internal uses, third-party disclosures (including overseas under APP 8), retention.
+4. **Privacy impact analysis** against the 13 APPs: identify where the project does or might not comply, and the risk to individuals.
+5. **Privacy management strategy**: mitigations, controls, residual risks.
+6. **Recommendations**: prioritised, with owners.
+
+**Who must PIA in AU:**
+
+- **Commonwealth agencies**: mandatory PIA for any high privacy risk project under the Privacy (Australian Government Agencies — Governance) APP Code 2017. Must publish on the agency's PIA register.
+- **Private sector APP entities**: not mandatory under current Privacy Act, but strongly recommended by OAIC. Tranche 2 reforms may introduce a mandatory PIA trigger for "high privacy risk" activities `[verify-au]`.
+- **CDR participants**: assessment under the CDR Rules in addition to or instead of a Privacy Act PIA.
+
+**PIA content checklist for AU (in addition to standard PIA content):**
+
+- APP-by-APP compliance analysis (each of the 13 APPs against the project).
+- APP 8 cross-border disclosure analysis: where will personal information be disclosed overseas? Is the recipient subject to a substantially similar law? If not, what contractual or consent measures apply?
+- APP 11 security: technical and organisational safeguards mapped to the OAIC "Guide to securing personal information".
+- NDB scheme readiness: how would an eligible data breach be detected, assessed, and notified within the statutory timeframes?
+- Automated decision-making (ADM): if the project involves substantially automated decisions significantly affecting individuals, document the ADM and confirm the notice obligations under tranche 1 reforms (in force from December 2026 `[verify-au]`).
+- Sensitive information: where collected, document the consent basis under APP 3.3 and any exceptions relied on.
+- Children's data: if the project handles personal information of individuals under 18, document the consent mechanism and the planned alignment with the OAIC Children's Online Privacy Code (when finalised `[verify-au]`).
+- State health records overlays: if health information is handled in Vic, NSW, or ACT, document the additional state Act compliance.
+
+**PIA output format**: an Australian PIA does not need to follow GDPR DPIA structure. Use the practice's house format if defined; otherwise the OAIC PIA template is the canonical structure.
+
+**Where the same project requires both an AU PIA and a GDPR DPIA**, produce a single combined document with parallel analysis (DPIA framework for EU/UK data subjects, APP-by-APP for AU). The narrative should distinguish the two regimes clearly so that a future regulator inquiry can read the relevant section.
+
+---
+
 ## Step 0: Is a PIA needed?
 
 Check the trigger criteria in `~/.claude/plugins/config/claude-for-legal/privacy-legal/CLAUDE.md`. That is the team's house answer.

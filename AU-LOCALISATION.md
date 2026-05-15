@@ -31,8 +31,8 @@ For each plugin, localisation covers:
 | Plugin | Status | Notes |
 |---|---|---|
 | `references/au-localisation/` | In progress | Foundation reference materials being built |
-| `employment-legal` | Pilot in progress | Fair Work Act, NES, unfair dismissal, state long service leave being added |
-| `privacy-legal` | Not started | Needs APPs framework to replace GDPR / CCPA primary lens |
+| `employment-legal` | Pilot complete (review pending) | Fair Work Act, NES, unfair dismissal, state long service leave added to CLAUDE.md, hiring-review, termination-review |
+| `privacy-legal` | Pilot complete (review pending) | Privacy Act 1988 (Cth), 13 APPs, NDB scheme, OAIC enforcement, APP 8 cross-border, APP 12 access added to CLAUDE.md, use-case-triage, dpa-review, dsar-response, pia-generation |
 | `ip-legal` | Not started | Needs IP Australia, Patents Act 1990, Copyright Act 1968, Trade Marks Act 1995, no DMCA equivalent |
 | `litigation-legal` | Not started | Needs Federal Court Rules, state Supreme Court rules, state Evidence Acts |
 | `corporate-legal` | Not started | Needs Corporations Act 2001, ASIC filing calendar, no Delaware analogue |

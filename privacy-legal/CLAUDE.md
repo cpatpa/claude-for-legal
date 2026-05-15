@@ -22,6 +22,9 @@ Rules for every skill, command, and agent in this plugin:
 *Written by the cold-start interview. Until then, this is a template — if you see
 `[PLACEHOLDER]`, run `/privacy-legal:cold-start-interview`.*
 
+> [!CAUTION]
+> **AU localisation pilot, AI-generated content.** This plugin has been partially localised for Australia. When the Regulatory footprint below includes "Australian Privacy Act" or "APPs", or the company-profile primary jurisdiction is Australia, skills must read `references/au-localisation/` at the repository root and apply the Australian Privacy Principles, the Notifiable Data Breaches scheme, and OAIC guidance rather than (or alongside) GDPR/CCPA defaults. See the `## Australian framework` section below. Every Australian-specific output must be verified by an Australian legal practitioner.
+
 ---
 
 ## Who we are
@@ -155,8 +158,10 @@ with respect to [whose data]. Data lives in [regions]. Privacy team is [N] peopl
 
 **Work-product header** (prepended to DPA reviews, PIAs, reg-gap analyses, policy-monitor sweeps, and triage outputs):
 
-- If Role is Lawyer / legal professional: `PRIVILEGED & CONFIDENTIAL — ATTORNEY WORK PRODUCT — PREPARED AT THE DIRECTION OF COUNSEL`
+- If Role is Lawyer / legal professional AND primary jurisdiction is US: `PRIVILEGED & CONFIDENTIAL — ATTORNEY WORK PRODUCT — PREPARED AT THE DIRECTION OF COUNSEL`
+- If Role is Lawyer / legal professional AND primary jurisdiction is **Australia**: `PRIVILEGED AND CONFIDENTIAL: PREPARED AT THE REQUEST OF [AU LEGAL PRACTITIONER] FOR THE DOMINANT PURPOSE OF OBTAINING LEGAL ADVICE`. Do NOT apply the "ATTORNEY WORK PRODUCT" header in Australian contexts. PIAs and DPA reviews are typically created for business compliance reasons rather than for the dominant purpose of obtaining legal advice; assertion of privilege over them in Australia is fact-specific and often unsuccessful. See `references/au-localisation/privilege.md`.
 - If Role is Non-lawyer: `RESEARCH NOTES — NOT LEGAL ADVICE — REVIEW WITH A LICENSED ATTORNEY BEFORE ACTING`
+- If Role is Non-lawyer AND primary jurisdiction is **Australia**: `RESEARCH NOTES. NOT LEGAL ADVICE. REVIEW WITH AN AUSTRALIAN LEGAL PRACTITIONER BEFORE ACTING`
 
 **The header's protection is jurisdiction-specific.** "Attorney work product" is a US doctrine (FRCP 26(b)(3)). It does not exist in most other legal systems, and asserting it on a document does not create it:
 
@@ -379,6 +384,119 @@ When a skill reads a document, matter file, production set, or data room and the
 ## Large output
 
 When a user asks to "run all the workflows," "review every document," "process everything," or anything else that would produce more output than fits in one turn, scope first. Estimate the size ("that's roughly 15 workflows at ~100 lines each — about 1,500 lines"), offer a choice ("I can do a detailed pass on 3-5, or a quick pass on all 15, or work through all 15 in batches — which do you want?"), and wait for the answer before starting. Committing to a plan that can't fit in one turn produces a silent truncation the user can't see. The corollary of "know what you read" is "know what you can write."
+
+## Australian framework
+
+> Active when the practice profile's primary jurisdiction is Australia OR the Regulatory footprint includes Privacy Act 1988 (Cth) / APPs / OAIC. Apply this framework first; fall back to GDPR/CCPA framing only where the practice profile makes those regimes primary.
+>
+> All content in this section is AI-generated and must be verified against the Privacy Act 1988 (Cth), the current APP guidelines, OAIC determinations, and any tranche 2 reforms in force at the time. Tag every claim `[verify-au]` until checked against the primary source.
+
+### Coverage of the Privacy Act 1988 (Cth)
+
+- **APP entities**: covered organisations and Commonwealth agencies. Includes private sector organisations with annual turnover above A$3 million; smaller organisations only if they (a) trade in personal information, (b) provide health services, (c) are a credit reporting body, (d) are a contracted service provider for a Commonwealth contract, or (e) opt in (s 6E).
+- **Small business operator exemption** (s 6D): private sector organisations with turnover ≤ A$3M are exempt unless an exception above applies. **Tranche 2 reforms propose removing this exemption.** `[verify-au]`
+- **Employee records exemption** (s 7B(3)): personal information held by a current or former employer about a current or former employee, where the act or practice is directly related to the employment relationship. Does NOT extend to job candidates. Long-criticised; tranche 2 reforms propose narrowing. `[verify-au]`
+- **Political party exemption** (s 7C) and other limited exemptions.
+- **Extraterritorial application** (s 5B): the Act applies to acts done outside Australia by an entity with an "Australian link". Tranche 1 reforms (Privacy and Other Legislation Amendment Act 2024) removed the requirement that the entity collect or hold the personal information in Australia, broadening extraterritorial reach. `[verify-au]`
+
+### The 13 Australian Privacy Principles (APPs) at a glance
+
+- **APP 1**: open and transparent management. Have an up-to-date APP privacy policy.
+- **APP 2**: anonymity and pseudonymity. Default to allowing where lawful and practicable.
+- **APP 3**: collection. Only collect personal information reasonably necessary for one or more of the entity's functions or activities. Sensitive information (health, biometric, race, sexual orientation, etc.) requires consent and reasonable necessity.
+- **APP 4**: unsolicited personal information. Destroy or de-identify if collection would not have been permitted under APP 3.
+- **APP 5**: notification at the time of collection. Specific matters must be notified.
+- **APP 6**: use and disclosure. Only for the primary purpose, or a related (sensitive: directly related) secondary purpose the individual would reasonably expect, or with consent, or for a permitted general/health/legal-enforcement situation.
+- **APP 7**: direct marketing. Specific rules; opt-out required.
+- **APP 8**: cross-border disclosure. Entity remains accountable for an overseas recipient's act or practice unless an exception applies (substantially similar law plus enforcement mechanism, or consent with notice of consequences). This is the operative AU rule for international data transfers, not "adequacy decisions" (which is a GDPR concept).
+- **APP 9**: government related identifiers. Restrictions on adoption, use, and disclosure (Medicare, Centrelink, etc.).
+- **APP 10**: data quality. Reasonable steps to ensure information is accurate, up to date, complete (and relevant for use/disclosure).
+- **APP 11**: security. Reasonable steps to protect information from misuse, interference, loss, unauthorised access, modification, disclosure. Destroy or de-identify when no longer needed.
+- **APP 12**: access. Individual has a right of access to personal information held about them, subject to exceptions. Default response time: a reasonable period, generally within 30 days. No statutory fee for access but reasonable processing costs may be charged.
+- **APP 13**: correction. Individual has a right to have inaccurate, out-of-date, incomplete, irrelevant or misleading personal information corrected. Statement of correction may be required if correction declined.
+
+### Notifiable Data Breaches scheme (Part IIIC)
+
+- **Eligible data breach**: there is unauthorised access to, or unauthorised disclosure of, personal information OR a loss of personal information; AND a reasonable person would conclude this is likely to result in serious harm to any individual to whom the information relates; AND the entity has not been able to prevent the likely risk of serious harm by remedial action.
+- **Assessment time**: entity must take reasonable steps to assess whether a suspected breach is an eligible data breach within **30 days** of becoming aware (s 26WH).
+- **Notification**: notify the OAIC and affected individuals **as soon as practicable** after determining there is an eligible data breach (s 26WK, s 26WL). No fixed external clock, but a delay must be reasonable.
+- **Penalties**: civil penalty for serious or repeated non-compliance with NDB scheme (which now sits inside the post-PoLA Act penalty regime, see below).
+
+### Penalties (Privacy and Other Legislation Amendment Act 2024)
+
+- Civil penalty for **serious interference with privacy** (s 13G as amended): the greater of A$50M, 3x the benefit obtained, or 30% of adjusted turnover (for body corporates). Significantly higher than the pre-2022 maximum of A$2.22M.
+- New tiered civil penalty regime introduces lower-tier penalties for less serious contraventions.
+- **Statutory tort** for serious invasions of privacy (commenced 10 June 2025 `[verify-au]`): introduced by the Privacy and Other Legislation Amendment Act 2024. Limited to intentional or reckless invasions; serious; without consent or other justification; balanced against public interest.
+- **Children's online privacy code** (under development by OAIC): standards for handling personal information of individuals under 18. Status: in consultation as of 2025 `[verify-au]`.
+- **Automated decision-making (ADM) notice**: from December 2026 `[verify-au]`, APP entities must include in their APP 5 collection notices and APP 1 privacy policies information about substantially automated decisions that significantly affect the individual's rights or interests.
+
+### Cross-border disclosure (APP 8)
+
+There is no concept of "adequacy decisions" or SCCs in Australia. Instead, an APP entity disclosing personal information overseas remains accountable for the recipient's handling unless:
+
+- (a) the entity reasonably believes the recipient is subject to a law or binding scheme substantially similar to the APPs that has effective enforcement, AND the individual would be able to take action to enforce that law or scheme; OR
+- (b) the individual has consented to the disclosure after being expressly informed that APP 8.1 will not apply (informed consent with notice of consequences); OR
+- (c) one of the other s 16C exceptions applies (legal authority, lessening serious threat to life or health, etc.).
+
+In practice, most international groups rely on (a) with detailed legal advice and on contractual measures binding the overseas recipient to APP-equivalent obligations. The Office of the Australian Information Commissioner has issued APP guidelines on APP 8.
+
+### PIA in Australia
+
+- **Commonwealth agencies**: Privacy Impact Assessments are mandatory for all high privacy risk projects under the Privacy (Australian Government Agencies — Governance) APP Code 2017, with publication on the agency's PIA register.
+- **Private sector**: PIAs are not statutorily mandatory under the current Privacy Act, but the OAIC strongly recommends them for any new project that involves personal information. Tranche 2 reforms propose making PIAs mandatory for high privacy risk activities `[verify-au]`.
+- **Methodology**: OAIC's "Guide to Undertaking Privacy Impact Assessments" is the canonical methodology. PIA stages: threshold assessment, project description, mapping of information flows, privacy impact analysis against the APPs, privacy management strategy, recommendations.
+
+### Consumer Data Right (CDR)
+
+- Co-administered by the OAIC and ACCC under Part IVD of the Competition and Consumer Act 2010 (Cth) and the Consumer Data Right Rules.
+- Sector-specific rollout: banking (2020), energy (2022), with proposed expansions.
+- "Accredited data recipients" must comply with CDR Privacy Safeguards (Privacy Safeguards 1-13), which sit alongside the APPs and apply in priority for CDR data.
+- Skills should detect CDR-data scenarios and apply the Privacy Safeguards rather than the APPs.
+
+### My Health Records and health-sector privacy
+
+- **My Health Records Act 2012 (Cth)**: separate regime for the My Health Record system; civil and criminal penalties for unauthorised access.
+- State health records legislation (e.g. *Health Records Act 2001* (Vic), *Health Records and Information Privacy Act 2002* (NSW), *Health Records (Privacy and Access) Act 1997* (ACT)) overlays the Privacy Act for health information in those states.
+- Health service providers are APP entities regardless of turnover (s 6D(4)(b)).
+
+### DSAR / APP 12 access requests
+
+| GDPR DSAR | AU APP 12 |
+|---|---|
+| 1 calendar month (Art 12) | "Reasonable period", generally within 30 days `[verify-au]` |
+| Specific exemptions (Art 15(4), Recital 63) | Exceptions in APP 12.3 (frivolous or vexatious, serious threat to life or health, etc.) |
+| Statutory right to portability (Art 20) | No general portability right (CDR-specific) |
+| No fee unless manifestly unfounded/excessive | Reasonable processing costs may be charged |
+| Identity verification implied | Reasonable identity verification expected |
+
+### Mapping (GDPR/CCPA to AU)
+
+| GDPR / CCPA concept | AU equivalent | Notes |
+|---|---|---|
+| Controller / processor | (Not a Privacy Act concept) | All covered entities are "APP entities". Allocation of responsibility is contractual. |
+| DPIA (Art 35) | PIA per OAIC guide | Not statutorily mandatory in private sector (yet) |
+| SCCs / adequacy | APP 8 accountability + contract | No SCCs/adequacy in AU |
+| Lawful basis (Art 6) | Collection necessity + consent / permitted situation | Different framework |
+| Right to erasure (Art 17) | No general right; APP 11 destruction when no longer needed; APP 13 correction | Tranche 2 may add a right to erasure `[verify-au]` |
+| DPO appointment (Art 37) | Privacy officer (common best practice, not mandated) | No DPO obligation but OAIC encourages |
+| DPA (Art 28) | Contractual privacy clauses | No statutory minimum content for "DPA" with a service provider |
+| Breach notification (Art 33: 72 hours to authority) | NDB scheme: as soon as practicable after determining eligible breach | Different trigger and clock |
+
+### DPA review in AU context
+
+- AU has no statutory minimum-content requirement for a "data processing agreement" with a service provider. Contracts should establish:
+  - Scope of personal information handled and purposes
+  - Limitations on use and disclosure
+  - Security obligations (APP 11 equivalent)
+  - Sub-processor controls
+  - Cross-border disclosure restrictions consistent with APP 8
+  - Breach notification timelines that enable the controlling entity to meet NDB scheme obligations
+  - Audit and assistance rights
+  - Return or destruction of data on termination
+  - Liability and indemnity for breaches
+- Where the same agreement covers GDPR/UK GDPR and APP-regulated data, the GDPR Art 28 schedule generally satisfies AU contractual expectations; a brief AU-specific overlay is typically added.
+
+---
 
 ## Currency watch
 
