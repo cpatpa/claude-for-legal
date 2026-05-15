@@ -122,6 +122,36 @@ Status values:
 
 Run when no tracker exists, or with `--rebuild` to regenerate from scratch.
 
+## Australian framework (if AU is the relevant jurisdiction)
+
+> AI-generated. Verify against current ASIC fees and timetables; ASIC publishes annual indexation of fees.
+
+- **Single national registry**: ASIC, not state Secretaries of State. There is no Delaware analogue. Companies with an ACN are governed by the Corporations Act 2001 (Cth) regardless of where they operate within Australia.
+- **Annual review**: ASIC issues each company an annual review on the anniversary of registration. Pay the annual review fee and confirm details within 2 months (Form 484 if changes). Late fees apply.
+- **Form 484**: change to company details (officeholders, members, addresses, share structure). Due **28 days** from change.
+- **Form 388**: financial reports for public companies, large pty companies, registered foreign companies. Annual, lodged with annual report.
+- **Director ID**: required for every director since 5 April 2022 (issued by ABRS — Australian Business Registry Services). New directors must obtain a Director ID before appointment.
+- **Registered office** (s 142 Corporations Act): public address required, open during business hours; cannot be a PO box. Update via Form 484.
+- **Officeholders**: Pty Ltd requires at least 1 resident director; Ltd requires at least 2 (one resident); company secretary required for public companies (resident).
+- **Small proprietary company exemption**: if 2 of 3 met (consolidated revenue < A$50M, consolidated gross assets < A$25M, fewer than 100 employees), exempt from full financial reporting under Chapter 2M unless directed otherwise.
+- **AFSL / ACL**: separate licences (Australian Financial Services Licence and Australian Credit Licence) tracked separately. Annual obligations under the respective regulatory guides.
+- **AUSTRAC enrolment**: required for reporting entities under the AML/CTF Act 2006 (Cth). Annual compliance report due 31 March.
+- **Modern Slavery Statement**: if consolidated revenue > A$100M, annual statement due within 6 months of FY end (Modern Slavery Act 2018 (Cth)).
+- **State payroll tax**: state-by-state thresholds and rates; entity-by-entity grouping rules apply (NSW Revenue, SRO Vic, etc.).
+- **State land tax**: state-by-state thresholds; entities holding land in multiple states need state-by-state reporting.
+- **WGEA gender pay reporting**: employers with 100+ employees report annually to the Workplace Gender Equality Agency.
+
+Compliance calendar should map by:
+- ASIC obligations (annual review, Form 484 trigger events, Form 388 if applicable)
+- AFSL / ACL conditions (if held)
+- AUSTRAC (if a reporting entity)
+- State revenue obligations
+- WGEA, Modern Slavery, climate-related financial disclosure (CRFD) under upcoming Treasury Laws Amendment (Sustainability Reporting) Act `[verify-au]`
+
+Tag every AU-specific deadline `[verify-au]` until confirmed against the regulator's published calendar.
+
+---
+
 ### Step 1: Load entity table
 
 Read `~/.claude/plugins/config/claude-for-legal/corporate-legal/CLAUDE.md` → `## Entity Management` → Entity table. If the entity table

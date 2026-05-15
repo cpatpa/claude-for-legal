@@ -115,6 +115,65 @@ No room for error. One counter-example makes them false. Research whether qualif
 | "Guaranteed" | Only if you actually offer a guarantee with terms — this creates warranty exposure |
 | "Always" / "Every" | "Typically" / "Most" |
 
+## Australian framework (if AU is the relevant jurisdiction)
+
+> AI-generated. Verify against the Australian Consumer Law and current ACCC guidance.
+
+**Primary legal hook**: ACL s 18 (misleading or deceptive conduct) is strict liability. No intent required. Penalty since 2022: greater of A$50M / 3x benefit / 30% adjusted turnover per contravention.
+
+**Specific provisions to check claim against**:
+
+- **ACL s 29** (false or misleading representations about goods or services): nature, characteristics, suitability, quality, value, standard, grade, composition, style, model, history.
+- **ACL s 29(1)(g)**: representations about sponsorship, approval, performance characteristics, accessories, uses, benefits.
+- **ACL s 29(1)(h)**: place of origin (see also Pt 5-3 country of origin labelling regime).
+- **ACL s 29(1)(i)**: need for goods or services.
+- **ACL s 29(1)(m)**: misrepresentation about consumer guarantees ("we don't have to refund" is a common contravention).
+- **ACL s 33**: misleading conduct as to nature, manufacturing process, characteristics, suitability, quantity of goods.
+- **ACL s 34**: misleading conduct as to services.
+- **ACL s 37**: false or misleading representations and practices in connection with the supply or possible supply of business activities.
+
+**ACCC focus areas (as of 2024-2025)**:
+
+- **Green claims**: ACCC Guidance "Making environmental claims" (June 2023). 8 principles: be truthful and accurate, have evidence, don't omit material info, explain claims in plain language, be specific about which part is "green", don't overstate, use clear language, ensure third-party logos are accurate.
+- **AI-related claims**: ACCC actively enforcing on "AI" labels without substantive AI capability, "AI-powered" claims that don't reflect the actual capability.
+- **Subscription / auto-renewal**: comply with UCT regime; transparent terms; clear cancellation pathway.
+- **Influencer marketing**: substance over form. Material connection to the brand must be disclosed (#ad / #sponsored / clear language). AANA Code of Ethics applies.
+- **Health and wellness claims**: TGA-regulated for therapeutic claims; even non-TGA claims must be substantiated.
+
+**Substantiation standard**:
+
+- Claims must be substantiated at the time of publication.
+- Comparison claims: like-for-like, current, objective measure, fairly stated.
+- Superlatives ("best", "cheapest", "leading"): higher substantiation bar; objective measure required.
+- "Up to X" claims: a meaningful proportion of users must achieve at or near X.
+
+**Country of origin (Pt 5-3 ACL)**:
+
+- "Made in Australia": last substantial transformation in Australia + 50%+ production costs incurred in Australia (food: different test under Country of Origin Labelling).
+- "Product of Australia": more stringent than "Made in" (all significant ingredients + all/virtually all production processes in Australia).
+- "Grown in Australia": specific to fresh produce.
+- AMAG (Australian Made, Australian Grown) logo: licensed by Australian Made Campaign Ltd; specific eligibility criteria.
+
+**Common AU-specific marketing claim contraventions**:
+
+- "Up to 50% off" without indication that some customers will receive less (s 29).
+- "Refund only with receipt" (misrepresents s 29(1)(m) — consumer guarantee rights survive).
+- "AI-powered" for products with no substantive AI element.
+- Disclaimers in fine print that contradict headline claims (the test is the dominant impression).
+- "Australian Made" without satisfying the statutory test.
+- Reviews / testimonials not from real customers, or selectively presented.
+
+**Output additions for AU**:
+
+- Cite ACL s 18 (general) and the specific s 29 sub-paragraph relevant.
+- Flag substantiation evidence needed before launch.
+- Note any UCT or APP overlay.
+- Reference the relevant ACCC guidance.
+
+Tag every AU-specific cite `[verify-au]` until checked.
+
+---
+
 ## The review
 
 ### Step 1: Extract every claim

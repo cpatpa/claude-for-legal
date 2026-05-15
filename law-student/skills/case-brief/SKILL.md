@@ -29,6 +29,52 @@ Case briefs state holdings, rules, and reasoning. Getting them wrong turns your 
 
 A brief built on my guess and your good faith is worse than no brief. Better to err toward "I'm not sure — read it yourself" than to invent.
 
+## Australian framework (if the student is studying at an AU law school)
+
+> AI-generated. Verify against the case as published.
+
+**Citation format (AGLC4)**:
+
+- **Reported case**: *Case name* (Year) Volume Reporter Page, Pinpoint (Judge). Example: *Mabo v Queensland (No 2)* (1992) 175 CLR 1, 42 (Brennan J).
+- **Medium neutral (unreported)**: *Case name* [Year] Court Abbreviation Number, [Paragraph]. Example: *Smith v Jones* [2024] NSWSC 123, [45] (Smith J).
+- Case names in italics. Parties separated by `v` (not `v.` or `vs`).
+- Court abbreviations: HCA (High Court of Australia), FCA (Federal Court single judge), FCAFC (Full Court of the Federal Court), FCFCOA (Federal Circuit and Family Court), NSWSC / NSWCA, VSC / VSCA, QSC / QCA, WASC / WASCA, SASC / SASCFC, TASSC, ACTSC / ACTCA, NTSC / NTCA.
+
+**AU brief structure**:
+
+1. **Citation**: AGLC4 format.
+2. **Court and bench**: which court; single judge / bench of N. If High Court, note the bench size (HCA usually 5 or 7).
+3. **Procedural posture**: how the case got to this court (trial → appeal → special leave → HCA). Special leave required for most HCA appeals.
+4. **Facts**: succinct.
+5. **Issues**: what the court actually decided. Issues that the court chose not to decide (often noted by the court) are not the ratio.
+6. **Holding**: result, by majority. Note dissents and concurrences in separate judgments.
+7. **Ratio decidendi (binding rule)**: the principle the court relied on to reach the result. Often disputed; if multiple judgments, identify the common ratio. AU appellate courts often produce multiple separate judgments; identifying the ratio requires reading all judgments.
+8. **Obiter dicta**: persuasive but not binding statements.
+9. **Application/significance**: how this case sits in the doctrinal trajectory; what it changes; what later cases say about it.
+
+**Hierarchy and binding**:
+
+- **High Court of Australia (HCA)**: final court of appeal. HCA decisions bind all Australian courts.
+- **Full Court of the Federal Court (FCAFC)**: binds single Federal Court judges and most lower federal courts.
+- **State Courts of Appeal / Court of Criminal Appeal**: bind single judges of the same court and intermediate state courts.
+- **Cross-state**: a NSW Court of Appeal decision is persuasive but not binding on the Victorian Supreme Court.
+- **English and Commonwealth decisions**: persuasive in many areas (especially equity, contract); not binding.
+
+**Important difference from US case-brief practice**:
+
+- AU doctrine often draws from English cases (Donoghue v Stevenson, Hedley Byrne, etc.). Don't treat these as merely "old English law" — they are foundational AU law via reception.
+- Statutory interpretation is governed by the Acts Interpretation Act 1901 (Cth) and state equivalents, plus *CIC Insurance Limited v Bankstown Football Club Ltd* (1997) 187 CLR 384 (purposive approach, surrounding circumstances).
+- AU does not have a "casebook" tradition equivalent to US. Reading the actual judgment is expected.
+
+**Skill behaviour for AU briefs**:
+
+- Use AGLC4 format throughout.
+- For HCA cases, distinguish plurality from concurrence judgments (e.g. "Gleeson CJ and Kirby J", "Gummow J", "Hayne J" individually identified).
+- Use "His Honour" / "Her Honour" if quoting from a judgment in formal style; "the court" if discussing the decision generally.
+- Tag every case fact, holding, or quotation `[verify against casebook / law report]` until the student confirms.
+
+---
+
 ## Load context
 
 `~/.claude/plugins/config/claude-for-legal/law-student/CLAUDE.md` → outline/brief preferences (format, depth), learning style.

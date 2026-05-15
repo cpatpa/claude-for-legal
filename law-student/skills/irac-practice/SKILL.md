@@ -46,6 +46,48 @@ Watch for: real names, real addresses, real dates, specific dollar amounts, "my 
 - `~/.claude/plugins/config/claude-for-legal/law-student/irac-sessions/[student]/tracker.md` if exists — pattern tracking across sessions
 - Student-provided hypo (if practicing on a specific prompt) and their written answer
 
+## Australian framework (if the student is studying at an AU law school)
+
+> AI-generated. Verify against the student's course materials and lecturer feedback.
+
+**IRAC in AU**: IRAC structure is widely taught in Australian law schools. Some lecturers prefer **IRAC**, others **FIRAC** (Facts, Issue, Rule, Application, Conclusion), others **ILAC** (Issue, Law, Application, Conclusion). The skill should adapt to the student's course preference.
+
+**Rule statement in AU IRAC**:
+
+- Cite AU statutes (Cth and state) and AU case law, not US. Use AGLC4 format.
+- Statutory interpretation: *CIC Insurance Limited v Bankstown Football Club Ltd* (1997) 187 CLR 384 (purposive approach, context matters). Don't import US textualism / originalism debates.
+- For common law areas: cite High Court (HCA) decisions where available; lower court decisions only where HCA hasn't spoken.
+- Donoghue v Stevenson, Hedley Byrne, Salomon, etc. are foundational AU law via reception. Treat as binding through HCA adoption.
+
+**Application in AU IRAC**:
+
+- AU exam answers tend to value careful application over rule-recitation. Lecturers often complain that students "regurgitate" the rule. Push the student to apply.
+- Counter-argument: AU lecturers commonly award marks for engaging with the other side's argument. Push the student to identify and rebut.
+- Policy: many AU electives (especially 3L/4L) reward policy analysis. Identify when this is expected.
+
+**Common AU-specific subject matter**:
+
+- **Torts**: *Donoghue v Stevenson* [1932] AC 562; *Caparo Industries Plc v Dickman* [1990] 2 AC 605 (adopted in AU); Civil Liability Acts (state-by-state, e.g. *Civil Liability Act 2002* (NSW)). AU has departed from UK on some points (e.g. *Sullivan v Moody* (2001) 207 CLR 562 on novel duty categories).
+- **Contracts**: *Carlill v Carbolic Smoke Ball Co* [1893] 1 QB 256; *Codelfa Construction Pty Ltd v State Rail Authority of NSW* (1982) 149 CLR 337 (admissibility of surrounding circumstances); *Toll (FGCT) Pty Ltd v Alphapharm Pty Ltd* (2004) 219 CLR 165 (objective theory).
+- **Property**: Torrens system, *Frazer v Walker* [1967] 1 AC 569; native title (*Mabo v Queensland (No 2)* (1992) 175 CLR 1).
+- **Equity**: *Coco v A N Clark (Engineers) Ltd* [1969] RPC 41; *Mareva Compania Naviera SA v International Bulkcarriers SA* [1975] 2 Lloyd's Rep 509; *Walton's Stores (Interstate) Ltd v Maher* (1988) 164 CLR 387 (unified estoppel).
+- **Constitutional law**: HCA jurisprudence; ss 51, 75, 76, 90, 92, 109 of the Australian Constitution; implied freedom of political communication (*Lange v Australian Broadcasting Corporation* (1997) 189 CLR 520).
+- **Administrative law**: judicial review (s 75(v) of the Constitution; *Plaintiff S157/2002 v Commonwealth* (2003) 211 CLR 476); ADJR Act 1977 (Cth); ART (replaced AAT 14 October 2024).
+- **Criminal law**: state Crimes Acts / Criminal Codes; AU does NOT have a Model Penal Code analogue. The Code states (Qld, WA, Tas, NT) and the common-law states (NSW, Vic, SA, ACT) differ.
+- **Evidence**: uniform Evidence Acts (Cth/NSW/Vic/Tas/ACT/NT); non-uniform (Qld/WA/SA).
+- **Civil procedure**: Federal Court Rules 2011 (Cth); state Supreme Court rules.
+- **Corporations**: Corporations Act 2001 (Cth) ss 180-184 directors' duties.
+- **Professional Conduct**: Australian Solicitors' Conduct Rules (ASCR); Legal Profession Uniform Law.
+
+**Skill behaviour for AU IRAC**:
+
+- Push for AU citations; flag any US citation the student uses unless the course is comparative.
+- Use AGLC4 citation format in feedback.
+- Distinguish AU and UK positions where they diverge (e.g. duty of care: AU and UK have moved apart).
+- Tag every cited rule `[verify against casebook / Acts]` until the student confirms.
+
+---
+
 ## Workflow
 
 ### Step 1: Establish what we're grading

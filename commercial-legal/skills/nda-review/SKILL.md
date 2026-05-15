@@ -23,6 +23,26 @@ Before producing output, check where it's going. If the user has named a destina
 
 Most inbound NDAs are fine. A few have landmines. This skill sorts them in under a minute so legal only reads the ones that matter.
 
+## Australian framework (if AU is the relevant jurisdiction)
+
+> AI-generated. Verify against AU contract law and the Privacy Act 1988 (Cth).
+
+- **Breach of confidence** in AU is an equitable cause of action (*Coco v A N Clark (Engineers) Ltd* [1969] RPC 41, adopted in AU). Three elements: information of a confidential nature; communicated in circumstances importing an obligation of confidence; unauthorised use or disclosure causing detriment. NDAs typically codify and extend this.
+- **Term**: AU NDAs typically run perpetually for trade secrets and 3-5 years for other confidential information. Perpetual terms are enforceable; restraint of trade doctrine does not generally apply to confidentiality clauses (different from non-competes).
+- **Restraint of trade overlay**: if the NDA includes a non-compete, non-solicit, or restraint that extends beyond confidentiality, that part is governed by restraint of trade doctrine. NSW: *Restraints of Trade Act 1976* (NSW) allows reading down. Other states: blue pencil severance only.
+- **Privacy Act overlay**: where confidential information includes "personal information" (APP entity), the NDA must address APP 11 security obligations and (for cross-border disclosure) APP 8 accountability. Standard NDA confidentiality language does not automatically meet APP 8 requirements.
+- **Sexual harassment NDAs**: AU has growing legislative and policy resistance to "secrecy clauses" that suppress sexual harassment disclosures. AHRC *Respect@Work* (2020) recommendations; some state legislation restricts NDAs for sexual harassment without the complainant's request. Flag in any NDA pre-empting employment-related disclosures.
+- **Common AU-specific drafting issues**:
+  - **Choice of law**: AU contracts often default to NSW, Vic, or WA. Foreign governing law on AU-parties NDAs may complicate enforcement.
+  - **Carve-outs**: standard AU carve-outs include disclosure required by law (court order, regulator), to professional advisers under continuing obligation of confidence, with prior written consent, and information that becomes publicly available without breach.
+  - **Injunctive relief**: AU courts grant interlocutory injunctions to restrain breach of confidence (Mareva/freezing orders also available). Specify equitable remedies are available.
+  - **Indemnity for breach**: AU indemnity language strictly construed; specify scope clearly.
+  - **No equivalent of US "trade secret" statutory tort**: AU relies on equitable breach of confidence + contract.
+
+Tag every AU-specific point `[verify-au]` until checked.
+
+---
+
 **The goal:** a GREEN NDA should need nothing more than a signature. A YELLOW needs a lawyer's eyes on one or two specific things. A RED stops before anyone wastes time.
 
 ## Load the playbook first

@@ -33,15 +33,15 @@ For each plugin, localisation covers:
 | `references/au-localisation/` | Foundation complete (review pending) | 8 reference files: regulators, courts, AGLC4, terminology, legal profession, privilege, dates/currency/spelling |
 | `employment-legal` | Pilot complete (review pending) | Fair Work Act, NES, unfair dismissal, general protections, state long service leave; CLAUDE.md, hiring-review, termination-review |
 | `privacy-legal` | Pilot complete (review pending) | Privacy Act 1988 (Cth), 13 APPs, NDB scheme, OAIC enforcement, APP 8 cross-border, APP 12 access; CLAUDE.md, use-case-triage, dpa-review, dsar-response, pia-generation |
-| `ip-legal` | Pilot complete (review pending) | Patents Act 1990, Copyright Act 1968, Trade Marks Act 1995, IP Australia, no DMCA equivalent, groundless threats; CLAUDE.md, takedown |
-| `litigation-legal` | Pilot complete (review pending) | Federal Court Rules 2011, state Supreme Court rules, uniform Evidence Acts, LPP dominant purpose, Calderbank offers, Part IVA class actions, costs follow event; CLAUDE.md |
-| `corporate-legal` | Pilot complete (review pending) | Corporations Act 2001 (Cth), ASIC filings (Form 484, 388), directors' duties, continuous disclosure, schemes of arrangement, FIRB, no Delaware analogue; CLAUDE.md |
-| `commercial-legal` | Pilot complete (review pending) | Australian Consumer Law, non-excludable consumer guarantees, UCT regime with penalties, misleading and deceptive conduct (s 18), unconscionable conduct, Modern Slavery Act; CLAUDE.md |
-| `regulatory-legal` | Pilot complete (review pending) | AU regulator feed sources (ASIC, ACCC, OAIC, APRA, AUSTRAC, ATO, AFCA, eSafety, ACMA), parliamentary process, no NPRM regime; CLAUDE.md |
-| `product-legal` | Pilot complete (review pending) | ACL marketing claims (s 18, 29, 33), substantiation, country of origin (Pt 5-3), Spam Act, mandatory product safety, ACCC enforcement; CLAUDE.md |
-| `ai-governance-legal` | Pilot complete (review pending) | Voluntary AI Safety Standard 2024 (10 Guardrails), AI Ethics Principles, proposed Mandatory Guardrails, Privacy Act ADM (Dec 2026), sectoral overlays; CLAUDE.md |
-| `legal-clinic` | Pilot complete (review pending) | Clinical legal education context, Legal Profession Uniform Law and state Acts, ASCR, reserved legal work, common practice areas; CLAUDE.md |
-| `law-student` | Pilot complete (review pending) | Priestley 11, PLT pathway, AGLC4, no single bar exam, AU assessment formats, AI use policies; CLAUDE.md |
+| `ip-legal` | Pilot complete (review pending) | Patents Act 1990, Copyright Act 1968, Trade Marks Act 1995, IP Australia, no DMCA equivalent, groundless threats; CLAUDE.md, takedown, clearance, oss-review |
+| `litigation-legal` | Pilot complete (review pending) | Federal Court Rules 2011, state Supreme Court rules, uniform Evidence Acts, LPP dominant purpose, Calderbank offers, Part IVA class actions, costs follow event; CLAUDE.md, demand-draft, privilege-log-review |
+| `corporate-legal` | Pilot complete (review pending) | Corporations Act 2001 (Cth), ASIC filings (Form 484, 388), directors' duties, continuous disclosure, schemes of arrangement, FIRB, no Delaware analogue; CLAUDE.md, entity-compliance, diligence-issue-extraction |
+| `commercial-legal` | Pilot complete (review pending) | Australian Consumer Law, non-excludable consumer guarantees, UCT regime with penalties, misleading and deceptive conduct (s 18), unconscionable conduct, Modern Slavery Act; CLAUDE.md, review, nda-review |
+| `regulatory-legal` | Pilot complete (review pending) | AU regulator feed sources (ASIC, ACCC, OAIC, APRA, AUSTRAC, ATO, AFCA, eSafety, ACMA), parliamentary process, no NPRM regime; CLAUDE.md, reg-feed-watcher |
+| `product-legal` | Pilot complete (review pending) | ACL marketing claims (s 18, 29, 33), substantiation, country of origin (Pt 5-3), Spam Act, mandatory product safety, ACCC enforcement; CLAUDE.md, launch-review, marketing-claims-review |
+| `ai-governance-legal` | Pilot complete (review pending) | Voluntary AI Safety Standard 2024 (10 Guardrails), AI Ethics Principles, proposed Mandatory Guardrails, Privacy Act ADM (Dec 2026), sectoral overlays; CLAUDE.md, aia-generation |
+| `legal-clinic` | Pilot complete (review pending) | Clinical legal education context, Legal Profession Uniform Law and state Acts, ASCR, reserved legal work, common practice areas; CLAUDE.md, client-intake |
+| `law-student` | Pilot complete (review pending) | Priestley 11, PLT pathway, AGLC4, no single bar exam, AU assessment formats, AI use policies; CLAUDE.md, case-brief, irac-practice |
 | `legal-builder-hub` | Pilot complete (review pending) | AU QA checks for community skills, AU-compatible starter packs, US-default flagging; CLAUDE.md |
 
 ## How to use this localisation

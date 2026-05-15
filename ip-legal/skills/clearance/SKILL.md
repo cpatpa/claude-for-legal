@@ -78,6 +78,41 @@ the list in review. Stay on the two-way door side.
 
 ---
 
+## Australian framework (if AU is the relevant jurisdiction)
+
+> AI-generated. Verify against IP Australia's Trade Marks Search and current Trade Marks Office practice. Replace USPTO framing with IP Australia where the target jurisdiction is AU.
+
+- **Registry**: IP Australia (ipaustralia.gov.au). Trade Marks Search is free at search.ipaustralia.gov.au/trademarks/search/quick.
+- **Classification**: Nice Classification (currently 12th edition). IP Australia's "TM Headstart" provides a pre-application clearance service.
+- **Trade Mark Act 1995 (Cth) examination grounds** to test against in clearance:
+  - s 39: signs not registrable.
+  - s 41: distinctiveness (was the most common ground; reworded 2013).
+  - s 42: scandalous mark, contrary to law.
+  - s 43: connotation likely to deceive or cause confusion.
+  - s 44: substantially identical or deceptively similar to an earlier mark for similar goods/services.
+  - s 60: deception or confusion because of reputation of another mark.
+  - s 61: false geographical indication.
+- **Confusion test**: "deceptively similar" (s 10): the mark so nearly resembles another that it is likely to deceive or cause confusion. Compared as a whole, with imperfect recollection. Different from US "likelihood of confusion" multi-factor test.
+- **Common law passing off**: a parallel cause of action; reputation + misrepresentation + damage. Often pleaded with ACL s 18 (misleading and deceptive conduct).
+- **Madrid Protocol**: AU is a member. International registrations designating Australia are examined locally.
+- **Trans-Tasman**: Australia and NZ have parallel but separate registers. Filing in AU does not protect in NZ. Watch out for trans-Tasman expansion plans.
+- **Removal for non-use** (s 92): a registered mark may be removed if not used for a continuous 3-year period, where 5 years has elapsed since registration. Use this offensively where a prior mark blocks but is not in use.
+- **"In Australia" use**: use of the mark in Australia is required to support and maintain a registration. Online use accessible in Australia can support use depending on facts.
+- **Famous mark / well-known mark**: protected under ss 60 and 120(3) even where goods/services are not similar. Higher reputation threshold.
+- **Defensive registrations** (s 185): available for trade marks of high reputation; protect against use in unrelated classes.
+
+**Clearance output additions for AU**:
+- IP Australia search reference number and date.
+- Nice class(es) examined.
+- Citation of earliest priority date for any conflicting mark found.
+- Owner of conflicting mark (search ASIC if a company) and any use evidence available.
+- Common law passing off scan: cursory check for unregistered use in the market (Google + ASIC business name + state business name searches).
+- Domain name (.com.au registry) and ASIC business name search.
+
+Tag every search result `[verify-au]` until the user confirms against the IP Australia search.
+
+---
+
 ## Load the practice profile first
 
 Before running clearance, read `~/.claude/plugins/config/claude-for-legal/ip-legal/CLAUDE.md`. Pull:
