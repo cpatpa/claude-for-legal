@@ -50,6 +50,30 @@ Read `~/.claude/plugins/config/claude-for-legal/legal-clinic/CLAUDE.md`:
 - **Contains `[PLACEHOLDER]` markers but no pause comment** → the template was never completed; offer to start fresh or resume from wherever the placeholders begin.
 - **Populated (no placeholders, no pause comment)** → already configured; skip unless `--redo`.
 
+## Australian jurisdiction branch
+
+If the clinic is an **Australian law school clinic**, run the AU-specific questions below after the standard interview and write the answers into the practice profile.
+
+**AU-specific questions to ask:**
+
+1. **State of operation**: which Australian state/territory is the clinic in (NSW, VIC, QLD, WA, SA, TAS, ACT, NT)?
+2. **Supervising practitioner**: which state are you admitted in? What is your practising certificate number and any conditions? Do you hold an unrestricted certificate (i.e. past the supervised practice period for solicitors)?
+3. **Designated local regulatory authority (DLRA)**: which Law Society / Bar Association supervises your practice (Law Society of NSW / Law Institute of Victoria / QLS / Law Society of WA / etc.)?
+4. **Legal Profession framework**: Legal Profession Uniform Law (NSW/VIC/WA) or state Legal Profession Act?
+5. **Australian Solicitors' Conduct Rules (ASCR)**: have students been briefed on Rules 9 (confidentiality), 10 (former client), 11 (concurrent client), 33 (communicating with represented party)?
+6. **Reserved legal work**: are students aware they may not engage in legal practice independently? Supervision protocol documented?
+7. **PLT relationship**: does the clinic count towards Practical Legal Training requirements? If yes, which PLT provider (College of Law / ANU Legal Workshop / Leo Cussen / other)?
+8. **Practice areas covered**: tenancy (state Residential Tenancies Acts), family (Family Law Act 1975 (Cth)), migration (Migration Act 1958 (Cth); only RMA or AU legal practitioner may give immigration assistance), consumer (ACL), employment (FWA), social security (ART), criminal, other?
+9. **Partner relationship**: does the clinic operate through or alongside a Community Legal Centre? Legal Aid? Standalone?
+10. **Client eligibility**: means test threshold? Legal Aid ineligibility verification process?
+11. **Tribunal practice**: which AU tribunals does the clinic appear before (NCAT, VCAT, QCAT, ART, FWC, AFCA)?
+12. **AU-specific seed documents**: upload your clinic handbook with AU jurisdictional context, AU-specific intake form, an example AU client letter, AU letter of advice templates per practice area, and the relevant Court / Tribunal forms.
+13. **Student admission pathway**: are students preparing for admission to which state's Supreme Court? Bar Association track or solicitor track?
+
+Write answers under `## Clinic profile` (AU state of operation), `## Jurisdiction` (with AU courts and tribunals), `## Supervision style` (AU-aware), `## Practice-area templates` (with AU primary sources), and (newly) `## Australian framework` (Legal Profession Uniform Law or state Act, DLRA, ASCR awareness, PLT relationship).
+
+---
+
 ## Check for the shared company profile
 
 Look for `~/.claude/plugins/config/claude-for-legal/company-profile.md`.

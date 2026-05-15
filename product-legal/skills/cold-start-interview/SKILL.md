@@ -53,6 +53,29 @@ The template structure lives at `${CLAUDE_PLUGIN_ROOT}/CLAUDE.md` — use it as 
 
 If a CLAUDE.md exists at the old cache path `~/.claude/plugins/cache/claude-for-legal/product-legal/*/CLAUDE.md` but not at the config path, copy it forward.
 
+## Australian jurisdiction branch
+
+If the shared company profile (or the user's answers) indicates **Australia** is the primary jurisdiction OR users/data/employees include Australia, run the AU-specific questions below after the standard interview and write the answers into the practice profile's `## Australian framework` section.
+
+**AU-specific questions to ask:**
+
+1. **AU consumer-facing supply**: do you supply goods/services to AU "consumers" (under A$100,000 OR personal/household use)? If yes, ACL non-excludable consumer guarantees (ss 51-59) apply regardless of any "AS IS" or limited-warranty drafting.
+2. **AU marketing channels**: which channels target AU users? Email (Spam Act compliance), SMS (Spam Act), phone (Do Not Call Register), social media, search ads, influencer marketing?
+3. **Comparative claims posture**: do you make comparison claims about competitors? Substantiation framework?
+4. **Green / environmental claims**: do you make sustainability claims? Have you reviewed against ACCC "Making environmental claims" guidance (June 2023, 8 principles)?
+5. **AI feature claims**: do you market "AI-powered", "AI-driven", "powered by AI" features? Substantiation evidence?
+6. **Country of origin claims**: do you make "Australian Made", "Product of Australia", "Australian Made & Owned" claims? AMAG logo licence?
+7. **TGA-regulated**: do you make therapeutic claims (medicines, medical devices, complementary medicines, cosmetics with therapeutic effect)? TGA listing/registration status?
+8. **Children's content**: do you target users under 18? Awareness of pending OAIC Children's Online Privacy Code `[verify-au]`?
+9. **Mandatory product safety**: do any of your products have mandatory safety standards or bans? Have you reported any consumer goods injury under ACL s 131 (2-day reporting)?
+10. **ACCC interaction history**: any ACCC infringement notices, court-enforceable undertakings, investigations?
+11. **Online Safety Act 2021 (Cth)**: do you operate a social media service, online dating service, online messaging service, or other "designated internet service"? Basic Online Safety Expectations awareness?
+12. **AU-specific seed documents**: upload your AU privacy collection notice template, marketing claims substantiation procedure, AU product safety incident response template, and your AU terms of service / EULA.
+
+Write answers under `## Review framework` (with AU-specific overlays), `## Marketing claims` (ACCC posture), `## Risk calibration` (with AU-specific severity calls), and `## Australian framework` (specific channel mix, ACCC interaction history, TGA status).
+
+---
+
 ## Check for the shared company profile
 
 Look for `~/.claude/plugins/config/claude-for-legal/company-profile.md`.

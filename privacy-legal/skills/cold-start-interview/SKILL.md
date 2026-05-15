@@ -54,6 +54,37 @@ The template structure lives at `${CLAUDE_PLUGIN_ROOT}/CLAUDE.md` — use it as 
 
 If a CLAUDE.md exists at the old cache path `~/.claude/plugins/cache/claude-for-legal/privacy-legal/*/CLAUDE.md` but not at the config path, copy it forward.
 
+## Australian jurisdiction branch
+
+If the shared company profile (or the user's answers) indicates **Australia** is the primary jurisdiction OR the regulatory footprint includes "Privacy Act 1988 (Cth)" / "APPs" / "OAIC", run the AU-specific questions below after the standard interview and write the answers into the practice profile's `## Australian framework` section.
+
+**Detection signals (any one triggers the AU branch):**
+- Company profile `Primary jurisdiction` is "Australia" or "AU".
+- Regulatory footprint mentions Privacy Act 1988 (Cth), APPs, OAIC, or NDB scheme.
+- User identifies as APP entity or Australian regulated entity.
+
+**AU-specific questions to ask:**
+
+1. **APP entity status**: are you an APP entity? (Annual turnover > A$3M OR small business operator with one of the s 6E exceptions, OR Commonwealth agency.)
+2. **Small business operator exemption**: if turnover ≤ A$3M, do any of the s 6E exceptions apply (trade in personal information, provide health services, credit reporting body, contracted Cth service provider, opt-in)?
+3. **Employee records exemption (s 7B(3))**: do you handle employee records? Note: exemption does NOT extend to job candidate records.
+4. **Sensitive information**: do you handle health, biometric, race, sexual orientation, criminal record, trade union, or other sensitive information under APP 3.3? Consent basis?
+5. **Cross-border disclosure (APP 8)**: do you disclose personal information overseas? To which countries? On what basis (substantially similar law, informed consent, or other s 16C exception)?
+6. **NDB scheme readiness**: do you have an eligible data breach assessment process meeting the 30-day window? Notification template ready for "as soon as practicable" timeline?
+7. **APP 12 access requests**: how do you respond to access requests? What's your current SLA? (OAIC benchmark: reasonable period, generally within 30 days `[verify-au]`.)
+8. **APP 11 security**: ISO 27001 certified? SOC 2 Type II? CPS 234 (if APRA-regulated)? Other?
+9. **Consumer Data Right participant**: are you an accredited data recipient under CDR? Banking, energy, or other designated sector?
+10. **My Health Records / health sector**: do you handle health information? My Health Record system? State health records overlay (Vic, NSW, ACT)?
+11. **Marketing**: how do you obtain consent under APP 7? Spam Act 2003 (Cth) compliance for electronic marketing?
+12. **AU-specific seed documents**: upload your APP privacy policy, your AU privacy collection notice template, an NDB scheme assessment template, and your APP 12 access request handling procedure.
+13. **OAIC interaction history**: have you had any OAIC complaints, determinations, or investigations? Are any open?
+14. **Children's data**: do you handle personal information of individuals under 18? Awareness of pending OAIC Children's Online Privacy Code `[verify-au]`?
+15. **Automated decision-making**: do you make substantially automated decisions significantly affecting individuals? Note: notice obligations from December 2026 `[verify-au]`.
+
+Write answers under `## Regulatory footprint` (Privacy Act 1988 (Cth), APPs, CDR if applicable, state health records if applicable), `## DPA playbook` (with AU contractual posture per the AU framework), `## DSAR process` (APP 12 timeline and exceptions), and `## Australian framework` (specific applicability of small business exemption, employee records exemption, APP 8 measures).
+
+---
+
 ## Check for the shared company profile
 
 Look for `~/.claude/plugins/config/claude-for-legal/company-profile.md`.

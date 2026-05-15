@@ -44,6 +44,33 @@ If a CLAUDE.md exists at the old cache path `~/.claude/plugins/cache/claude-for-
 
 ---
 
+## Australian jurisdiction branch
+
+If the shared company profile (or the user's answers) indicates **Australia** is the primary jurisdiction, run the AU-specific questions below after the standard interview and write the answers into the practice profile's `## Australian framework` section.
+
+**AU-specific questions to ask:**
+
+1. **Entity type**: Pty Ltd, Ltd, NL (no liability), unit trust, discretionary trust, partnership? Note: ACN for any company.
+2. **ASX-listed**: yes / no. If yes, which board (ASX Main Board, ASX Compliance)? What's your ticker code?
+3. **AFSL holder**: do you hold an Australian Financial Services Licence? Licence number? What financial services authorisations?
+4. **ACL (consumer credit) holder**: do you hold an Australian Credit Licence under the National Consumer Credit Protection Act 2009 (Cth)?
+5. **Director ID compliance**: have all directors obtained their Director ID via ABRS (mandatory since November 2022)?
+6. **Resident director compliance**: do you meet the resident director requirement (at least 1 for Pty Ltd, at least 2 for Ltd with one resident)?
+7. **Company secretary** (public companies require a resident secretary).
+8. **FIRB approvals**: do you have any current FIRB approvals (foreign investor)? Any pending applications?
+9. **ASIC compliance history**: any open ASIC investigations, infringement notices, or enforceable undertakings?
+10. **ASX Listing Rule waivers**: any current LR 4 reporting waivers, LR 10 transaction waivers?
+11. **Small proprietary company test**: do you meet 2 of 3 (consolidated revenue < A$50M, consolidated gross assets < A$25M, fewer than 100 employees)?
+12. **Constitution vs replaceable rules**: do you have a Constitution (post-1998) or rely on replaceable rules?
+13. **Subsidiary structure**: how many AU subsidiaries? Any foreign subsidiaries? Class order relief 98/1418 deed of cross-guarantee?
+14. **DDO regime (financial services)**: target market determinations in place for retail products?
+15. **Audit firm**: who is your auditor? Big 4 or other? Current rotation status (LR 14.2 audit partner rotation for listed entities)?
+16. **AU-specific seed documents**: upload your Constitution, current ASIC company extract (search.asic.gov.au), board charter, audit committee charter, any current ASX waivers, and the most recent annual report and Form 388 if a reporting entity.
+
+Write answers under `## Active modules` (M&A / Board / Public / Entity flags as relevant), `## Public Company` section if ASX-listed, `## Entity Management` for the AU entity table, and `## Australian framework` (specific Pty/Ltd structure, AFSL/ACL holdings, ASX listing status, FIRB profile).
+
+---
+
 ## Check for the shared company profile
 
 Look for `~/.claude/plugins/config/claude-for-legal/company-profile.md`.

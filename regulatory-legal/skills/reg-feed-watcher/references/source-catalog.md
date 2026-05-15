@@ -148,6 +148,80 @@ Artificial Lawyer, CA AG (ADMT), CPPA.
 
 ---
 
+## Australia — Primary
+
+> AI-generated catalogue, not verified. Feed URLs change; test before configuring. Many AU regulators favour email subscriptions or HTML over RSS, so coverage is patchier than the US Federal Register API ecosystem.
+
+| Source | Feed URL | Format | Covers | Auth | Notes |
+|---|---|---|---|---|---|
+| Federal Register of Legislation | `https://www.legislation.gov.au` | HTML + Atom | Authoritative source for in-force Commonwealth Acts, regulations, instruments | None | Atom feeds available for specific subscription points; verify current endpoints. The closest AU equivalent to eCFR / Federal Register. |
+| ASIC media releases | `https://asic.gov.au/about-asic/news-centre/find-a-media-release/` | RSS available | Enforcement, regulatory guides, consultation papers, infringement notices | None | Sub-feeds by year. Also subscribe to ASIC Update newsletter for digested view. |
+| ASIC consultations | `https://asic.gov.au/about-asic/our-roles/our-policies-and-procedures/consultation-papers-and-policy-proposals/` | HTML | Consultation papers, draft Regulatory Guides | None | Subscribe to ASIC Update for notifications. |
+| ACCC media | `https://www.accc.gov.au/about-us/publications/all-publications/news-and-media-releases` | RSS available | Enforcement, mergers, consumer protection, competition | None | Strong RSS coverage. |
+| ACCC consultations | `https://www.accc.gov.au/about-us/consultations` | HTML | Industry codes, mergers, ACL guidance consultations | None | |
+| OAIC news | `https://www.oaic.gov.au/news-and-publications/news` | RSS available | Determinations, media releases, guidance | None | Strong RSS coverage. Also OAIC Insights newsletter. |
+| OAIC determinations | `https://www.oaic.gov.au/privacy/privacy-decisions/determinations` | HTML | Privacy determinations under s 52 Privacy Act | None | Browse-by-year. |
+| APRA news | `https://www.apra.gov.au/news-and-publications` | RSS available | Letters, prudential standards, consultation, enforcement | None | Subscribe to APRA Insight. |
+| AUSTRAC news | `https://www.austrac.gov.au/news-and-media` | HTML + email | AML/CTF guidance, enforcement, consultation | None | Subscribe to AUSTRAC News. Tranche 2 commencement (1 July 2026 `[verify-au]`) extends to lawyers, accountants, real estate. |
+| ATO Legal Database | `https://www.ato.gov.au/law/` | HTML | Tax Determinations (TD), Taxation Rulings (TR), Practical Compliance Guidelines (PCG), Public Rulings | None | RSS for some series; subscribe to relevant area newsletters. |
+| ATO News | `https://www.ato.gov.au/about-ato/media-centre/media-releases` | HTML | ATO enforcement, ruling announcements | None | |
+| AFCA news | `https://www.afca.org.au/news` | HTML | Determinations, approach documents, member updates | None | |
+| Treasury consultations | `https://treasury.gov.au/consultation` | HTML | Whole-of-government consultations on legislative reform | None | Single location for most economic/financial law consultations. |
+| eSafety Commissioner | `https://www.esafety.gov.au/newsroom` | HTML | Online safety standards, industry codes, BOSE compliance | None | Subscribe to eSafety Newsletter. |
+| ACMA news | `https://www.acma.gov.au/news-centre` | HTML | Telecommunications, broadcasting, online content, Spam Act / Do Not Call enforcement | None | |
+| Fair Work Commission decisions | `https://www.fwc.gov.au/document-search?options=SearchType_3` | HTML | Decisions on unfair dismissal, general protections, modern awards, EAs | None | Subscribe to FWC publications. |
+| Fair Work Commission consultations | `https://www.fwc.gov.au/about-us/consultation-feedback` | HTML | Modern Award Review consultations | None | |
+| Fair Work Ombudsman news | `https://www.fairwork.gov.au/about-us/news-and-media-releases/2024-media-releases` | HTML (by year) | Court action announcements, compliance notices, guidance | None | |
+| TGA consultations | `https://consultations.tga.gov.au` | HTML | Therapeutic goods regulatory consultations | None | |
+| AHRC news | `https://humanrights.gov.au/news` | HTML | Discrimination, sexual harassment, positive duty enforcement | None | |
+| IP Australia | `https://www.ipaustralia.gov.au/news-and-community/news` | HTML | Trade marks, patents, designs administrative changes | None | |
+| AustLII Federal Court daily | `https://www.austlii.edu.au/cgi-bin/sinodisp/au/cases/cth/FCA/recent.html` | HTML | Recent Federal Court decisions | None | Daily decisions list; use to monitor litigation precedent. |
+| AustLII High Court | `https://www.austlii.edu.au/cgi-bin/sinodisp/au/cases/cth/HCA/recent.html` | HTML | Recent High Court decisions | None | |
+| DCCEEW (climate, energy, environment) | `https://www.dcceew.gov.au/news` | HTML | Climate-related disclosures, environmental regulation | None | Climate-related Financial Disclosure under Treasury Laws Amendment (Sustainability Reporting) Act `[verify-au]`. |
+| Parliament of Australia bills | `https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation` | HTML | Federal bills in progress | None | Most authoritative source for legislative status. Search by Act name. |
+
+## Australia — State and Territory
+
+| Source | Feed URL | Format | Covers | Notes |
+|---|---|---|---|---|
+| NSW Parliament bills | `https://www.parliament.nsw.gov.au/bills` | HTML | NSW legislation in progress | |
+| Victoria Parliament bills | `https://www.legislation.vic.gov.au/in-force/bills` | HTML | Vic legislation | |
+| Queensland Parliament bills | `https://www.parliament.qld.gov.au/Work-of-the-Assembly/Bills-and-Legislation` | HTML | Qld legislation | |
+| WA Parliament bills | `https://www.parliament.wa.gov.au/parliament/bills.nsf` | HTML | WA legislation | |
+| SA Parliament bills | `https://www.parliament.sa.gov.au/en/Parliamentary-Business/Legislation/Bills` | HTML | SA legislation | |
+| Tasmania Parliament bills | `https://www.parliament.tas.gov.au/bills` | HTML | Tas legislation | |
+| ACT Parliament bills | `https://www.parliament.act.gov.au/parliamentary-business/in-the-assembly/bills` | HTML | ACT legislation | |
+| NT Parliament bills | `https://parliament.nt.gov.au/business/legislation` | HTML | NT legislation | |
+| State Fair Trading offices | various URLs | HTML | State consumer protection enforcement | NSW Fair Trading, Consumer Affairs Vic, Office of Fair Trading Qld, Consumer Protection WA, CBS SA, CBOS Tas, Access Canberra, NT Consumer Affairs |
+| State EPAs | various URLs | HTML | Environmental regulation | EPA NSW, EPA Vic, DES Qld, DWER WA, EPA SA, EPA Tas, EPA ACT, NT EPA |
+| State Revenue Offices | various URLs | HTML | Payroll tax, stamp duty, land tax | Revenue NSW, SRO Vic, Qld Revenue Office, RevenueWA, RevenueSA, SRO Tas, ACT Revenue, NT TRO |
+| State law societies / bar associations | various URLs | HTML | Practice notes, AI guidance, professional conduct | Law Society of NSW, Law Institute of Vic, QLS, Law Society of WA, Law Society of SA, Law Society of Tas, ACT Law Society, Law Society NT; plus respective Bar Associations. |
+
+## Australia — Aggregators / Secondary
+
+| Source | URL | Notes |
+|---|---|---|
+| Law Council of Australia | `https://www.lawcouncil.au/publicassets/news-and-publications` | National peak body submissions and policy papers. |
+| AustLII | `https://www.austlii.edu.au` | Free case law and consolidated statutes. |
+| AusCERT / cyber security | `https://www.auscert.org.au` | Cyber security advisories. |
+| Lexology Australia | `https://www.lexology.com/library/?country=AU` | Aggregated law firm alerts. Tag as secondary. |
+
+## Starter packs (AU)
+
+**AU privacy team:**
+OAIC news, OAIC determinations, AUSTRAC news, Federal Register of Legislation (Privacy Act, PoLA Act amendments), Treasury consultations on Privacy Act tranche 2, state health records overlays (Health Records Act 2001 (Vic) etc.).
+
+**AU corporate / commercial team:**
+ASIC media + consultations, ASX listing rule announcements, ACCC media + consultations, Federal Register (Corporations Act, ACL amendments), Treasury consultations, AFCA news.
+
+**AU employment team:**
+FWC decisions, FWO news, AHRC news, state WHS regulators, state anti-discrimination boards, Federal Register (Fair Work Act amendments), state Industrial Relations registries.
+
+**AU AI governance team:**
+OAIC news (ADM, Children's Code), DISR consultations (Mandatory Guardrails), ASIC INFO releases, APRA news (CPS 230), eSafety newsroom, Federal Register (Online Safety Act amendments).
+
+---
+
 ## Adding a source
 
 To add a source that isn't in this catalog:

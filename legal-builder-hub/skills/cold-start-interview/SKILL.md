@@ -34,6 +34,27 @@ Read `~/.claude/plugins/config/claude-for-legal/legal-builder-hub/CLAUDE.md`:
 
 The template structure lives at `${CLAUDE_PLUGIN_ROOT}/CLAUDE.md` — use it as the section scaffold. Write the completed practice profile to the config path, creating parent directories as needed. If a CLAUDE.md exists at the old cache path `~/.claude/plugins/cache/claude-for-legal/legal-builder-hub/*/CLAUDE.md` but not here, copy it forward.
 
+## Australian jurisdiction branch
+
+If the shared company profile (or the user's answers) indicates **Australia** is the primary jurisdiction, run the AU-specific questions below and use them to filter the starter pack recommendations.
+
+**AU-specific questions to ask:**
+
+1. **Primary AU state for practice**: which state? (Affects state regulator / state court overlay relevance for installed skills.)
+2. **Practice type and AU adaptation**: in-house, private practice (solo, small firm, mid-tier, big six), government / Legal Aid / Community Legal Centre, academia, other?
+3. **AU-only or multi-jurisdiction**: do you work AU-only, or do you also operate in US/UK/EU/Asia? (Affects which jurisdictional content remains useful.)
+4. **AU regulator interaction frequency**: ASIC, ACCC, OAIC, APRA, AUSTRAC, ATO, Fair Work, others?
+
+**Starter pack recommendations should**:
+- Prioritise plugins where AU framework sections in this fork have been populated.
+- Flag any community skill from upstream registries that is US-default with a `[US-default — verify AU applicability]` tag.
+- Not auto-install US-default community skills as starter pack recommendations for AU users without confirmation.
+- Recommend the user contribute back AU adaptations to the registry as they develop them.
+
+**Cold-start completion**: after the AU answers, the hub installs the relevant plugins (employment-legal, privacy-legal, etc., as relevant to the practice type) with the understanding that those plugins' own AU branches will activate when their own cold-start interviews run.
+
+---
+
 ## Check for the shared company profile
 
 Look for `~/.claude/plugins/config/claude-for-legal/company-profile.md`.

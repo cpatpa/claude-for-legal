@@ -31,6 +31,29 @@ The template structure lives at `${CLAUDE_PLUGIN_ROOT}/CLAUDE.md` — use it as 
 
 If a CLAUDE.md exists at the old cache path `~/.claude/plugins/cache/claude-for-legal/regulatory-legal/*/CLAUDE.md` but not at the config path, copy it forward.
 
+## Australian jurisdiction branch
+
+If the shared company profile (or the user's answers) indicates **Australia** is the primary jurisdiction OR regulators include any Australian regulator, run the AU-specific questions below after the standard interview and write the answers into the practice profile.
+
+**AU-specific questions to ask:**
+
+1. **Primary AU regulators we watch**: ASIC, ACCC, OAIC, APRA, AUSTRAC, ATO, AFCA, IP Australia, Fair Work Commission / Ombudsman, eSafety Commissioner, ACMA, TGA, ART, state Fair Trading offices, state EPAs?
+2. **AFSL / ACL conditions**: do you hold an AFSL or ACL? Specific licence conditions to monitor?
+3. **APRA-regulated**: are you a prudentially regulated entity (ADI, insurer, super fund)? Which prudential standards apply (CPS 230, CPS 234, CPS 511, APS, LPS, HPS, SPS series)?
+4. **AUSTRAC reporting entity**: are you a reporting entity under the AML/CTF Act 2006 (Cth)? Awareness of tranche 2 (1 July 2026 commencement `[verify-au]`) expanding to lawyers, accountants, real estate, dealers in precious stones)?
+5. **ASIC sector**: which ASIC RG (Regulatory Guide) or INFO documents apply to your sector?
+6. **ACCC industry codes**: any industry codes administered by ACCC apply (Franchising, Horticulture, Dairy, Oil, Unit Pricing)?
+7. **State regulator overlay**: which state Fair Trading, EPA, WorkSafe, gaming/liquor regulators apply?
+8. **Federal Register of Legislation watchlist**: which Acts and instruments are on your active monitoring list?
+9. **State parliamentary watch**: which state parliaments have legislation in development that affects you? Bills trackers configured?
+10. **Treasury consultations**: do you respond to Treasury consultations? On what topics?
+11. **AU regulator interaction history**: open matters with any AU regulator? Recent infringement notices, EUs, public warning notices?
+12. **AU-specific seed documents**: upload your most recent regulator response, an example AU policy diff, your current AU compliance calendar, and your AU regulator escalation matrix.
+
+Write answers under `## Regulators we watch` (with AU regulators added), `## Policy library` (with AU policies indexed), `## Materiality threshold` (AU-specific examples), and `## Feed configuration` (AU regulator RSS/web sources).
+
+---
+
 ## Check for the shared company profile
 
 Look for `~/.claude/plugins/config/claude-for-legal/company-profile.md`.

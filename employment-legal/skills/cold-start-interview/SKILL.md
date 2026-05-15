@@ -36,6 +36,39 @@ Read `~/.claude/plugins/config/claude-for-legal/employment-legal/CLAUDE.md`:
 
 The template structure lives at `${CLAUDE_PLUGIN_ROOT}/CLAUDE.md` — use it as the section scaffold. Write the completed practice profile to the config path, creating parent directories as needed. If a CLAUDE.md exists at the old cache path `~/.claude/plugins/cache/claude-for-legal/employment-legal/*/CLAUDE.md` but not here, copy it forward.
 
+## Australian jurisdiction branch
+
+If the shared company profile (or the user's answers) indicates **Australia** is the primary jurisdiction OR Australian states/territories appear in the operational footprint, run the AU-specific questions below after the standard interview and write the answers into the practice profile's `## Australian framework` and `## Australian jurisdiction-specific escalation rules` sections.
+
+**Detection signals (any one triggers the AU branch):**
+- Company profile `Primary jurisdiction` is "Australia" or "AU".
+- Operational footprint includes any of: NSW, VIC, QLD, WA, SA, TAS, ACT, NT.
+- The user's role/contact is identified as an Australian legal practitioner.
+
+**AU-specific questions to ask:**
+
+1. **AU states with employees**: which of NSW, VIC, QLD, WA, SA, TAS, ACT, NT?
+2. **Primary AU state** for HR operations (drives long service leave default).
+3. **National system vs state system**: are you covered by the Fair Work national system (most private sector) or any state industrial relations system (WA non-national-system employers; state and local government in some states)?
+4. **Modern award coverage**: which modern award(s) cover your workforce? If "award-free above the high income threshold", note this. List the awards by name.
+5. **Enterprise agreement**: do you have an EA? With which union(s)? Renewal/expiry date?
+6. **Casual workforce**: roughly what proportion of headcount is casual? Have you applied the post-Closing Loopholes No 2 casual definition (FWA s 15A) and conversion pathway?
+7. **Contractor workforce**: roughly how many contractors? Have you applied the FWA s 15AA multi-factor test post-26 August 2024?
+8. **High income threshold employees**: roughly how many employees earn above the FWA high income threshold (currently A$175,000 from 1 July 2024 `[verify-au]`)? These have unfair dismissal access only if award-covered.
+9. **Long service leave portability schemes**: do you operate in any industry covered by state portable LSL (construction, contract cleaning, security, community services, coal mining)?
+10. **Restrictive covenants**: do you use post-employment restraints? Note that 2024-2025 Commonwealth reform proposals may ban or restrict non-competes below an income threshold `[verify-au]`.
+11. **Workers compensation insurer** per state: icare (NSW), WorkSafe Vic, WorkCover Qld, WorkCover WA, ReturnToWork SA, WorkSafe Tas, ACT, NT WorkSafe.
+12. **WHS regulator**: SafeWork NSW, WorkSafe Vic (note: Vic has its own OHS Act, not model WHS), WorkSafe Qld, WorkSafe WA, SafeWork SA, WorkSafe Tas, ACT WorkSafe, NT WorkSafe.
+13. **Anti-discrimination overlay**: which state anti-discrimination Acts apply? (Federal: SDA, RDA, DDA, ADA, AHRC Act.)
+14. **Sexual harassment positive duty (SDA s 47C, in force 12 December 2023)**: have you completed positive-duty risk assessment and policy update?
+15. **WGEA reporting**: 100+ employees? If yes, what is your most recent gender pay gap reporting status?
+16. **Modern Slavery Act 2018 (Cth)**: consolidated revenue > A$100M? If yes, when was your last Modern Slavery Statement?
+17. **AU-specific seed documents**: upload your AU employment contract template, the most recent termination memo for an AU employee, and any AU-specific addendum to the handbook.
+
+Write answers under `## Jurisdictional footprint` (AU states added), `## Australian framework` (modern awards, EAs, casual/contractor profile, restrictive covenant practice, long service leave scheme membership), and `## Australian jurisdiction-specific escalation rules` (per-state rules from the table in `## Australian framework`).
+
+---
+
 ## Check for the shared company profile
 
 Look for `~/.claude/plugins/config/claude-for-legal/company-profile.md`.

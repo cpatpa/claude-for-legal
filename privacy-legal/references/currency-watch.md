@@ -32,6 +32,51 @@ The map grows every year. As of May 2026, comprehensive privacy laws in force or
 
 CCPA: 45 days + 45-day extension with notice. GDPR: 1 month + 2-month extension. Other states vary — verify the specific state's window. The plugin defaults may be out of date for the newest states.
 
+## Australia (AI-generated; verify against OAIC, AustLII, Federal Register of Legislation)
+
+> All items in this AU section carry `[verify-au]` status. AU privacy law is in active reform.
+
+### Tranche 1 reforms (Privacy and Other Legislation Amendment Act 2024)
+
+- **Statutory tort for serious invasion of privacy**: commenced 10 June 2025 `[verify-au]`. Limited to intentional or reckless invasions; serious; without consent or other justification; balanced against public interest.
+- **Civil penalty cap raised**: serious or repeated interference now greater of A$50M / 3x benefit / 30% adjusted turnover. New tiered penalties for less serious contraventions.
+- **Extraterritorial application broadened**: s 5B amended to remove the "collect or hold in Australia" requirement.
+- **ADM (automated decision-making) notice obligations**: from December 2026 `[verify-au]`. APP entities must include in APP 5 collection notices and APP 1 privacy policies information about substantially automated decisions significantly affecting individuals.
+- **Children's Online Privacy Code**: OAIC code in development as of 2025 `[verify-au]`.
+
+### Tranche 2 reforms (proposed, not yet enacted)
+
+- **Small business operator exemption** (s 6D, < A$3M turnover): proposal to remove. Status: not enacted `[verify-au]`.
+- **Employee records exemption** (s 7B(3)): proposal to narrow. Status: not enacted `[verify-au]`.
+- **Mandatory PIA for high privacy risk activities**: proposal. Status: not enacted `[verify-au]`.
+- **Right to erasure**: proposal. Status: not enacted `[verify-au]`.
+- **Direct right of action**: proposal. Status: not enacted `[verify-au]`.
+
+### NDB scheme
+
+- 30-day assessment window (s 26WH). "As soon as practicable" notification after determining eligible breach. Verify if any reform tightens.
+
+### Cross-border (APP 8)
+
+- No SCCs / adequacy. AU continues accountability framework. Watch for any reform aligning with international transfer mechanisms.
+
+### Consumer Data Right (CDR)
+
+- Banking live 2020, energy live 2022. Telecommunications expansion proposed `[verify-au]`. Action initiation framework in development.
+
+### State health records
+
+- *Health Records Act 2001* (Vic), *Health Records and Information Privacy Act 2002* (NSW), *Health Records (Privacy and Access) Act 1997* (ACT) overlay the Privacy Act. Watch for state amendments.
+
+### Verify-at sources (AU)
+
+- OAIC: oaic.gov.au/news-and-publications
+- Federal Register of Legislation: legislation.gov.au
+- Treasury Privacy Act review: treasury.gov.au/consultation
+- AustLII Federal Court daily: austlii.edu.au
+
+---
+
 ## How to use this file
 
 When a skill cites a privacy rule, effective date, or threshold, it should note: "Privacy law is moving — this may have changed since my training. Verify at [source]. See `references/currency-watch.md`."

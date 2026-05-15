@@ -93,6 +93,28 @@ If a CLAUDE.md exists at the old cache path `~/.claude/plugins/cache/claude-for-
 
 If the user explicitly asks to re-run setup ("let's redo the interview", "my playbook changed"), run it again and show a diff before overwriting.
 
+## Australian jurisdiction branch
+
+If the shared company profile (or the user's answers) indicates **Australia** is the primary jurisdiction, run the AU-specific questions below after the standard interview and write the answers into the practice profile's `## Australian framework` section.
+
+**AU-specific questions to ask:**
+
+1. **Consumer-facing supply**: do you supply goods/services to AU "consumers" (under A$100,000 OR personal/household use)? If yes, the non-excludable ACL consumer guarantees (ss 51-59) apply regardless of any "AS IS" or limited-warranty drafting in your standard form.
+2. **Standard form contracts to small businesses**: do you contract with small businesses (counterparty < 100 employees OR turnover < A$10M)? If yes, the unfair contract terms regime applies with penalty exposure (greater of A$50M / 3x benefit / 30% turnover from 9 November 2023).
+3. **AU governing law preference**: which AU state's law do you prefer for your standard contracts (NSW, Vic, WA most common)? Why?
+4. **Modern Slavery threshold**: consolidated revenue > A$100M? If yes, you must lodge an annual Modern Slavery Statement.
+5. **Payment Times Reporting Act 2020 (Cth)**: revenue > A$100M? If yes, twice-yearly public reporting of small business payment practices required.
+6. **PPSR**: do your contracts create security interests requiring PPSR registration?
+7. **AU-specific contract clauses**: do you have an AU schedule for your DPA / privacy terms (APP-equivalent obligations rather than relying on GDPR Art 28 alone)? AU-specific breach notification timing supporting NDB scheme compliance?
+8. **GST treatment**: do your standard contracts handle GST correctly (B2B ex GST default; consumer pricing must be incl GST per ACL)?
+9. **AU vendor management**: do you have AU-specific vendor onboarding (ABN check, GST registration check, payment terms compliant with Payment Times Reporting)?
+10. **State payroll tax / land tax**: do you operate across multiple states with state revenue obligations affecting commercial deals?
+11. **AU-specific seed documents**: upload your AU standard sales contract, AU standard purchasing contract, AU vendor onboarding template, AU NDA template, and any AU consumer-facing terms of service.
+
+Write answers under `## Playbook` (with AU governing law and AU-specific posture noted per side), `## House style` (AU contract conventions), and `## Australian framework` (specific UCT exposure, Modern Slavery status, Payment Times Reporting status, AU governing law preference).
+
+---
+
 ## Check for the shared company profile
 
 Look for `~/.claude/plugins/config/claude-for-legal/company-profile.md`.

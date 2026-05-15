@@ -57,6 +57,32 @@ The template structure lives at `${CLAUDE_PLUGIN_ROOT}/CLAUDE.md` — use it as 
 
 If a CLAUDE.md exists at the old cache path `~/.claude/plugins/cache/claude-for-legal/ai-governance-legal/*/CLAUDE.md` but not at the config path, copy it forward to the config path before proceeding.
 
+## Australian jurisdiction branch
+
+If the shared company profile (or the user's answers) indicates **Australia** is the primary jurisdiction OR AI systems are deployed to or affect people in Australia, run the AU-specific questions below after the standard interview and write the answers into the practice profile.
+
+**AU-specific questions to ask:**
+
+1. **Voluntary AI Safety Standard 2024 (DISR)**: have you aligned to the 10 Guardrails? Which Guardrails are operationalised? Which still need work?
+2. **Australia's AI Ethics Principles (8)**: are these reflected in your AI policy?
+3. **Proposed Mandatory Guardrails for High-Risk AI**: do you have any AI systems likely to be classified "high-risk" under the proposed framework (DISR consultation 2024 `[verify-au]`)?
+4. **Privacy Act ADM notice obligations** (from December 2026 `[verify-au]`): do you make substantially automated decisions significantly affecting individuals? Have you scoped APP 5 and APP 1 disclosures?
+5. **APP 11 security for AI training data and inference**: technical and organisational measures in place?
+6. **APP 8 cross-border**: where is your AI training data stored, processed, and inferred? Recipients overseas? Substantially similar law analysis?
+7. **Sensitive information in AI**: do AI systems train on or infer sensitive information (health, biometric, race, sexual orientation)? APP 3.3 consent basis?
+8. **AU anti-discrimination testing**: have you tested AI outputs for disparate impact under SDA, RDA, DDA, ADA, state Acts?
+9. **ASIC AI (financial services)**: do you use AI in advice, dealing, claims handling, fraud detection? INFO 271 algorithmic trading? AFSL conditions on AI use?
+10. **APRA CPS 230** (operational risk, in force 1 July 2025 `[verify-au]`): how does AI fit into your operational risk management framework?
+11. **TGA software as medical device**: do you have AI-driven medical software requiring TGA approval?
+12. **Online Safety Act 2021 (Cth)**: do you generate or moderate AI-generated synthetic content? Image-based abuse / deepfake exposure?
+13. **AI vendor inventory**: how many third-party AI vendors? Highest-risk vendors? Training data flow-down clauses in place?
+14. **Public AI policy / commitments**: do you have a public AI policy, principles, or transparency report?
+15. **AU-specific seed documents**: upload your AI policy, an example AI impact assessment, your AU AI inventory, your AU AI vendor list, and any AU AI use case register entries.
+
+Write answers under `## AI system inventory` (with AU/AU-link classification), `## Vendor AI governance` (AU posture), `## AI policy commitments` (AU-specific), and (newly) `## Australian framework` (Voluntary AI Safety Standard alignment, ADM notice readiness, sectoral overlay).
+
+---
+
 ## Check for the shared company profile
 
 Look for `~/.claude/plugins/config/claude-for-legal/company-profile.md`.

@@ -38,6 +38,30 @@ Read `~/.claude/plugins/config/claude-for-legal/law-student/CLAUDE.md`:
 
 The template structure lives at `${CLAUDE_PLUGIN_ROOT}/CLAUDE.md` — use it as the section scaffold. Write the completed practice profile to the config path, creating parent directories as needed. If a CLAUDE.md exists at the old cache path `~/.claude/plugins/cache/claude-for-legal/law-student/*/CLAUDE.md` but not here, copy it forward.
 
+## Australian jurisdiction branch
+
+If the student is at an **Australian law school** OR targeting admission to an Australian state Supreme Court, run the AU-specific questions below after the standard interview and write the answers into the practice profile.
+
+**AU-specific questions to ask:**
+
+1. **Law school**: which AU law school? (Most have JD or LLB; some have LLM.)
+2. **Degree path**: LLB, JD, JD + Bachelor's combined, LLM, GDLP?
+3. **Year**: 1st year, 2nd year, 3rd year, 4th year (LLB), Penultimate (JD)?
+4. **Target state for admission**: NSW (Legal Profession Admission Board), VIC (Council of Legal Education), QLD (Legal Practitioners Admissions Board), WA (Legal Practice Board), SA, TAS, ACT, NT?
+5. **Priestley 11 progress**: which of the 11 have you completed? (Criminal Law and Procedure, Torts, Contracts, Property, Equity, Administrative Law, Federal and State Constitutional Law, Civil Procedure, Evidence, Company Law, Professional Conduct.)
+6. **PLT plan**: which PLT provider? (College of Law, ANU Legal Workshop, Leo Cussen, Newcastle Legal Centre, Bond University, etc.) Timing — immediately after LLB / JD, or deferred?
+7. **Career direction**: solicitor track, barrister track, in-house, government, academia, undecided?
+8. **Current classes**: list class names, lecturer (if their exams are uploaded), exam format (problem question / closed-book / take-home / open-book).
+9. **AGLC4**: are you required to cite in AGLC4? Have you used it before?
+10. **AI use policy**: what is your school's current policy on AI use in assessment? Class-specific variations?
+11. **Honour code**: are you a member of any law school honour society or governance body?
+12. **AU seed materials**: upload past exam papers (preferably from the same lecturer); annotated outlines from prior years; AGLC4 examples of your written work; problem-question answers with lecturer feedback; bar admission requirements for your target state.
+13. **Australian moots or competitions**: are you involved in client interviewing, witness examination, negotiation, mooting (Jessup, ALSA, Sir John Salmond, internal)?
+
+Write answers under `## Student profile` (with AU degree, school, state target), `## Current classes` (with AU class structure), `## Bar prep` (translated to PLT context for AU), and (newly) `## Australian framework` (Priestley 11 progress, target admission state, AGLC4 readiness, AU competitions).
+
+---
+
 ## Check for the shared company profile
 
 Look for `~/.claude/plugins/config/claude-for-legal/company-profile.md`.

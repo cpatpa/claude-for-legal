@@ -77,6 +77,30 @@ If a CLAUDE.md exists at the old cache path `~/.claude/plugins/cache/claude-for-
 
 If the user explicitly asks to re-run setup ("let's redo the interview", "my enforcement posture changed"), run it again and show a diff before overwriting.
 
+## Australian jurisdiction branch
+
+If the shared company profile (or the user's answers) indicates **Australia** is the primary jurisdiction OR the IP portfolio includes IP Australia registrations, run the AU-specific questions below after the standard interview and write the answers into the practice profile's `## Australian framework` section.
+
+**AU-specific questions to ask:**
+
+1. **IP Australia portfolio**: how many AU trade marks, patents, designs, plant breeder's rights? Provide a portfolio export from IP Australia or your IP management system.
+2. **Trade marks**: any IP Australia oppositions in progress? Any removal-for-non-use applications received or made?
+3. **Patents**: any current Australian patent applications? Any standard patents granted? Note: innovation patents abolished for new applications from 26 August 2021; existing innovation patents continue to expiry.
+4. **Madrid Protocol**: international registrations designating Australia? International registrations originating from Australia?
+5. **Hague Agreement**: international design applications designating Australia (Australia acceded 13 March 2025, in force 13 June 2025 `[verify-au]`)?
+6. **Copyright posture**: do you rely on copyright in software, content, designs? Note: AU copyright arises automatically (no registration).
+7. **Moral rights**: do your employee/contractor agreements address moral rights (Copyright Act Part IX) by consent in writing?
+8. **OSS posture**: which OSS licences do you allow / require review / ban? Note ACL non-excludable consumer guarantees apply to consumer-facing supply regardless of "AS IS" disclaimers.
+9. **Customs Notice of Objection**: do you have a current Notice of Objection lodged with the Australian Border Force for any of your registered IP?
+10. **Online enforcement**: have you used s 115A Copyright Act site-blocking injunctions? Recall: there is no DMCA equivalent for commercial UGC platforms in AU.
+11. **Groundless threats risk**: has your team been trained on the groundless threats provisions (Patents s 128, TM s 129, Copyright s 202, Designs s 77)?
+12. **AU-specific enforcement history**: any IP Australia opposition decisions, hearing decisions, or Federal Court IP proceedings (as plaintiff or defendant)?
+13. **AU-specific seed documents**: upload your AU IP portfolio register, an example AU C&D letter, your IP assignment template, and your AU OSS policy if it differs from your global policy.
+
+Write answers under `## IP portfolio` (with AU registrations), `## Enforcement posture` (AU-specific groundless threats awareness), and `## Australian framework` (specific portfolio profile, customs registrations, OSS posture under ACL).
+
+---
+
 ## Check for the shared company profile
 
 Look for `~/.claude/plugins/config/claude-for-legal/company-profile.md`.

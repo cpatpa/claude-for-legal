@@ -49,6 +49,30 @@ Read `~/.claude/plugins/config/claude-for-legal/litigation-legal/CLAUDE.md`:
 
 The template structure lives at `${CLAUDE_PLUGIN_ROOT}/CLAUDE.md` — use it as the section scaffold. Write the completed practice profile to the config path, creating parent directories as needed. If a CLAUDE.md exists at the old cache path `~/.claude/plugins/cache/claude-for-legal/litigation-legal/*/CLAUDE.md` but not here, copy it forward.
 
+## Australian jurisdiction branch
+
+If the shared company profile (or the user's answers) indicates **Australia** is the primary jurisdiction OR core jurisdictions include any AU state/territory, run the AU-specific questions below after the standard interview and write the answers into the practice profile's `## Australian framework` section.
+
+**AU-specific questions to ask:**
+
+1. **Core AU forums**: Federal Court of Australia, Federal Circuit and Family Court of Australia, state Supreme Courts (NSW, VIC, QLD, WA, SA, TAS, ACT, NT), state District/County Courts, tribunals (NCAT, VCAT, QCAT, FWC, ART, AFCA)? List by frequency.
+2. **Side mix**: default plaintiff / defence / both. Note AU costs follow the event creates structural asymmetry.
+3. **Class action exposure**: have you been a defendant in a Part IVA Federal Court class action or state equivalent? Active or threatened class actions?
+4. **Litigation funding**: do you engage litigation funders (as plaintiff)? Any current funded matters?
+5. **Insurance**: D&O insurer, E&O insurer, cyber insurer. Current Side A / B / C cover for D&O.
+6. **Outside counsel bench**: which AU firms? Lead partners by practice area? Direct briefing of barristers (cab rank)?
+7. **Senior Counsel / King's Counsel**: any current SC/KC briefs?
+8. **Practice rules**: which Court rules apply most often? Federal Court Rules 2011 (Cth)? UCPR NSW? Supreme Court (General Civil Procedure) Rules 2015 Vic? UCPR Qld?
+9. **Evidence regime**: uniform Evidence Act jurisdictions (Cth/NSW/Vic/Tas/ACT/NT) or non-uniform (Qld/WA/SA)?
+10. **Demand letter posture**: do you use Calderbank offers? Court-rule offers of compromise (UCPR Part 20 NSW, FCR Part 25)?
+11. **Privilege framework**: do your matter files distinguish legal advice privilege from litigation privilege? Are dominant-purpose contemporaneous records maintained?
+12. **Document preservation**: do you have a legal-hold template aligned with *British American Tobacco v Cowell* and similar AU document preservation case law?
+13. **AU-specific seed documents**: upload your AU litigation hold template, an example AU demand letter, an example matter intake form, and your AU outside counsel engagement template.
+
+Write answers under `## Practice role` (AU-specific contextualised), `## Side` (AU costs context noted), `## Landscape` (AU forums, AU outside counsel bench, AU dispute patterns), and `## Australian framework` (specific procedural defaults, evidence regime, demand-letter posture).
+
+---
+
 ## Check for the shared company profile
 
 Look for `~/.claude/plugins/config/claude-for-legal/company-profile.md`.
