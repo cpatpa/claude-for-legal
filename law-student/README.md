@@ -2,6 +2,9 @@
 
 Learning mode, not answer mode. Socratic drilling that asks YOU questions and pushes back on sloppy reasoning. Case briefing, outline building, flashcards, IRAC grading, cold-call prep, writing feedback that never rewrites for you, and exam forecasting from past professor exams. Calibrated to you — your classes, your bar jurisdiction, whether you want to be drilled or scaffolded.
 
+> [!CAUTION]
+> **Australian localisation: PILOT IN PROGRESS, AI-generated content.** Localised for Australia: Priestley 11 (the 11 areas of knowledge required for admission), AGLC4 citation style, AU case law and statute references, Practical Legal Training (PLT) pathway, AU bar admission via the Legal Profession Admission Board (LPAB in NSW) or equivalents, common law tradition (no Bluebook), and the JD / LLB / Master of Laws structure. AU law schools assess differently from US schools: research essays, problem-based exams, and case-comments are common; "casebooks" are less central than in the US. All AU content must be reviewed by your law school's academic staff before relying on it for assessment.
+
 **Every output is a study scaffold, not a model answer. The plugin structures your thinking, drills you Socratically, and flags what you got wrong. It doesn't write the outline, the brief, or the essay for you — that would defeat the purpose. Citations in study materials are tagged for verification.**
 
 ## Who this is for

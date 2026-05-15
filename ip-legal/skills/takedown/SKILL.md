@@ -76,6 +76,34 @@ DMCA §512 is **US federal law**. It runs against service providers subject to U
 - `~/.claude/plugins/config/claude-for-legal/ip-legal/CLAUDE.md` → `## IP practice profile` (copyright registrations if any), `## Enforcement posture` → `Approval matrix → DMCA takedown (ordinary)` row, `## Outputs` (work-product header, role), `## Who's using this` (role — lawyer vs. non-lawyer)
 - **Matter context.** Check `## Matter workspaces` in the practice-level CLAUDE.md. If `Enabled` is `✗` (in-house default), skip matter machinery. If enabled and no active matter, ask: "Which matter? Run `/ip-legal:matter-workspace switch <slug>` or say `practice-level`." Write outputs to the active matter's folder at `~/.claude/plugins/config/claude-for-legal/ip-legal/matters/<matter-slug>/takedown/<slug>/` (or `takedown/<slug>/` at practice level). Never read another matter's files unless `Cross-matter context` is `on`.
 
+## Australian framework (if AU is the relevant jurisdiction)
+
+> AI-generated. Verify against the Copyright Act 1968 (Cth) and current case law. There is NO DMCA equivalent in Australia. Do not draft a "§512(c)(3) takedown" against an AU target; route to the framework below instead.
+
+**No AU statutory takedown for commercial UGC platforms.** The AU Copyright Act 1968 (Cth) safe harbour scheme (ss 116AA-116AJ) covers only carriage service providers (telcos) and (post-2018 reforms) educational institutions, libraries, archives, cultural institutions, and disability organisations. Commercial social media platforms, search engines, and UGC sites are NOT covered.
+
+**Options for AU copyright enforcement online:**
+
+1. **Voluntary platform takedown**: most platforms (YouTube, Meta, X, TikTok) run global takedown processes that accept notices regardless of jurisdiction. Use the platform's policy form. No statutory counter-notice exists in AU; counter-notices arise only under the platform's own policy.
+2. **Site-blocking injunction under s 115A** of the Copyright Act 1968 (Cth): apply to the Federal Court for an order requiring carriage service providers to block access to an overseas online location that has the primary purpose or effect of infringing copyright. Extended in 2018 to allow blocking of search results. Used most often by film and music rightsholders.
+3. **Infringement proceedings under s 115**: standard copyright infringement claim in the Federal Court. Damages, account of profits, injunction, additional damages under s 115(4) for flagrant infringement.
+4. **Customs Notice of Objection**: under Customs Act 1901 (Cth), rightsholders can lodge a notice with the Australian Border Force to seize infringing goods at the border.
+
+**Drafting a takedown notice for an AU rightsholder targeting a platform:**
+
+- Identify the work and confirm subsistence (Copyright Act 1968 (Cth) s 32 for works, s 89 for sound recordings, etc.). No registration is required in AU (different from the US position).
+- Confirm ownership. Note that AU has author-first ownership (s 35) with the employment exception in s 35(6); commissioned photographs, portraits, and engravings have specific rules in s 35(5).
+- Identify the infringing material and the AU nexus (where the infringer is, where the infringement occurs).
+- Identify the platform's notice channel.
+- Do not assert "§512(c)(3)" or US safe-harbour concepts. State that the rightsholder is the copyright owner under the Copyright Act 1968 (Cth) and requests removal.
+- **Groundless threats**: Copyright Act 1968 (Cth) s 202 makes it actionable to make an unjustified threat of copyright infringement proceedings. Carefully scope the letter; do not over-claim.
+
+**If a counter-notice is received via a platform's voluntary policy**: the platform's own terms govern. There is no AU statutory analogue to the DMCA counter-notice/restoration scheme.
+
+**Moral rights claims**: separate from copyright (Part IX). False attribution, derogatory treatment, failure to attribute. Personal to the author, not assignable. Worth flagging in a notice where the infringement implicates moral rights.
+
+---
+
 ## Send mode — drafting a §512(c)(3) takedown notice
 
 ### Step 1: Identify the copyrighted work

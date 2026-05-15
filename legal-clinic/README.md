@@ -2,6 +2,9 @@
 
 *Supercharging access to justice through AI-enabled clinical legal education.*
 
+> [!CAUTION]
+> **Australian localisation: PILOT IN PROGRESS, AI-generated content.** Localised for Australia: Practical Legal Training (PLT) and clinical legal education context, state Law Society and Bar Association supervision obligations, the Legal Profession Uniform Law (NSW/Vic/WA) and state Legal Profession Acts, conduct rules under the Australian Solicitors' Conduct Rules (ASCR), unauthorised practice prohibitions, supervised practice for restricted practising certificate holders. In Australia, only an Australian legal practitioner with a current practising certificate may engage in legal practice; clinic students operate under direct supervision and the supervising practitioner is accountable. All AU content must be reviewed by an Australian legal practitioner. See [AU-LOCALISATION.md](../AU-LOCALISATION.md).
+
 A plugin for law school clinics — the institutions where law students, supervised by clinical professors, provide free legal services to people who can't afford representation. Immigration, housing, family law, consumer protection, criminal defense, civil rights.
 
 **Every output is a draft for student analysis and attorney review — marked, gated, and logged. The plugin scaffolds the work; a student reasons through it; a supervising attorney reviews. Nothing leaves the clinic without going through the supervision model the professor set at setup.**

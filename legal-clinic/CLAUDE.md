@@ -374,6 +374,63 @@ Size the response to the question. A product name check needs 3 sentences and a 
 
 Over-lawyering is a failure mode. It buries the answer, it trains the PM to route around legal, and it makes the next "this actually needs a full review" land like crying wolf. A product counsel's main job is sorting "which kind of problem is this" before doctrine applies. Do the sort first.
 
+## Australian framework
+
+> Active when the clinic is an Australian law school clinic. AI-generated; verify against the state Law Society / Bar Association and the Legal Profession Uniform Law (NSW / Vic / WA) or the relevant state Legal Profession Act.
+
+### Australian clinical legal education context
+
+- Clinical legal education is well-established at Australian law schools. Clinics typically run through a partnership with a community legal centre (CLC), Legal Aid, or as a standalone law school clinic.
+- Students may NOT engage in legal practice independently. They operate under the direct supervision of an Australian legal practitioner with a current practising certificate.
+- **Reserved legal work**: engaging in legal practice (preparing documents affecting legal rights, appearing as advocate) without a practising certificate is an offence (Legal Profession Uniform Law (NSW) s 10; equivalent in other states). Clinic students operating under supervision rely on the supervisor's practising certificate.
+- The Practical Legal Training (PLT) pathway sits separately: graduates complete PLT (e.g. College of Law, ANU Legal Workshop, Leo Cussen) and a supervised practice period to obtain unrestricted practising certificates. Clinics are not PLT but may inform PLT content.
+
+### State regulation (designated local regulatory authorities)
+
+- **NSW**: Law Society of NSW (solicitors) / NSW Bar Association (barristers). Legal Profession Uniform Law (NSW).
+- **Vic**: Victorian Legal Services Board + Commissioner, Law Institute of Victoria, Victorian Bar. Legal Profession Uniform Law Application Act 2014 (Vic).
+- **Qld**: Queensland Law Society, Bar Association of Queensland, Legal Services Commission. Legal Profession Act 2007 (Qld).
+- **WA**: Legal Practice Board of WA, Law Society of WA, WA Bar Association. Legal Profession Uniform Law Application Act 2022 (WA, from 1 July 2022).
+- **SA**: Law Society of SA, SA Bar Association, Legal Practitioners Conduct Board. Legal Practitioners Act 1981 (SA).
+- **Tas**: Law Society of Tasmania, Tasmanian Bar. Legal Profession Act 2007 (Tas).
+- **ACT**: ACT Law Society, ACT Bar Association. Legal Profession Act 2006 (ACT).
+- **NT**: Law Society NT, NT Bar Association. Legal Profession Act 2006 (NT).
+
+### Conduct rules
+
+- **Australian Solicitors' Conduct Rules (ASCR)** adopted in most jurisdictions for solicitors.
+- **Legal Profession Uniform Conduct (Barristers) Rules 2015** in NSW, Vic, WA.
+- Key student-relevant rules: confidentiality, conflicts (concurrent and former client), duty to court, candour, communication with represented parties, honesty in dealings.
+
+### Privilege framing for clinic outputs
+
+- Replace US "ATTORNEY WORK PRODUCT" headers with AU-appropriate framing. See `references/au-localisation/privilege.md`.
+- For supervised clinic work, use: `CONFIDENTIAL. PREPARED UNDER SUPERVISION OF [AU LEGAL PRACTITIONER] FOR THE DOMINANT PURPOSE OF OBTAINING LEGAL ADVICE / EXISTING / ANTICIPATED LITIGATION`.
+- Note: dominant purpose test (Esso) applies. Internal clinical pedagogical artifacts (training notes, retrospectives) typically do NOT attract LPP because their dominant purpose is education, not legal advice.
+
+### Common AU clinic practice areas and primary sources
+
+- **Tenancy / housing**: state Residential Tenancies Acts. State tribunals (NCAT, VCAT, QCAT). Tenants Union resources.
+- **Family**: Family Law Act 1975 (Cth); Federal Circuit and Family Court of Australia. Domestic violence: state-specific Acts.
+- **Migration**: Migration Act 1958 (Cth); Migration Regulations; Department of Home Affairs. Only Registered Migration Agents (RMA) or Australian legal practitioners may give immigration assistance.
+- **Consumer / consumer credit**: Australian Consumer Law (Schedule 2 to the Competition and Consumer Act 2010 (Cth)); National Consumer Credit Protection Act 2009 (Cth).
+- **Employment**: Fair Work Act 2009 (Cth); state long service leave Acts; state anti-discrimination Acts.
+- **Social security**: Social Security Act 1991 (Cth); Administrative Review Tribunal (ART, replaced AAT 14 October 2024) Social Security Division.
+- **Criminal**: state Crimes Acts / Criminal Codes; state criminal procedure rules; Legal Aid duty solicitor schemes.
+
+### Citation: AGLC4
+
+Clinic memos and student work product should use AGLC4 citation. See `references/au-localisation/citation-aglc.md`.
+
+### Notable differences from US clinic practice
+
+- Australian clinics often serve self-represented litigants in tribunals (NCAT, VCAT, QCAT) where rules of evidence are relaxed.
+- Costs do not generally follow the event in tribunals at the same scale as courts; access for SRLs is broader.
+- Legal Aid Commission funding eligibility is means-tested; many clinic clients are above the Legal Aid means test but cannot afford private representation.
+- Restorative justice, alternative dispute resolution, and community legal education are common AU clinic activities alongside individual casework.
+
+---
+
 ## Jurisdiction recognition
 
 The skill's default frameworks, tests, statutes, and procedures are often US-centric. When the user, the matter, or the facts involve a non-US jurisdiction, recognize it and act on it — don't silently apply US doctrine to non-US facts.

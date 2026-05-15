@@ -272,6 +272,53 @@ Size the response to the question. A product name check needs 3 sentences and a 
 
 Over-lawyering is a failure mode. It buries the answer, it trains the PM to route around legal, and it makes the next "this actually needs a full review" land like crying wolf. A product counsel's main job is sorting "which kind of problem is this" before doctrine applies. Do the sort first.
 
+## Australian framework
+
+> Active when the practice profile lists any Australian regulator. AI-generated; verify against regulator websites and the Federal Register of Legislation.
+
+### Primary AU regulator feed sources
+
+- **ASIC**: asic.gov.au news centre, consultations.
+- **ACCC**: accc.gov.au publications, consultations.
+- **OAIC**: oaic.gov.au news, determinations, consultations.
+- **APRA**: apra.gov.au news. Letters, prudential standards, consultation packages.
+- **AUSTRAC**: austrac.gov.au news. Consultation drafts, AML/CTF guidance.
+- **ATO**: ato.gov.au. Tax Determinations (TD), Taxation Rulings (TR), Practical Compliance Guidelines (PCG), Public Rulings.
+- **AFCA**: afca.org.au. Determinations and approach documents.
+- **Treasury**: treasury.gov.au/consultation. Whole-of-government consultations on legislative reform.
+- **eSafety Commissioner**: esafety.gov.au.
+- **ACMA**: acma.gov.au.
+- **Fair Work Commission**: fwc.gov.au. Decisions and modern award reviews.
+- **TGA**: tga.gov.au.
+- **Federal Register of Legislation**: legislation.gov.au. Authoritative source for in-force Commonwealth law.
+- **AustLII**: austlii.edu.au. Free case law and consolidated statutes (Cth, all states/territories).
+- **Federal Court daily decisions**: austlii.edu.au.
+- **State parliaments**: each publishes a Bills tracker.
+
+### How regulation changes in Australia
+
+- **Primary legislation**: Bills introduced by government or private member, debated, passed by both Houses, royal assent, commencement.
+- **Subordinate legislation**: regulations, instruments, determinations made under primary Act authority. Lodged on Federal Register of Legislation.
+- **Regulator guidance**: not law, but informative of regulator's approach (e.g. ASIC Regulatory Guides, ACCC Guidelines, OAIC APP Guidelines).
+- **Consultation**: typically a Treasury or Department-led process. Exposure draft (ED) Bill, ED legislative instrument, position papers, regulator consultation papers. There is no US-style notice-and-comment rulemaking; comments are sought but the legislative power sits with Parliament for primary law and with the Minister for delegated legislation.
+- **Industry codes**: Code of Banking Practice, ePayments Code, ACMA codes. Some prescribed under statute (with civil penalty consequences) and some voluntary.
+
+### Materiality and digest format
+
+When digesting AU regulatory developments:
+
+- **Always material**: new Act commencement, new prudential standard, infringement notice/enforcement action against a sector participant, court decision interpreting an Act provision, ATO public ruling addressing a transaction we use.
+- **Review-worthy**: consultation paper, exposure draft, regulator speech, position paper, dear-CEO letter.
+- **FYI**: media releases without operative effect, academic commentary, sector reports.
+
+### AGLC citations in digests
+
+- Cite Acts as *Title of Act* Year (Jurisdiction) section (e.g. *Privacy Act 1988* (Cth) s 13G).
+- Cite cases with medium neutral citation where available (e.g. [2024] FCAFC 100, [25]).
+- See `references/au-localisation/citation-aglc.md` for the full convention.
+
+---
+
 ## Jurisdiction recognition
 
 The skill's default frameworks, tests, statutes, and procedures are often US-centric. When the user, the matter, or the facts involve a non-US jurisdiction, recognize it and act on it — don't silently apply US doctrine to non-US facts.

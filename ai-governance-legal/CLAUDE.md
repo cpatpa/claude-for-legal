@@ -402,6 +402,61 @@ Size the response to the question. A product name check needs 3 sentences and a 
 
 Over-lawyering is a failure mode. It buries the answer, it trains the PM to route around legal, and it makes the next "this actually needs a full review" land like crying wolf. A product counsel's main job is sorting "which kind of problem is this" before doctrine applies. Do the sort first.
 
+## Australian framework
+
+> Active when the practice profile's footprint includes Australia. AI-generated; verify against DISR (Department of Industry, Science and Resources), OAIC, ASIC, ACCC current guidance.
+
+### There is no AU "AI Act" (as of 2025)
+
+Australia is taking a **sectoral overlay + voluntary standards** approach. Substantive AI obligations come from:
+
+- **Privacy Act 1988 (Cth)** and the Australian Privacy Principles, particularly APP 1 (transparency), APP 3 (collection necessity, sensitive information), APP 6 (use and disclosure), APP 11 (security), and the new automated decision-making notice obligations introduced by the Privacy and Other Legislation Amendment Act 2024 (in force from December 2026 `[verify-au]`).
+- **Australian Consumer Law** (Schedule 2 to the Competition and Consumer Act 2010 (Cth)) for AI consumer-facing claims (misleading and deceptive conduct, false or misleading representations) and unfair contract terms in AI-related agreements.
+- **Corporations Act 2001 (Cth)** for AI used in decision-making subject to directors' duties (ss 180-184); ASIC INFO 271 (algorithmic trading) and INFO 230 (electronic disclosure) provide sector guidance.
+- **Anti-discrimination law** (Sex Discrimination Act 1984 (Cth), Racial Discrimination Act 1975 (Cth), Disability Discrimination Act 1992 (Cth), Age Discrimination Act 2004 (Cth), state equivalents) for AI that produces discriminatory outcomes.
+- **Online Safety Act 2021 (Cth)** for AI-generated synthetic content.
+- **Therapeutic Goods Act 1989 (Cth)** for AI-as-medical-device (TGA software as a medical device regulatory framework).
+- **Sectoral overlays** (banking via APRA CPS 230, telecommunications via ACMA, energy via AER).
+
+### Voluntary AI Safety Standard (DISR, 2024)
+
+DISR Voluntary AI Safety Standard issued September 2024. Ten Guardrails:
+1. Accountability process for AI governance, decision-making, risk management.
+2. Risk management process across AI lifecycle.
+3. Data governance, privacy and security measures.
+4. Test AI models and systems to evaluate performance.
+5. Enable human control or intervention in AI systems.
+6. Inform end users about AI-enabled decisions.
+7. Establish processes for people affected to contest outcomes.
+8. Transparency with other organisations across the supply chain.
+9. Keep records to enable third-party assessment.
+10. Engage stakeholders and evaluate needs and circumstances.
+
+### Proposed Mandatory Guardrails for High-Risk AI
+
+DISR consultation paper "Introducing mandatory guardrails for AI in high-risk settings" (September 2024). Status as of 2025: consultation; not enacted `[verify-au]`. Watch for legislation 2025-2026.
+
+### Australian AI Ethics Framework
+
+Voluntary "Australia's AI Ethics Principles" (8 principles): human, societal and environmental wellbeing; human-centred values; fairness; privacy protection and security; reliability and safety; transparency and explainability; contestability; accountability.
+
+### Sectoral AI considerations
+
+- **ASIC**: INFO 271 (algorithmic trading), Report 720 (AI), AFSL conditions on use of AI in advice and dealing.
+- **ACCC**: AI consumer harm focus. Statement on AI and guidance on AI claims in marketing.
+- **OAIC**: APP 11 security applies to AI training data and inference outputs. ADM notice obligations from December 2026.
+- **APRA**: CPS 230 (operational risk, in force 1 July 2025) requires regulated entities to identify and manage AI operational risk.
+- **TGA**: software as medical device, including AI-driven medical software, regulated under the Therapeutic Goods Act 1989 (Cth).
+
+### Skill behaviour for AU AI matters
+
+- **use-case-triage**: classify against the Voluntary AI Safety Standard Guardrails. Flag potential "high-risk" AI under the proposed mandatory framework. Confirm Privacy Act APP 11 / s 13G exposure if personal information is processed.
+- **aia-generation**: structure aligned with the Voluntary AI Safety Standard. Reference Australia's AI Ethics Principles. Include Privacy Act APPs analysis, Anti-Discrimination Acts analysis, ACL analysis as relevant.
+- **vendor-ai-review**: scrutinise vendor terms for cross-border data flow (APP 8), training on Australian user data, model change notification, audit cooperation. AU has no statutory minimum content; flag absence of these terms.
+- **reg-gap-analysis**: monitor DISR consultations, OAIC guidance, ASIC INFO documents, ACCC speeches, parliamentary bills on AI.
+
+---
+
 ## Jurisdiction recognition
 
 The skill's default frameworks, tests, statutes, and procedures are often US-centric. When the user, the matter, or the facts involve a non-US jurisdiction, recognize it and act on it — don't silently apply US doctrine to non-US facts.

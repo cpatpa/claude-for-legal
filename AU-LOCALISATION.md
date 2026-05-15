@@ -30,19 +30,19 @@ For each plugin, localisation covers:
 
 | Plugin | Status | Notes |
 |---|---|---|
-| `references/au-localisation/` | In progress | Foundation reference materials being built |
-| `employment-legal` | Pilot complete (review pending) | Fair Work Act, NES, unfair dismissal, state long service leave added to CLAUDE.md, hiring-review, termination-review |
-| `privacy-legal` | Pilot complete (review pending) | Privacy Act 1988 (Cth), 13 APPs, NDB scheme, OAIC enforcement, APP 8 cross-border, APP 12 access added to CLAUDE.md, use-case-triage, dpa-review, dsar-response, pia-generation |
-| `ip-legal` | Not started | Needs IP Australia, Patents Act 1990, Copyright Act 1968, Trade Marks Act 1995, no DMCA equivalent |
-| `litigation-legal` | Not started | Needs Federal Court Rules, state Supreme Court rules, state Evidence Acts |
-| `corporate-legal` | Not started | Needs Corporations Act 2001, ASIC filing calendar, no Delaware analogue |
-| `commercial-legal` | Not started | Largely jurisdiction-neutral, needs Australian Consumer Law lens, AU misleading and deceptive conduct doctrine |
-| `regulatory-legal` | Not started | Needs ASIC, APRA, ACCC, OAIC, AUSTRAC, ATO feed sources |
-| `product-legal` | Not started | Needs Australian Consumer Law, misleading and deceptive conduct, ACCC enforcement posture |
-| `ai-governance-legal` | Partial | Multi-jurisdiction table already names Australian AI Ethics Framework; needs Voluntary AI Safety Standard, Privacy Act amendments, ACCC AI enforcement |
-| `legal-clinic` | Not started | Needs PLT and supervised practice context, state law society oversight |
-| `law-student` | Not started | Needs Australian law school structure, Priestley 11, AGLC citation, PLT pathway |
-| `legal-builder-hub` | Not started | Largely jurisdiction-neutral |
+| `references/au-localisation/` | Foundation complete (review pending) | 8 reference files: regulators, courts, AGLC4, terminology, legal profession, privilege, dates/currency/spelling |
+| `employment-legal` | Pilot complete (review pending) | Fair Work Act, NES, unfair dismissal, general protections, state long service leave; CLAUDE.md, hiring-review, termination-review |
+| `privacy-legal` | Pilot complete (review pending) | Privacy Act 1988 (Cth), 13 APPs, NDB scheme, OAIC enforcement, APP 8 cross-border, APP 12 access; CLAUDE.md, use-case-triage, dpa-review, dsar-response, pia-generation |
+| `ip-legal` | Pilot complete (review pending) | Patents Act 1990, Copyright Act 1968, Trade Marks Act 1995, IP Australia, no DMCA equivalent, groundless threats; CLAUDE.md, takedown |
+| `litigation-legal` | Pilot complete (review pending) | Federal Court Rules 2011, state Supreme Court rules, uniform Evidence Acts, LPP dominant purpose, Calderbank offers, Part IVA class actions, costs follow event; CLAUDE.md |
+| `corporate-legal` | Pilot complete (review pending) | Corporations Act 2001 (Cth), ASIC filings (Form 484, 388), directors' duties, continuous disclosure, schemes of arrangement, FIRB, no Delaware analogue; CLAUDE.md |
+| `commercial-legal` | Pilot complete (review pending) | Australian Consumer Law, non-excludable consumer guarantees, UCT regime with penalties, misleading and deceptive conduct (s 18), unconscionable conduct, Modern Slavery Act; CLAUDE.md |
+| `regulatory-legal` | Pilot complete (review pending) | AU regulator feed sources (ASIC, ACCC, OAIC, APRA, AUSTRAC, ATO, AFCA, eSafety, ACMA), parliamentary process, no NPRM regime; CLAUDE.md |
+| `product-legal` | Pilot complete (review pending) | ACL marketing claims (s 18, 29, 33), substantiation, country of origin (Pt 5-3), Spam Act, mandatory product safety, ACCC enforcement; CLAUDE.md |
+| `ai-governance-legal` | Pilot complete (review pending) | Voluntary AI Safety Standard 2024 (10 Guardrails), AI Ethics Principles, proposed Mandatory Guardrails, Privacy Act ADM (Dec 2026), sectoral overlays; CLAUDE.md |
+| `legal-clinic` | Pilot complete (review pending) | Clinical legal education context, Legal Profession Uniform Law and state Acts, ASCR, reserved legal work, common practice areas; CLAUDE.md |
+| `law-student` | Pilot complete (review pending) | Priestley 11, PLT pathway, AGLC4, no single bar exam, AU assessment formats, AI use policies; CLAUDE.md |
+| `legal-builder-hub` | Pilot complete (review pending) | AU QA checks for community skills, AU-compatible starter packs, US-default flagging; CLAUDE.md |
 
 ## How to use this localisation
 

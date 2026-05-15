@@ -2,6 +2,9 @@
 
 In-house commercial contracts workflows: vendor agreement review, NDA triage, SaaS subscription review, renewal tracking, escalation routing, and business-stakeholder summaries. Built around a team practice profile that gets written by a cold-start interview — the plugin learns *your* playbook, not a generic one.
 
+> [!CAUTION]
+> **Australian localisation: PILOT IN PROGRESS, AI-generated content.** Localised for Australia: Australian Consumer Law (Schedule 2 to the Competition and Consumer Act 2010 (Cth)), misleading and deceptive conduct (ACL s 18), unconscionable conduct (ACL ss 20-22), expanded unfair contract terms regime (penalties from 9 November 2023 of up to A$50M / 3x benefit / 30% turnover), consumer guarantees (ACL ss 51-59), payment times (Payment Times Reporting Act 2020 (Cth)), and AU governing-law conventions. The non-excludable consumer guarantees in the ACL apply regardless of any "AS IS" or limited-warranty drafting for goods/services supplied to consumers under A$100,000 (or used personally regardless of value). All AU content must be reviewed by an Australian legal practitioner. See [AU-LOCALISATION.md](../AU-LOCALISATION.md).
+
 **Every output is a draft for attorney review — cited, flagged, and gated — not a legal conclusion.** The plugin does the work: reads the documents, applies your playbook, finds the issues, drafts the memo. A lawyer reviews, verifies, and decides. Citations are tagged by source so you know which ones came from a research tool and which ones need checking. Privilege markers are applied conservatively so nothing waives by accident. Consequential actions — filing, sending, executing — are gated behind explicit confirmation.
 
 ## Who this is for

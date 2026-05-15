@@ -2,6 +2,9 @@
 
 In-house litigation counsel support for managing a portfolio of matters. Cold-start captures your risk calibration, dispute landscape, and house style — the frame every matter is triaged against. Uniform intake turns new matters into structured log entries and per-matter history files. Status rollups and deep-dive briefings read from the log.
 
+> [!CAUTION]
+> **Australian localisation: PILOT IN PROGRESS, AI-generated content.** This plugin has been partially localised for Australia. AU-specific content has been added for Federal Court Rules 2011 (Cth), state Supreme Court rules, Evidence Act 1995 (Cth) and state evidence acts, Australian legal professional privilege (no separate work product doctrine), Calderbank offers and without prejudice privilege, class actions under Part IVA of the Federal Court of Australia Act 1976 (Cth), costs follow the event. **Multiple US-only concepts in skill templates do not transfer:** FRCP 26 work product, FRE 408 settlement protection, US-style discovery, depositions, civil juries. All AU content must be reviewed by an Australian legal practitioner. See [AU-LOCALISATION.md](../AU-LOCALISATION.md).
+
 Built for counsel who own many matters at once, most of which are run by outside firms. This plugin is a thinking partner, not a matter management system. If you have LawVu / SimpleLegal / Onit, this does not replace them — it sits alongside, as your structured reasoning layer.
 
 **Every output is a draft for attorney review — cited, flagged, and gated — not a legal conclusion.** The plugin does the work: reads the documents, applies your playbook, finds the issues, drafts the memo. A lawyer reviews, verifies, and decides. Citations are tagged by source so you know which ones came from a research tool and which ones need checking. Privilege markers are applied conservatively so nothing waives by accident. Consequential actions — filing, sending, executing — are gated behind explicit confirmation.

@@ -2,6 +2,9 @@
 
 Community legal skills discovery and installation. Browses GitHub registries (lpm-skills, [additional registries — add via /legal-builder-hub:registry-browser], and others), installs and auto-updates, surfaces related community skills inside your other legal plugins. The cold-start interview IS the starter pack recommender — asks your practice type, recommends what to install.
 
+> [!CAUTION]
+> **Australian localisation context, AI-generated content.** This plugin is largely jurisdiction-neutral by design (it manages skill discovery and installation, not legal substance). When recommending or installing community skills, this plugin should note where a skill's jurisdiction is US-default and either suggest an AU alternative or flag the gap. The Australian legal community publishes far fewer AI legal skills than the US community; the registry will skew US-default until that changes. All recommended skills must be evaluated for AU applicability by an Australian legal practitioner before use on AU matters. See [AU-LOCALISATION.md](../AU-LOCALISATION.md).
+
 **Every community skill is surfaced raw before install, scanned for prompt-injection patterns, and evaluated against the Legal Skill Design Framework. The plugin helps you find and evaluate; you decide what to trust.**
 
 ## Who this is for

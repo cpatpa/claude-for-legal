@@ -276,6 +276,80 @@ Size the response to the question. A product name check needs 3 sentences and a 
 
 Over-lawyering is a failure mode. It buries the answer, it trains the PM to route around legal, and it makes the next "this actually needs a full review" land like crying wolf. A product counsel's main job is sorting "which kind of problem is this" before doctrine applies. Do the sort first.
 
+## Australian framework
+
+> Active when the student profile's bar jurisdiction is in Australia or the student is studying at an Australian law school. AI-generated; verify with your law school's academic staff and the relevant state Legal Profession Admission Board.
+
+### Priestley 11
+
+The 11 areas of academic study required for admission as an Australian legal practitioner (content prescribed by the Law Admissions Consultative Committee, LACC):
+
+1. Criminal Law and Procedure
+2. Torts
+3. Contracts
+4. Property (including Torrens system)
+5. Equity (including Trusts)
+6. Administrative Law
+7. Federal and State Constitutional Law
+8. Civil Procedure
+9. Evidence
+10. Company Law
+11. Professional Conduct (including Trust Accounts)
+
+A law student must pass each of the Priestley 11 (or be exempted) to be eligible for admission. Course names vary by school.
+
+### Path to admission
+
+1. **Accredited law degree** (LLB or JD). Approximately 4-5 years (LLB) or 3 years (JD, postgraduate).
+2. **Practical Legal Training (PLT)**: through providers such as College of Law, ANU Legal Workshop, Leo Cussen Centre for Law, Newcastle Legal Centre, Bond University. Typically 4-6 months full-time or longer part-time. Includes coursework and supervised placement.
+3. **Application for admission**: through the state Legal Profession Admission Board (LPAB in NSW; Council of Legal Education in Vic; Legal Practitioners Admissions Board in Qld; Legal Practice Board in WA). Includes character checks.
+4. **Admission ceremony**: at the Supreme Court of the state of admission.
+5. **Practising certificate**: applied for separately through the Law Society / Bar Association in the state of practice. Initial restricted certificate (typically 2 years' supervised practice) for solicitors; barristers complete Bar Practice Course / Readers Course.
+
+### Citation: AGLC4
+
+Australian law schools, journals, and most courts use the Australian Guide to Legal Citation (AGLC4). It replaces the US Bluebook. See `references/au-localisation/citation-aglc.md` at the repo root for a quick reference.
+
+Key points:
+- Statutes: *Title of Act* Year (Jurisdiction) section. Example: *Corporations Act 2001* (Cth) s 180(1).
+- Cases: *Case name* (Year) Volume Reporter Page (reported) or *Case name* [Year] Court Number, [Pinpoint paragraph] (medium neutral). Example: *Mabo v Queensland (No 2)* (1992) 175 CLR 1, 42 (Brennan J).
+- Footnotes, not parenthetical in-text cites.
+
+### Common Australian assessment formats
+
+- **Problem questions**: fact scenarios requiring application of law to facts. Often IRAC-structured.
+- **Research essays**: critical analysis of a doctrine or development.
+- **Case comments**: analysis of a single significant decision.
+- **Take-home exams**: typically 8-72 hours with open materials. AI use governed by your school's policy.
+- **In-semester moots and advocacy assessments**: oral skill assessment, often graded by panel.
+- **Closed-book end-of-semester exams**: still common; some schools have moved to open-book.
+
+### Honesty and AI use
+
+Australian law schools each have an AI use policy. Common positions in 2024-2025:
+
+- AI use without disclosure may breach the academic integrity rule.
+- Some schools permit AI for ideation/research with disclosure; others restrict to specific tasks.
+- Use of AI to draft your own assessment is typically a breach unless expressly permitted.
+- Check your school's current policy; your professor may have additional rules.
+
+### Bar prep is different in Australia
+
+Unlike the US, Australia does not have a single bar exam. The PLT process and subsequent admission ceremony grant admission to the Supreme Court of a state, which is then recognised through mutual recognition by other state Supreme Courts. There is no equivalent of the UBE/MBE/MEE.
+
+For barristers, the **Bar Practice Course** (NSW) or **Readers Course** (Vic, Qld, WA) is the post-admission specialised training to practise as a barrister.
+
+### Skill behaviour for AU students
+
+- **case-brief**: use AGLC citation. Distinguish ratio decidendi from obiter dicta in the Australian common law tradition. Note appellate court hierarchy (HCA binds all; FCAFC binds single FCA judges; state Courts of Appeal bind single judges of the same court).
+- **outline-builder**: structure by Priestley 11 area where applicable. Use AU statute and case law.
+- **irac-practice**: IRAC is widely taught in Australia and the same structure applies, but the R (rule) should cite AU statutes (Cth and state) and AU case law, not US.
+- **socratic-drill**: AU law schools tend to use less of the cold-call tradition than top-tier US schools; tutorials are more common.
+- **flashcards**: prioritise High Court of Australia decisions and current Commonwealth statute. Statute changes more often than HCA decisions.
+- **exam-forecast**: AU exam patterns include longer problem questions (sometimes a single fact scenario for 2-3 hours), structured research questions, and policy questions.
+
+---
+
 ## Jurisdiction recognition
 
 The skill's default frameworks, tests, statutes, and procedures are often US-centric. When the user, the matter, or the facts involve a non-US jurisdiction, recognize it and act on it — don't silently apply US doctrine to non-US facts.

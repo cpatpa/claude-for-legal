@@ -330,6 +330,76 @@ Size the response to the question. A product name check needs 3 sentences and a 
 
 Over-lawyering is a failure mode. It buries the answer, it trains the PM to route around legal, and it makes the next "this actually needs a full review" land like crying wolf. A product counsel's main job is sorting "which kind of problem is this" before doctrine applies. Do the sort first.
 
+## Australian framework
+
+> Active when the practice profile's primary jurisdiction is Australia OR Registered-in includes Australia / IP Australia. Apply this framework first; fall back to US framing only where the practice profile makes US primary.
+>
+> AI-generated. Verify against IP Australia, the Federal Register of Legislation, and AustLII before relying on any specific point.
+
+### Statutory framework
+
+- **Patents Act 1990 (Cth)**: standard patents (20 years), innovation patents (abolished for new applications from 26 August 2021; existing patents continue to expiry). Examination by IP Australia. Opposition under Part 5. Infringement proceedings in the Federal Court (Patents Act s 120). Defences include experimental use (s 119C, in force from April 2012).
+- **Trade Marks Act 1995 (Cth)**: registration via IP Australia. 10-year registration, renewable. Madrid Protocol member. Opposition under Part 5 (3 months from publication for opposition; 1 month extension on request). Removal for non-use (s 92): mark may be removed if not used for a continuous period of 3 years, 5 years from registration date.
+- **Copyright Act 1968 (Cth)**: copyright arises automatically; no registration system. Term: life of author + 70 years for most works. Crown copyright modified by 2017 amendments. Moral rights (Part IX). Fair dealing exceptions (research/study, criticism/review, parody/satire, news reporting, professional advice) are narrower than US fair use.
+- **Designs Act 2003 (Cth)**: registered designs system. Initial 5-year term, renewable to 10 years total. No EU-style unregistered design right.
+- **Plant Breeder's Rights Act 1994 (Cth)**: PBR via IP Australia.
+- **Circuit Layouts Act 1989 (Cth)**: protection for original circuit layouts.
+
+### No DMCA equivalent
+
+- Australia has NO direct counterpart to the US DMCA § 512 notice-and-takedown safe harbour for general internet intermediaries.
+- The Copyright Act 1968 (Cth) safe harbour (ss 116AA-116AJ) was historically restricted to carriage service providers (telcos). The Copyright Amendment (Service Providers) Act 2018 (Cth) extended it to educational institutions, libraries, archives, key cultural institutions, and organisations assisting persons with disabilities. Commercial UGC platforms, social media, and search engines are NOT covered by the AU safe harbour.
+- For online infringement: rightsholders can apply to the Federal Court for an injunction under s 115A of the Copyright Act 1968 (Cth) requiring a carriage service provider to block access to overseas online locations that have the primary purpose or effect of infringing copyright (the "site-blocking" jurisdiction). Extended in 2018 to allow blocking of search results.
+- Takedown requests to AU-based platforms operate via voluntary platform policies, not a statutory notice-and-counter-notice regime. There is no statutory equivalent of the DMCA counter-notice.
+
+### Trade mark practice (IP Australia)
+
+- **Classification**: Nice Classification (currently 12th edition). IP Australia provides a Trade Mark Goods and Services search.
+- **Examination grounds**: distinctiveness (s 41), conflict with prior marks (ss 44, 60), descriptiveness, scandalous mark.
+- **Opposition**: 3 months from publication, with 1-month extension available. Notice of intention to oppose filed; statement of grounds and particulars follows.
+- **Removal for non-use** (s 92): mark may be removed on application if not used for a continuous 3-year period, where 5 years has elapsed from registration. Onus on the registered owner to prove use.
+- **Famous marks**: well-known marks protected under ss 60 and 120(3) ("connection in the course of trade" test).
+- **Passing off**: common law passing off remains available alongside trade mark infringement. Australian Consumer Law s 18 (misleading or deceptive conduct) is often pleaded alongside passing off as the modern alternative.
+
+### Patent practice (IP Australia)
+
+- **Patentability**: novelty, inventive step, manner of manufacture, usefulness, secret use. Manner of manufacture is the statutory threshold; software patents tested under the Myriad / Research Affiliates / Encompass / Aristocrat line of cases (still developing).
+- **Filing**: provisional then complete (within 12 months) or direct complete. PCT national phase entry within 31 months of priority. Examination must be requested (within 5 years of filing).
+- **Opposition**: 3 months from publication of acceptance.
+- **Patent term extension**: pharmaceuticals up to 5 years (s 70).
+- **Innovation patents**: phased out; no new applications since 26 August 2021. Existing innovation patents continue to expiry.
+- **Crown use** (s 163): government use rights with compensation.
+
+### Copyright
+
+- **Subsistence**: automatic on creation in a material form, for literary, dramatic, musical, artistic works, films, sound recordings, broadcasts, published editions. No registration.
+- **Ownership**: author (or, for employee-created works in the course of employment, the employer subject to contract: s 35(6)). Commissioned works of certain kinds (photographs, portraits, engravings) have specific rules.
+- **Term**: life + 70 years for most works (after 2005 free trade agreement reforms).
+- **Moral rights** (Part IX): right of attribution, right against false attribution, right of integrity. Personal to the author; not assignable. Can be consented to (in writing) but not waived as a bulk concept.
+- **Fair dealing**: enumerated purposes only (research/study, criticism/review, parody/satire (from 2006), news reporting, professional advice). Narrower than US fair use; "fair dealing for the purpose of [purpose]" is the gatekeeper.
+- **Statutory licences** for educational copying and government use (Parts VA, VB, VII).
+- **Technical protection measures (TPMs)**: ss 116AN-116AS (anti-circumvention; akin to DMCA § 1201).
+- **Performers' rights**: Part XIA. Performers' moral rights (from 2007).
+
+### Trade secrets and confidential information
+
+- No federal trade secrets statute. Protection via the equitable action for breach of confidence and contract.
+- *Smith Kline & French Laboratories (Aust) Ltd v Secretary, Department of Community Services and Health* (1990) 22 FCR 73; *Coco v A N Clark (Engineers) Ltd* [1969] RPC 41 (adopted in Australia): three elements for breach of confidence: information of a confidential nature, communicated in circumstances importing an obligation of confidence, unauthorised use.
+- Springboard doctrine recognised but applied flexibly.
+
+### Open source
+
+- No AU-specific OSS licence regime. GPL, Apache, MIT and the rest interpret as international contracts under Australian governing law. Australian Consumer Law non-excludable guarantees apply to software supplied to consumers regardless of "AS IS" disclaimers in OSS licences (a frequent gotcha for product teams shipping consumer-facing AU products).
+
+### Enforcement
+
+- **Forum**: Federal Court (most IP), state Supreme Courts (some). Federal Circuit and Family Court (Division 2) for less complex IP matters.
+- **Costs**: costs follow the event (party-party scale, around 60-70% recovery). Indemnity costs available for certain conduct.
+- **Customs / border seizures**: Notice of Objection regime under Customs Act 1901 (Cth) for trade marks, copyright, designs, PBR.
+- **Cease and desist letters**: groundless threats provisions exist (Patents Act s 128, Trade Marks Act s 129, Copyright Act s 202, Designs Act s 77). A recipient of an unjustified threat can sue for damages and declarations. AU C&Ds must be more careful than US "all-or-nothing" demands to avoid the groundless threats trap.
+
+---
+
 ## Jurisdiction recognition
 
 The skill's default frameworks, tests, statutes, and procedures are often US-centric. When the user, the matter, or the facts involve a non-US jurisdiction, recognize it and act on it — don't silently apply US doctrine to non-US facts.

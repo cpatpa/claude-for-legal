@@ -206,6 +206,47 @@ Size the response to the question. A product name check needs 3 sentences and a 
 
 Over-lawyering is a failure mode. It buries the answer, it trains the PM to route around legal, and it makes the next "this actually needs a full review" land like crying wolf. A product counsel's main job is sorting "which kind of problem is this" before doctrine applies. Do the sort first.
 
+## Australian framework
+
+> Active when the practice profile's primary jurisdiction is Australia. AI-generated; verify against the recommendations of the relevant state Law Society and the registered skill's own primary sources.
+
+### How the hub treats AU localisation
+
+- The skill registries this hub watches (lpm-skills and equivalents) currently skew heavily US-default. When recommending a skill for an AU user, the hub should:
+  1. Flag US-default skills with a `[US-default — verify AU applicability]` tag in the registry browse output.
+  2. Note when an AU equivalent exists in the registry. Where none exists, surface that gap.
+  3. Recommend skills compatible with AU practice in starter packs for AU users (Australian Consumer Law, Privacy Act APPs, Fair Work Act, Corporations Act 2001 (Cth), AGLC citation).
+- The hub should NOT auto-install US-default skills as "starter pack" recommendations for AU users without an explicit confirmation step.
+
+### Hub QA check for AU compatibility
+
+When `/legal-builder-hub:skills-qa` runs on a candidate skill, add the following checks:
+
+- **Work-product header**: does the skill apply `ATTORNEY WORK PRODUCT` headers unconditionally? If so, flag for AU users (the header does not create privilege in AU; the dominant purpose test applies). Recommend the skill add a jurisdiction-conditional branch.
+- **Statute references**: does the skill hard-code US statutes (FRCP, FRE, USC titles, state Code references) without an AU branch? If the user's primary jurisdiction is AU, surface this.
+- **Citation style**: does the skill use Bluebook format in output? AU users may want AGLC4.
+- **Regulator references**: does the skill refer to FTC, SEC, USPTO, IRS without an AU counterpart mapping?
+
+These checks are pass/fail informational; the hub does not block install. The user decides.
+
+### AU-compatible starter packs
+
+- **AU in-house commercial**: commercial-legal (AU framework section active), privacy-legal (AU framework), regulatory-legal (AU regulator feeds).
+- **AU corporate/M&A**: corporate-legal (AU framework), commercial-legal, regulatory-legal.
+- **AU employment**: employment-legal (AU framework, Fair Work Act).
+- **AU IP**: ip-legal (AU framework, IP Australia, no DMCA).
+- **AU litigation**: litigation-legal (AU framework, FCA Rules, Evidence Act).
+- **AU product**: product-legal (AU framework, ACL, ACCC), privacy-legal.
+- **AU AI governance**: ai-governance-legal (Voluntary AI Safety Standard, Privacy Act ADM).
+- **AU law school clinic**: legal-clinic (AU framework, PLT context, state regulation).
+- **AU law student**: law-student (AU framework, Priestley 11, AGLC4, PLT).
+
+### Recommend AU-specific community skills as they emerge
+
+Encourage AU registry development. Currently the AU AI legal skill community is small; recommend AU users contribute back where they have adapted skills for AU.
+
+---
+
 ## Jurisdiction recognition
 
 The skill's default frameworks, tests, statutes, and procedures are often US-centric. When the user, the matter, or the facts involve a non-US jurisdiction, recognize it and act on it — don't silently apply US doctrine to non-US facts.

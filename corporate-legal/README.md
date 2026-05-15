@@ -2,6 +2,9 @@
 
 In-house corporate counsel workflows across four practice areas: M&A deals, board and corporate secretary, public company governance, and entity management. Activate only the modules that apply to your role. The cold-start interview is modular — it asks targeted questions per active area and writes only the relevant sections to your practice profile.
 
+> [!CAUTION]
+> **Australian localisation: PILOT IN PROGRESS, AI-generated content.** Localised for Australia: Corporations Act 2001 (Cth), ASIC lodgement and reporting regime (Form 388, 484, etc.), directors' duties (ss 180-184), continuous disclosure (s 674), DDO, AFSL/ACL licensing, ASX Listing Rules, FIRB approvals, takeovers chapter 6, schemes of arrangement, and the unified national companies regime (no Delaware analogue). There is no AU equivalent of Delaware GCL or a Secretary of State filing model; ASIC is the single national registry. All AU content must be reviewed by an Australian legal practitioner. See [AU-LOCALISATION.md](../AU-LOCALISATION.md).
+
 **Every output is a draft for attorney review — cited, flagged, and gated — not a legal conclusion.** The plugin does the work: reads the documents, applies your playbook, finds the issues, drafts the memo. A lawyer reviews, verifies, and decides. Citations are tagged by source so you know which ones came from a research tool and which ones need checking. Privilege markers are applied conservatively so nothing waives by accident. Consequential actions — filing, sending, executing — are gated behind explicit confirmation.
 
 ## Who this is for
