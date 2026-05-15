@@ -2,6 +2,9 @@
 
 Intellectual property practice: trademark, copyright, patent, trade secret, and open source. Drafts and triages cease-and-desist letters and DMCA takedowns (sending and responding), runs first-pass trademark clearance and freedom-to-operate triage, reviews IP clauses in agreements, tracks registrations and renewal deadlines, and checks open source license compliance. Built around a practice profile that gets written by a cold-start interview — the plugin learns *your* enforcement posture, portfolio, and approval matrix, not a generic one.
 
+> [!CAUTION]
+> **Australian localisation: PILOT IN PROGRESS, AI-generated content.** This plugin has been partially localised for Australia. AU-specific content has been added for the Patents Act 1990 (Cth), Copyright Act 1968 (Cth), Trade Marks Act 1995 (Cth), Designs Act 2003 (Cth), and IP Australia practice. **There is no DMCA equivalent in Australia.** The Copyright Act safe harbour scheme (ss 116AA-116AJ) was historically limited and was extended in 2018 to libraries, archives, educational and disability institutions but not to commercial UGC platforms; takedowns for AU content use a different framework. All AU content must be reviewed by an Australian legal practitioner. See [AU-LOCALISATION.md](../AU-LOCALISATION.md).
+
 **Every output is a draft for attorney review — cited, flagged, and gated — not a legal conclusion.** The plugin does the work: reads the documents, applies your playbook, finds the issues, drafts the memo. A lawyer reviews, verifies, and decides. Citations are tagged by source so you know which ones came from a research tool and which ones need checking. Privilege markers are applied conservatively so nothing waives by accident. Consequential actions — filing, sending, executing — are gated behind explicit confirmation.
 
 ## Who this is for

@@ -2,6 +2,9 @@
 
 Watches regulatory feeds, diffs new regulations against your policy library, surfaces gaps. Learns your materiality threshold so it doesn't alert on every commissioner's speech. Wired for Thomson Reuters Regulatory Intelligence and CourtListener.
 
+> [!CAUTION]
+> **Australian localisation: PILOT IN PROGRESS, AI-generated content.** Localised for Australia: AU regulator feed sources (ASIC, ACCC, OAIC, APRA, AUSTRAC, ATO, AFCA, Treasury, eSafety, ACMA), Federal Register of Legislation, AustLII judgment feeds, state parliamentary bills trackers, and parliamentary process (not US-style notice-and-comment rulemaking). Australian regulatory change typically happens via primary legislation passed by Parliament, ministerial regulations and instruments, or regulator guidance and consultation papers; there is no US-equivalent NPRM regime. All AU content must be reviewed by an Australian legal practitioner. See [AU-LOCALISATION.md](../AU-LOCALISATION.md).
+
 **Every output is a draft for attorney review — cited, flagged, and gated — not a legal conclusion.** The plugin does the work: reads the documents, applies your playbook, finds the issues, drafts the memo. A lawyer reviews, verifies, and decides. Citations are tagged by source so you know which ones came from a research tool and which ones need checking. Privilege markers are applied conservatively so nothing waives by accident. Consequential actions — filing, sending, executing — are gated behind explicit confirmation.
 
 ## Who this is for

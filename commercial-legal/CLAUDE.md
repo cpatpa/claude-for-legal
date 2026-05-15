@@ -422,6 +422,52 @@ Size the response to the question. A product name check needs 3 sentences and a 
 
 Over-lawyering is a failure mode. It buries the answer, it trains the PM to route around legal, and it makes the next "this actually needs a full review" land like crying wolf. A product counsel's main job is sorting "which kind of problem is this" before doctrine applies. Do the sort first.
 
+## Australian framework
+
+> Active when the practice profile's primary jurisdiction is Australia. AI-generated; verify against the Competition and Consumer Act 2010 (Cth), Australian Consumer Law (Schedule 2), and ACCC guidance.
+
+### ACL non-excludable consumer guarantees
+
+- ACL ss 51-59 establish non-excludable consumer guarantees: title, undisturbed possession, acceptable quality, fit for purpose, supply by description, supply by sample, repairs and spare parts, express warranties.
+- Apply to goods or services supplied to "consumers" (ACL s 3): under A$100,000, OR for personal/household use regardless of price, OR vehicles or trailers used in transport of goods.
+- Cannot be excluded, restricted, or modified by contract (ACL s 64). Any "AS IS" or "to the fullest extent permitted by law" clause must not purport to exclude these.
+- Misrepresentation that a guarantee can be excluded is itself a contravention (ACL s 29(1)(m)).
+
+### Unfair contract terms (UCT)
+
+- Expanded regime in force from 9 November 2023. Applies to standard form contracts with consumers OR with small businesses (fewer than 100 employees OR annual turnover < A$10M; threshold counts the contract counterparty).
+- Test: term causes a significant imbalance; not reasonably necessary to protect a legitimate interest; would cause detriment if relied on (ACL s 24).
+- Penalties (since 9 November 2023): civil pecuniary penalty up to the greater of A$50M, 3x the value of benefit, or 30% of adjusted turnover (for companies). Previously the unfair term was merely void; now it is a contravention with penalty exposure per term.
+- Skill behaviour: when reviewing a counterparty's standard form contract or our own standard form, scan each clause against the example unfair-term list in ACL s 25 (one-sided termination rights, unilateral variation, automatic renewal traps, capped liability disproportionate to risk, jurisdiction restrictions).
+
+### Misleading and deceptive conduct (ACL s 18)
+
+- Conduct in trade or commerce that is misleading or deceptive, or likely to mislead or deceive. No requirement of intent; strict liability.
+- Pre-contractual statements, marketing material, conduct during negotiation all caught. Includes silence in certain circumstances.
+- Remedies: damages (ACL s 236), injunctions (s 232), corrective orders (s 246), compensation orders (s 237).
+- Pleaded alongside breach of contract; the statutory action often pleads better than common law misrepresentation.
+
+### Unconscionable conduct (ACL ss 20-22)
+
+- s 20: unconscionable conduct as understood at common law (high threshold).
+- s 21: statutory unconscionable conduct in business transactions (broader). Factors in s 22 (bargaining power, conditions imposed, understanding of documents, undue influence).
+- Not limited to "consumers"; applies B2B.
+
+### Common terms posture
+
+- **Liability cap**: ACL non-excludable guarantees survive any cap for consumer-facing supply. Caps for B2B supply generally enforceable subject to UCT if standard form and small business.
+- **Indemnity**: AU courts construe strictly against the indemnitee.
+- **Governing law**: NSW, Victoria, and Western Australia are common defaults for AU contracts. Foreign governing law for AU consumer or small business contracts may be unenforceable in part where ACL applies.
+- **Dispute resolution**: arbitration permitted; consumer disputes often retain court access despite arbitration clauses (ACL operates as a public-policy carve-out).
+- **Payment Times Reporting Act 2020 (Cth)**: applies to entities with revenue > A$100M. Twice-yearly public reporting of payment practices to small business suppliers.
+
+### Modern slavery
+
+- Modern Slavery Act 2018 (Cth): entities with annual consolidated revenue > A$100M must lodge an annual Modern Slavery Statement.
+- NSW Modern Slavery Act 2018 (NSW) operates alongside, lower threshold.
+
+---
+
 ## Jurisdiction recognition
 
 The skill's default frameworks, tests, statutes, and procedures are often US-centric. When the user, the matter, or the facts involve a non-US jurisdiction, recognize it and act on it — don't silently apply US doctrine to non-US facts.

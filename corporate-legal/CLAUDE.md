@@ -244,6 +244,67 @@ Size the response to the question. A product name check needs 3 sentences and a 
 
 Over-lawyering is a failure mode. It buries the answer, it trains the PM to route around legal, and it makes the next "this actually needs a full review" land like crying wolf. A product counsel's main job is sorting "which kind of problem is this" before doctrine applies. Do the sort first.
 
+## Australian framework
+
+> Active when the practice profile's primary jurisdiction is Australia. AI-generated; verify against current ASIC and ASX guidance.
+
+### Corporate law stack
+
+- **Corporations Act 2001 (Cth)** is the single national companies regime. There is no AU equivalent to Delaware GCL; the same Act applies in every state and territory. ASIC is the sole national registry.
+- **Common entity types**: Pty Ltd (proprietary, limited by shares, capped at 50 non-employee shareholders), Ltd (public, listed or unlisted), NL (no liability, mining), trusts (unit, discretionary, fixed). No equivalent of US LLC; the Pty Ltd is the closest.
+- **Constitution** is the governing document (replaces "bylaws" and "articles"). Optional under s 134; if absent, replaceable rules in the Corporations Act apply.
+- **ABN, ACN, TFN**: Australian Business Number (commercial), Australian Company Number (assigned by ASIC), Tax File Number (tax). Quote ACN on company documents (s 153).
+
+### Directors' duties (Corporations Act ss 180-184)
+
+- s 180: duty of care and diligence (business judgment rule defence in s 180(2)).
+- s 181: act in good faith in the best interests of the company and for a proper purpose.
+- s 182: not improperly use position.
+- s 183: not improperly use information.
+- s 184: criminal liability for recklessness or intentional dishonesty.
+- Duties owed to the company, not to shareholders individually (Foss v Harbottle line; statutory derivative action in Part 2F.1A).
+
+### Continuous disclosure (ASX listed)
+
+- Corporations Act s 674: ASX-listed entities must immediately disclose price-sensitive information not generally available, subject to ASX Listing Rule 3.1 carve-outs (incomplete proposal, confidential, reasonable person would not expect disclosure).
+- Civil penalty for breach: greater of A$525,000 (individual) / A$2,625,000 (body corporate) per contravention `[verify-au]`. Misleading or deceptive conduct claims (ACL s 18) commonly bolted on.
+
+### M&A specifics
+
+- **Takeovers**: Chapter 6 Corporations Act. 20% rule (s 606). Bid types: off-market, on-market, scheme of arrangement (s 411). Takeovers Panel as primary forum.
+- **Schemes of arrangement** (s 411): court-supervised process for change of control. 75% by value + 50% by number at scheme meeting + court approval. Now the most common AU public M&A structure.
+- **FIRB**: Foreign Investment Review Board approval under Foreign Acquisitions and Takeovers Act 1975 (Cth). Thresholds vary by acquirer type and target sector; agribusiness, residential land, sensitive sectors lower. Failure to obtain approval is a serious offence.
+- **No DGCL-style appraisal rights**. Dissenter rights operate differently; minority shareholders typically rely on s 411(4)(c) or Part 5.1 (oppression) remedies.
+- **No SEC-style "no-shop" / fiduciary out** doctrine; AU directors' duties analysed under s 180 / 181 with reference to UK and AU case law.
+
+### Filings and lodgements (ASIC)
+
+- **Form 484** (change to company details): officeholders, members, addresses, share structure. 28 days from change.
+- **Form 388** (financial reports): public companies, large pty companies. Annual.
+- **Annual review**: ASIC sends each company on anniversary; pay fee, update.
+- Small proprietary companies (2 of 3: < A$50M revenue, < A$25M assets, < 100 employees) exempt from full reporting requirements.
+
+### AFSL and ACL
+
+- **AFSL**: Australian Financial Services Licence. Required to "provide a financial service" (s 911A). Includes advice, dealing, custodial services.
+- **ACL (consumer credit)**: Australian Credit Licence. Required to engage in credit activities under the National Consumer Credit Protection Act 2009 (Cth).
+- **DDO** (Design and Distribution Obligations): Treasury Laws Amendment (Design and Distribution Obligations and Product Intervention Powers) Act 2019 (Cth). Target market determinations.
+
+### Public company specifics
+
+- Half-year + annual reports.
+- AGM within 5 months of financial year end (s 250N).
+- Two strikes rule on remuneration reports (s 250U).
+- ASX Listing Rules layer on top of Corporations Act (Chapter 4 reporting, Chapter 7 capital raisings, Chapter 10 transactions with persons in a position of influence, Chapter 14 meetings and voting).
+
+### Entity compliance
+
+- **Registered office** (s 142): public address required, must be open during business hours.
+- **Officeholders**: at least 1 resident director for Pty Ltd; at least 2 for Ltd; company secretary required for public companies (resident).
+- **Director ID**: required for all directors since November 2022 (issued by ABRS).
+
+---
+
 ## Jurisdiction recognition
 
 The skill's default frameworks, tests, statutes, and procedures are often US-centric. When the user, the matter, or the facts involve a non-US jurisdiction, recognize it and act on it — don't silently apply US doctrine to non-US facts.

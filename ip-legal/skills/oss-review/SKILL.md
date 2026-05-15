@@ -76,6 +76,37 @@ Tell the user what licenses are in their dependency tree, what obligations those
 
 If the practice profile has an OSS policy uploaded, read that too — it is the source of truth for which licenses the team accepts, which trigger review, and which are banned.
 
+## Australian framework (if AU is the relevant jurisdiction)
+
+> AI-generated. Verify against the Copyright Act 1968 (Cth), the Australian Consumer Law, and current case law.
+
+**Key AU-specific OSS issues:**
+
+1. **ACL non-excludable consumer guarantees**: Australian Consumer Law ss 51-59 establish consumer guarantees that **cannot be excluded by contract** for software supplied to "consumers" (under A$100,000 or for personal use). Standard OSS "AS IS" warranty disclaimers (GPL, Apache, MIT, BSD) **do not override the ACL**. The supplier (your company, NOT the upstream OSS author) carries the consumer guarantee obligation.
+   - Acceptable quality (ACL s 54): software must be of acceptable quality (free from defects, safe, durable, fit for all purposes for which goods of that kind are commonly supplied).
+   - Fitness for any disclosed purpose (s 55).
+   - Compliance with description / sample (ss 56, 57).
+   - Statutory remedy: repair, replace, refund, damages.
+   - This is a recurring failure mode for AU-shipped consumer products bundling OSS.
+2. **Copyright Act 1968 (Cth)**: copyright in software arises automatically. AU does not have a registration system. License compliance is governed by contract (the OSS licence) and statute (Copyright Act + ACL overlay).
+3. **No DMCA equivalent for distribution**: there is no AU statutory safe harbour for commercial UGC platforms hosting OSS-derivative work. If you redistribute OSS-derived software via a platform, the platform may be exposed to s 36 copyright infringement claims without DMCA-style protection.
+4. **Patents Act 1990 (Cth) s 119C experimental use defence**: limited; does not protect commercial OSS use. Be aware of OSS components that may implement patented methods.
+5. **Privacy Act considerations**: OSS components that handle personal information must be assessed for APP 8 (cross-border disclosure) and APP 11 (security) compliance regardless of OSS license.
+6. **AU-specific compliance signposts**:
+   - GPL-2.0, GPL-3.0, AGPL: copyleft scope analysis under AU contract law principles.
+   - MIT/BSD/Apache: permissive but ACL consumer guarantees still apply to end product.
+   - Custom or non-standard licences: assess under AU contract interpretation principles (Codelfa, Toll v Alphapharm).
+   - License compatibility: GPL incompatible with proprietary distribution in AU as elsewhere.
+
+**Output additions for AU OSS reviews:**
+- Note ACL consumer guarantee exposure if the product is supplied to AU consumers regardless of OSS "AS IS" disclaimers.
+- Flag any cross-border data flow that engages APP 8.
+- For SaaS supply (not distribution), some OSS copyleft triggers do not fire (GPL distribution test); AGPL specifically targets SaaS.
+
+Tag every AU-specific point `[verify-au]` until checked.
+
+---
+
 ## Workflow
 
 ### Step 1: What's the scope?

@@ -105,6 +105,28 @@ The cold-start interview should ask about this preference. Default is `true` —
 [paste agreement text]
 ```
 
+## Australian framework (if AU is the relevant jurisdiction)
+
+> AI-generated. Verify against the Australian Consumer Law and current ACCC guidance.
+
+When reviewing an AU contract, apply these overlays in addition to the playbook:
+
+- **Non-excludable ACL consumer guarantees** (ss 51-59, 64): apply to goods/services supplied to "consumers" (under A$100,000 OR personal use). Contract clauses purporting to exclude or modify these are void; attempting to do so is itself a contravention (s 29(1)(m)). Flag any "AS IS" or "to the fullest extent permitted by law" wording in consumer-facing supply.
+- **Unfair contract terms (ACL s 23-28)**: applies to standard form contracts with consumers OR small businesses (fewer than 100 employees OR annual turnover < A$10M, applied to the counterparty). Penalty for using an unfair term (from 9 November 2023): greater of A$50M / 3x benefit / 30% adjusted turnover. Scan for the s 25 example list: one-sided termination, unilateral variation, automatic renewal traps, liability cap disproportionate to risk, jurisdiction restrictions.
+- **Misleading and deceptive conduct (ACL s 18)**: pre-contractual statements, marketing material, conduct during negotiation. Strict liability. Survives "entire agreement" clauses to a significant degree (the entire-agreement clause does not exclude s 18 claims).
+- **Unconscionable conduct (ss 20-22)**: section 20 (common law equivalent) high threshold; section 21 (statutory) broader, applies to business transactions.
+- **Privacy and security**: for contracts involving personal information, ensure APP 8 (cross-border accountability), APP 11 (security), and NDB scheme assistance obligations are addressed. AU has no statutory "DPA" requirement; this is contractual.
+- **Penalty doctrine**: AU penalty doctrine narrower than the historical US position; *Andrews v ANZ Banking Group* (2012) 247 CLR 205 and *Paciocco* (2016) 258 CLR 525 set the test. Genuine pre-estimate of loss permitted; punitive liquidated damages not.
+- **Modern Slavery Statement**: if either party has revenue > A$100M, supply chain due diligence and reporting obligations apply.
+- **Payment Times Reporting Act 2020 (Cth)**: entities with revenue > A$100M must report payment practices to small business suppliers twice yearly.
+- **Governing law / dispute resolution**: NSW, Victoria, WA are common AU governing-law defaults. Foreign governing law on AU consumer contracts may not exclude ACL.
+- **Spelling, dates, currency**: AUD, DD/MM/YYYY, en-AU spelling.
+- **"AS IS" disclaimers** do not override ACL non-excludable guarantees; the supplier remains liable. Flag aggressively in AU consumer-facing contracts.
+
+Tag every AU-specific claim `[verify-au]` until checked.
+
+---
+
 ## Output
 
 Full review memo per the skill's format. Routing decision logged at the top. Deviation-by-deviation, specific redline language, named approver. Saved where `~/.claude/plugins/config/claude-for-legal/commercial-legal/CLAUDE.md` → House style says work product goes.

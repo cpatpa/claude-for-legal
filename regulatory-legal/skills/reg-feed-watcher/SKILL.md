@@ -24,6 +24,45 @@ value — unfiltered feeds are noise.
 
 `references/source-catalog.md` (in this skill's directory) → curated catalog of RSS/JSON/HTML sources across US federal, US state, EU/UK, international, and secondary/aggregator categories. Use when configuring new sources or when the user's watchlist has coverage gaps (see Step 0).
 
+## Australian framework (if AU is the relevant jurisdiction)
+
+> AI-generated. Verify against current regulator websites; URLs and feed endpoints change. The AU regulatory feed ecosystem is less mature than the US Federal Register / Regulations.gov ecosystem; some primary sources require web scraping or manual checks.
+
+**Primary AU regulator feeds to configure (with note on availability):**
+
+- **ASIC**: asic.gov.au news centre, consultation papers, regulatory guides. RSS available for media releases.
+- **ACCC**: accc.gov.au media releases, consultations. RSS available.
+- **OAIC**: oaic.gov.au news, determinations, consultation papers. RSS for media releases.
+- **APRA**: apra.gov.au news, prudential standards, letters. RSS available.
+- **AUSTRAC**: austrac.gov.au news. Consultations announced via mailing list.
+- **ATO**: ato.gov.au. Tax Determinations (TD), Taxation Rulings (TR), Practical Compliance Guidelines (PCG), Public Rulings. RSS for some series.
+- **AFCA**: afca.org.au news, determinations.
+- **Treasury**: treasury.gov.au/consultation. Whole-of-government consultations on legislative reform.
+- **eSafety Commissioner**: esafety.gov.au news, industry codes consultations.
+- **ACMA**: acma.gov.au news, industry codes.
+- **Fair Work Commission**: fwc.gov.au decisions, modern award reviews. Subscribe to FWC mailing lists.
+- **Fair Work Ombudsman**: fairwork.gov.au news, court action announcements.
+- **TGA**: tga.gov.au news, consultations.
+- **Federal Register of Legislation**: legislation.gov.au — authoritative source for Cth law. RSS for recent registrations.
+- **AustLII**: austlii.edu.au — daily Federal Court decisions list, recent High Court cases.
+- **State parliaments**: each publishes a Bills tracker (search "[state name] parliament bills tracker").
+
+**Materiality calibration for AU users:**
+
+- **Always material**: new Act commencement (Federal Register of Legislation), enforcement action against an entity in our sector, court decision interpreting a relevant Act provision, ATO public ruling on a transaction we use.
+- **Review-worthy**: consultation paper, exposure draft (ED) Bill, regulator speech with policy signals, dear-CEO letter, position paper.
+- **FYI**: media releases without operative effect, academic commentary, sector reports without enforcement action.
+
+**AU regulatory process differs from US:**
+
+- No equivalent of Federal Register notice-and-comment rulemaking. AU primary law passes Parliament; subordinate legislation made by Ministers under Act authority.
+- Consultation papers are not legally binding even when "draft" form is published.
+- Regulator guidance (RGs, Information Sheets, INFOs) is not law but expresses regulator's enforcement approach. Persuasive but not binding.
+
+Tag every AU source URL or specific feed claim `[verify-au]` until tested against the live source.
+
+---
+
 ## Workflow
 
 ### Step 0: Coverage check (before pulling)

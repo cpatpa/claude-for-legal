@@ -36,6 +36,38 @@ The VDR has 2,000 documents. Somewhere in there are the 30 that matter for the d
 
 If deal-context.md doesn't exist, ask which deal this is for.
 
+## Australian framework (if AU is the relevant jurisdiction)
+
+> AI-generated. Verify against current Corporations Act provisions and Australian Taxation Office guidance. Replace US diligence categories with AU equivalents.
+
+**Substantive diligence areas in AU M&A (non-exhaustive):**
+
+- **Corporate**: Corporations Act 2001 (Cth) compliance, ASIC search of historical and current officeholder/member/charges records, constitution review (replaceable rules vs custom), shareholder agreements, capital structure (ordinary, preference, options, performance rights), director appointment compliance (Director ID since April 2022), s 588G insolvent trading exposure.
+- **Tax**: ATO compliance history, payroll tax (state-by-state), GST registration, GST grouping if relevant, R&D tax incentive claims, transfer pricing documentation if relevant, employee share scheme arrangements (Division 83A), tax consolidation if a group, capital gains tax cost base trail.
+- **Litigation**: Federal Court / state Supreme Court searches, NCAT/VCAT/QCAT searches if relevant, regulator-led proceedings (ASIC, ACCC, OAIC, Fair Work). PPSR security interest searches.
+- **Employment**: Fair Work Act compliance (NES, modern awards, enterprise agreements), state long service leave entitlements (often a hidden liability), superannuation guarantee (currently 11.5%; 12% from 1 July 2025 `[verify-au]`), unfunded leave balances, casual employment classification (post Closing Loopholes No 2 amendments), independent contractor classification under FWA s 15AA.
+- **Property**: Torrens title, registered leases, native title considerations, environmental contamination, planning compliance.
+- **IP**: IP Australia search for patents/trade marks/designs/PBR, IP assignment compliance (Copyright Act 1968 s 35 ownership default rules for employee works), open source compliance, customs Notice of Objection.
+- **Privacy**: Privacy Act 1988 (Cth) APP entity status, APP privacy policy currency, NDB scheme readiness, OAIC complaint history, CDR participation if relevant.
+- **Regulatory**: AFSL/ACL conditions, AUSTRAC compliance, sector-specific licences (TGA, ACMA, APRA, state liquor/gaming).
+- **Material contracts**: change of control clauses, assignment restrictions, payment terms (Payment Times Reporting Act 2020 (Cth) if revenue > A$100M).
+- **FIRB**: if target has Australian assets and acquirer is a foreign person, FIRB approval may be required. Penalties for failure to obtain are serious.
+- **Modern slavery**: Modern Slavery Statement compliance if revenue > A$100M.
+
+**Materiality thresholds**: AU practice typically uses different dollar bands than US (smaller market). Calibrate.
+
+**Common AU-specific issues to flag**:
+- Modern award misclassification or underpayment (a 2018-2024 wave of enforcement found systemic underpayments across major employers).
+- Casual employment classification post-2024 reforms.
+- Long service leave pro-rata triggers (state-by-state).
+- ASIC Form 484 lodgement timeliness.
+- Director ID compliance.
+- Trust structures (unit, discretionary, fixed) and beneficial ownership.
+
+Tag every AU-specific claim `[verify-au]` until checked.
+
+---
+
 ## Workflow
 
 ### Step 1: Inventory the VDR

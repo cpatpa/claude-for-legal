@@ -68,6 +68,34 @@ If no prior output is found (new counterparty / new activity), say so explicitly
 
 Read `~/.claude/plugins/config/claude-for-legal/privacy-legal/CLAUDE.md` → `## DPA playbook`. Also read `## Privacy policy commitments` — the DPA can't contradict what the privacy policy promises.
 
+## Australian framework (if Privacy Act in footprint)
+
+> AI-generated. Verify against the Privacy Act 1988 (Cth) and current OAIC guidance. The AU regulatory landscape for DPA-equivalent contracts is fundamentally different from GDPR; do not assume an Art 28-style schedule satisfies AU requirements without reading the substantive APP overlays.
+
+**Key AU points to apply during the review:**
+
+1. **There is no "DPA" in statute.** The Privacy Act does not require a particular form of contract between an APP entity and a service provider. The contract should establish APP-equivalent obligations, but the term-by-term checklist is contractual, not statutory.
+2. **No controller/processor.** Both parties are likely "APP entities" (subject to the small business exemption). Risk allocation is contractual, not framed against statutory roles.
+3. **APP 8 cross-border**: the disclosing entity remains liable for the overseas recipient's handling unless an exception applies. Check the recipient's location and whether substantially similar laws apply. If not, the contract must bind the recipient to APP-equivalent obligations and consider whether informed consent with notice of consequences was relied on.
+4. **Notifiable Data Breaches scheme**: the contract must enable the controlling entity to meet its NDB obligations (assessment within 30 days; notification as soon as practicable after determining an eligible data breach). Vendor breach notification clauses of 72 hours (GDPR Art 33-inspired) usually work for AU; clauses of "as soon as practicable" without a number are weaker and should be tightened.
+5. **APP 11 security**: the contract should reflect reasonable security obligations and (especially for sensitive information) more specific safeguards.
+6. **Sensitive information** (health, biometric, race, sexual orientation, etc.): collection requires consent under APP 3.3 unless an exception applies. The contract should restrict the processor from collecting, using, or disclosing sensitive information beyond what the controlling entity has lawfully obtained.
+7. **APP 12 / APP 13 individual rights**: the contract should require the processor to assist in responding to access and correction requests within the APP 12.4 timeframe (a reasonable period, generally within 30 days `[verify-au]`).
+8. **Destruction / de-identification on termination**: APP 11.2 requires destruction or de-identification when personal information is no longer needed. The contract should require return or destruction on termination, with a retention exception for legal compliance only.
+9. **Penalty exposure**: post-PoLA Act (2024), serious or repeated interferences with privacy attract penalties of the greater of A$50M, 3x benefit, or 30% of adjusted turnover. Liability allocation and indemnities should reflect this exposure.
+10. **Health information**: if the activity involves health information, state Health Records legislation may overlay. In Vic, NSW, and ACT, state acts impose additional obligations.
+
+**Common drafting issues to flag:**
+
+- A GDPR-only DPA with no AU overlay schedule. Add an AU schedule confirming APP-equivalent obligations.
+- Reliance on "adequacy" or "SCC" language. AU does not have these concepts; replace or supplement.
+- Breach notification timeline of "without undue delay" with no number. Tighten to a specific period that supports the controlling entity's NDB scheme assessment within 30 days.
+- Sub-processor consent that does not address cross-border disclosure.
+- "Data subject" language without confirming AU individuals are within scope.
+- Audit rights drafted only for GDPR; ensure they cover OAIC investigations and NDB assessment cooperation.
+
+---
+
 ## Federal sectoral overlay (ask first, before the term-by-term walk)
 
 Before walking the term-by-term review, answer: **does the data flowing through this DPA include any federally-regulated category?** GDPR and state consumer-privacy law supply one floor; federal sectoral law often supplies another that does not appear in the generic DPA playbook. A DPA that is GDPR-complete can still be GLBA-blind, HIPAA-blind, or COPPA-blind, and a fintech / healthtech / edtech / kidtech counterparty will notice.

@@ -291,6 +291,78 @@ Size the response to the question. A product name check needs 3 sentences and a 
 
 Over-lawyering is a failure mode. It buries the answer, it trains the PM to route around legal, and it makes the next "this actually needs a full review" land like crying wolf. A product counsel's main job is sorting "which kind of problem is this" before doctrine applies. Do the sort first.
 
+## Australian framework
+
+> Active when the practice profile's core jurisdictions include Australia or any AU state/territory, or the matter facts are Australian. Apply this framework first; do not silently apply FRCP/FRE to AU matters.
+>
+> AI-generated. Verify against the Federal Court Rules 2011 (Cth), the applicable state Supreme Court rules, the relevant Evidence Act, and current case law before relying on any specific point.
+
+### Privilege framing (replaces US work product)
+
+- AU has **legal professional privilege (LPP)** with two limbs: legal advice privilege and litigation privilege. No separate "work product" doctrine.
+- **Dominant purpose test** (*Esso Australia Resources Ltd v Commissioner of Taxation* (1999) 201 CLR 49): a confidential communication or document attracts privilege only if its dominant purpose, at creation, was either (a) giving or obtaining legal advice from a qualified legal practitioner, or (b) use in existing or reasonably anticipated litigation.
+- **Internal litigation analyses, reserve memos, draft chronologies, claim charts, brief outlines** prepared for the dominant purpose of advice or anticipated litigation attract LPP. Documents created in the ordinary course of business and only secondarily for possible litigation generally do NOT.
+- **In-house counsel** attract LPP provided they are acting in a legal capacity (not as business participant) and have sufficient independence.
+- **Waiver** is governed by *Mann v Carnell* (1999) 201 CLR 1: inconsistency between the conduct of the privilege holder and the maintenance of confidentiality the privilege protects.
+- Replace "ATTORNEY WORK PRODUCT" header with `PRIVILEGED AND CONFIDENTIAL: PREPARED AT THE REQUEST OF [AU LEGAL PRACTITIONER] FOR THE DOMINANT PURPOSE OF [OBTAINING LEGAL ADVICE / EXISTING / ANTICIPATED LITIGATION]`. See `references/au-localisation/privilege.md`.
+
+### Court structure and rules
+
+- **Federal Court of Australia**: Federal Court Rules 2011 (Cth). Subject-matter jurisdiction (corporations, competition, IP, taxation, bankruptcy, industrial relations, native title, admiralty, migration). Single-judge then Full Court (3) appeals.
+- **Federal Circuit and Family Court of Australia (FCFCOA)**: Division 1 family; Division 2 family + bankruptcy + migration + Fair Work small claims + human rights.
+- **State Supreme Courts**: unlimited civil jurisdiction. Each has its own procedural rules (UCPR (NSW), Supreme Court Rules (Vic), UCPR (Qld), RSC (WA), UCR (SA), state-specific Tas/ACT/NT).
+- **Mid-tier**: District Court (NSW, Qld, WA, SA), County Court (Vic). No mid-tier in Tas, ACT, NT.
+- **Local / Magistrates**: small civil + summary criminal.
+- **Tribunals**: NCAT, VCAT, QCAT, SAT, SACAT, TASCAT, ACAT, NTCAT, FWC, ART (replaced AAT 14 Oct 2024).
+
+### Evidence
+
+- **Uniform Evidence Acts** in Cth, NSW, Vic, Tas, ACT, NT (the *Evidence Act 1995* (Cth) and state mirror legislation).
+- **Non-uniform jurisdictions**: Qld (*Evidence Act 1977* (Qld)), WA (*Evidence Act 1906* (WA)), SA (*Evidence Act 1929* (SA)).
+- **Without prejudice privilege**: settlement communications generally inadmissible. Common law and (in uniform jurisdictions) s 131 *Evidence Act 1995* (Cth).
+- **Settlement privilege**: do not assume FRE 408 framing transfers. Use "without prejudice", "without prejudice save as to costs" (Calderbank), or s 131 Evidence Act protections.
+
+### Discovery, depositions, interrogatories
+
+- **Discovery is not automatic**. Federal Court typically orders disclosure of categories of documents, not all relevant documents (Federal Court Practice Note GPN-DISC). State Supreme Courts use discovery by reference to issues.
+- **No routine pre-trial depositions**. Examination of witnesses pre-trial only on special grounds (preservation, foreign witnesses, urgent matters). Cross-examination happens at hearing.
+- **Interrogatories**: permitted but leave usually required; rarely used; subject to proportionality controls.
+- **Pleadings carry more weight than US notice pleadings**. The pleadings define the issues; departure from pleadings at trial requires amendment.
+
+### Demand letters and settlement
+
+- **Without prejudice privilege**: AU equivalent of FRE 408 settlement-communication protection but with different mechanics. Use the heading "WITHOUT PREJUDICE" on settlement communications.
+- **Calderbank offers** (*Calderbank v Calderbank* [1976] Fam 93, adopted in AU): a written settlement offer marked "without prejudice save as to costs". If the offeree does not accept and ultimately does no better at trial, the offer can be used at the costs stage to seek indemnity costs from the date of the offer.
+- **Offers of compromise** in court rules (e.g. UCPR Part 20 (NSW), Federal Court Rules Part 25): formal court-rule offers carry specific costs consequences distinct from Calderbank.
+- **Groundless threats provisions** apply in IP matters (Patents Act s 128, Trade Marks Act s 129, Copyright Act s 202, Designs Act s 77). A C&D making an unjustified threat of infringement proceedings is itself actionable.
+
+### Costs
+
+- **Costs follow the event**: the losing party generally pays a portion of the winning party's costs (party-party scale, around 60-70% of actual). Structural to litigation strategy.
+- **Indemnity costs** available for unreasonable conduct, rejection of a reasonable Calderbank offer, fraud, abuse of process.
+- **Security for costs** orders against impecunious plaintiffs (especially corporate plaintiffs).
+- **Adverse costs orders against non-party funders** are recognised (e.g. *Knight v FP Special Assets* (1992) 174 CLR 178).
+
+### Class actions
+
+- **Federal**: Part IVA of the *Federal Court of Australia Act 1976* (Cth). Opt-out as default. Common fund orders curtailed by *BMW Australia Ltd v Brewster* (2019) 269 CLR 574 but later statutorily restored in part.
+- **State**: VIC has Part 4A *Supreme Court Act 1986* (Vic), permits **group costs orders** (since 2020); NSW has Part 10 *Civil Procedure Act 2005* (NSW); Qld has Part 13A *Civil Proceedings Act 2011* (Qld). WA's regime commenced 2022.
+- **Contingency fees**: generally prohibited except for Group Costs Orders in Vic class actions.
+- **Litigation funding**: permitted and well-established. Subject to *Corporations Act 2001* (Cth) managed investment scheme (MIS) requirements (recently amended).
+
+### Notable differences in skill behaviour
+
+- **demand-draft / demand-received**: replace FRE 408 framing with without prejudice + Calderbank.
+- **privilege-log-review**: AU privilege analysis under uniform Evidence Act ss 117-131. Different categories from FRCP 26(b)(3).
+- **deposition-prep**: rare in AU; relabel as "evidence-in-chief / cross-examination prep at hearing" or "examination on commission" where applicable.
+- **chronology**: framework transfers; citation format goes to AGLC.
+- **subpoena-triage**: state-by-state rules; check the correct rules for the originating court.
+- **claim-chart**: framework transfers; elements come from AU statute or common law.
+- **brief-section-drafter**: AU "brief" can mean different things; a brief to counsel (instructional document) is distinct from a written submission filed in court. Clarify which.
+- **legal-hold**: document preservation obligations in AU (e.g. *British American Tobacco Australia Services Ltd v Cowell* (2002) 7 VR 524) are distinct from US spoliation jurisprudence and FRCP 37 sanctions; framework is by analogy, not citation.
+
+---
+
 ## Jurisdiction recognition
 
 The skill's default frameworks, tests, statutes, and procedures are often US-centric. When the user, the matter, or the facts involve a non-US jurisdiction, recognize it and act on it — don't silently apply US doctrine to non-US facts.

@@ -1,8 +1,13 @@
 # Claude for Legal
 
-Reference agents, skills, and data connectors for the legal workflows we see most — in-house commercial, privacy, product, corporate, employment, litigation, regulatory, AI governance, IP, and the learning side of the practice (law school clinics and students).
+Reference agents, skills, and data connectors for the legal workflows we see most: in-house commercial, privacy, product, corporate, employment, litigation, regulatory, AI governance, IP, and the learning side of the practice (law school clinics and students).
 
-> **New here?** Start with [QUICKSTART.md](QUICKSTART.md) — install in 60 seconds. This README is the full reference.
+> [!CAUTION]
+> **This fork is being localised for Australia.** All output from these plugins is AI-generated and may include hallucinated statutes, section numbers, case citations, and procedural rules. The base plugins were originally written for a United States legal market; cross-cutting US assumptions remain in plugins that have not yet been localised. An Australian legal practitioner must review, verify, and take professional responsibility for anything that leaves the building.
+>
+> For the localisation tracker, status table, and known limitations, see [AU-LOCALISATION.md](AU-LOCALISATION.md). For Australian reference materials (regulators, courts, AGLC citation, terminology, privilege), see [references/au-localisation/](references/au-localisation/).
+
+> **New here?** Start with [QUICKSTART.md](QUICKSTART.md). This README is the full reference.
 
 Everything here is available **two ways from one source**: install it as a [Claude Cowork](https://claude.com/product/cowork) or [Claude Code](https://claude.com/product/claude-code) plugin, or deploy it through the [Claude Managed Agents API](https://docs.claude.com/en/api/managed-agents) behind your own workflow engine. Same system prompt, same skills — you choose where it runs.
 

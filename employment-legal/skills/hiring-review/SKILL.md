@@ -127,23 +127,93 @@ Read the letter. Check:
 **Employment-at-will is US-only.** "At-will" means either party can terminate without cause or notice (subject to statutory exceptions). This concept does not exist outside the US:
 
 - **US (most states):** At-will is the default. Offer letters often include "at-will" language to defeat implied-contract arguments. Check that it's present if US.
-- **Montana:** Not at-will — Wrongful Discharge from Employment Act requires cause after probation.
+- **Montana:** Not at-will. Wrongful Discharge from Employment Act requires cause after probation.
 - **UK:** No at-will. Employees have statutory protections from day 1 (unfair dismissal after 2 years of service, automatic unfair dismissal for protected reasons from day 1). The offer letter must contain the written statement of particulars (ERA 1996 s.1): pay, hours, notice period, holidays, pension, disciplinary/grievance procedures.
 - **EU:** No at-will. Termination requires cause, notice, and often works council consultation or collective redundancy procedures. The offer letter requirements vary by member state but notice periods and written particulars are standard.
-- **Australia:** No at-will. Fair Work Act minimum notice periods, unfair dismissal protections, NES.
+- **Australia:** No at-will. See the Australian framework below.
 - **Canada:** No at-will. Common law reasonable notice (can be months), ESA minimums, wrongful dismissal exposure.
 - **Singapore, other APAC:** No at-will. Employment Act and contract-based protections.
+
+---
+
+### Australian framework for hiring review
+
+> When the work jurisdiction identified in Step 1 is in Australia, apply this framework in addition to the steps above. This block is AI-generated and must be reviewed by an Australian legal practitioner before acting on it. Tag every Australian-specific claim `[verify-au]` until checked against the primary source (Fair Work Act, modern award, state Act, IP Australia / ASIC register, etc.).
+
+**Source stack to check (in order):**
+
+1. **Fair Work Act 2009 (Cth)** and the National Employment Standards. Identify whether the employee will be in the national system (almost all private sector employers are; state and local government employees in some states are not).
+2. **Modern award or enterprise agreement** that covers the role and industry. Coverage is determined by the industry and the role's classification, not by what the employer or employee prefers. The role must be classified within the applicable award's classification structure. Check whether the proposed remuneration meets or exceeds the award rate including loadings, allowances, and penalty rates.
+3. **State long service leave Act** in the relevant state or territory.
+4. **State anti-discrimination Act** in the relevant state or territory (overlaying Commonwealth Acts).
+5. **Common law restraint of trade** and (NSW only) the *Restraints of Trade Act 1976* (NSW).
+
+**Required content of an Australian offer / employment contract:**
+
+- Position title and classification under any applicable modern award.
+- Start date.
+- Status: permanent (full-time / part-time), maximum-term / fixed-term, or casual. Casual employee definition is set in the Fair Work Act and the role must in substance be casual; the contract label alone is not determinative.
+- Remuneration: base salary, superannuation (currently 11.5% of OTE, scheduled to reach 12% on 1 July 2025 `[verify-au]`), any allowances, any annualised salary arrangement that absorbs award entitlements (must comply with the applicable award's annualised wage clause).
+- Hours of work.
+- Notice period (must meet NES s 117 minimum on each side).
+- Probation period if any (probation does not displace unfair dismissal protections; the minimum employment period under s 382(a) FWA is the relevant gate, not the contractual probation).
+- Annual leave, personal/carer's leave, parental leave references (NES floor).
+- Confidentiality, IP assignment.
+- Restrictive covenants (see below).
+- Termination provisions consistent with NES.
+- Mandatory provision of the **Fair Work Information Statement** to all new employees (s 124 FWA). Casual employees must additionally receive the **Casual Employment Information Statement** (s 125B FWA).
+
+**No at-will in Australia.** Do not include "employment at will" language in an Australian offer. Replace with the agreed notice period each way (must meet NES minimum on the employer side; the employee side may match or differ).
+
+**Restrictive covenants in AU:**
+
+- Default position: an enforceable post-employment restraint requires (a) a legitimate interest to protect (confidential information, customer connection, staff stability), and (b) a restraint that is reasonable in scope (duration, geography, activity).
+- **NSW**: courts can read down an unreasonable restraint under s 4 *Restraints of Trade Act 1976* (NSW). This makes broader cascading clauses survive in NSW that would not in other states.
+- **Other states**: blue-pencil severance only. Courts will not rewrite an unreasonable clause; they may sever a complete sub-clause.
+- **Consideration**: a restraint introduced mid-employment requires fresh consideration (a payment or a clear benefit) beyond continued employment.
+- **2024-2025 reform alert**: the Commonwealth has announced proposals to ban or restrict non-compete clauses below an income threshold. Verify current status before drafting or advising. `[verify-au]`
+- For executive hires: check whether the contract is below the FWA "high income threshold" (currently A$175,000 from 1 July 2024 `[verify-au]`). High-income employees not covered by an award have unfair dismissal access only if under the threshold.
+
+**Classification and award coverage:**
+
+- The award classification is a question of fact (what does the role actually do?), not preference.
+- "Set-off" or annualised salary arrangements can absorb award entitlements only if the contract is clear and the salary in fact exceeds what the award would require taking into account loadings, allowances, and penalty rates. Underpayment risk is acute; multi-million dollar back-pay liabilities and civil penalties have been imposed on major employers.
+- Casual classification: the *Fair Work Legislation Amendment (Closing Loopholes No. 2) Act 2024* (Cth) introduced a new definition of casual employee (s 15A) and a casual conversion pathway (s 66AAB) effective from 26 August 2024. `[verify-au]`
+- Independent contractor classification: s 15AA FWA (effective 26 August 2024) sets a multi-factor "real substance, practical reality, and true nature" test. ATO superannuation tests apply separately under the *Superannuation Guarantee (Administration) Act 1992* (Cth).
+
+**Background checks and right to work:**
+
+- Right to work: VEVO check via Department of Home Affairs for non-citizens. Employer sanctions for knowingly employing unlawful non-citizens under the *Migration Act 1958* (Cth) Subdivision C of Division 12.
+- Police checks: nationally coordinated criminal history check via accredited bodies. State-by-state spent convictions schemes (e.g. *Criminal Records Act 1991* (NSW)) prevent reliance on certain old convictions.
+- Working with Children Check: state-by-state schemes (e.g. WWCC in NSW, WWC Check in Vic). Mandatory for child-related work.
+- Privacy Act 1988 (Cth) APP 3 limits collection of personal information to what is reasonably necessary for the employer's functions. Employee records exemption (s 7B(3)) applies to current and former employees but NOT to job candidates.
+
+**Pay transparency / pay equity:**
+
+- *Workplace Gender Equality Act 2012* (Cth) gender pay gap reporting for employers with 100+ employees (WGEA). Public disclosure of employer-level gender pay gaps commenced February 2024.
+- *Sex Discrimination Act 1984* (Cth) and *Fair Work Act 2009* (Cth) prohibit pay secrecy clauses (FWA ss 333B-D from 7 December 2022): employees have a workplace right to disclose or not disclose their remuneration.
+
+**Output additions for AU hires (in addition to the standard output structure):**
+
+- Note the **applicable modern award (or "award-free, above high income threshold")** and the classification under that award.
+- Note **superannuation rate** applied and confirm super fund stapling has been considered.
+- Note any **restraint of trade** clause and the enforceability analysis under the work state's doctrine, including the 2024-2025 reform status if a non-compete is included.
+- Note **state long service leave** Act applicable and any portability scheme.
+- Confirm **Fair Work Information Statement** (and Casual Employment Information Statement, if applicable) will be provided.
+
+---
 
 **Check for at-will language ONLY if the jurisdiction is US.** For non-US jurisdictions, check instead for: notice period (and whether it meets statutory minimum), the written-statement particulars the jurisdiction requires, probation period terms, and any jurisdiction-specific mandatory clauses.
 
 **Never recommend adding at-will language to a non-US offer letter.** It's legally meaningless, it can conflict with mandatory statutory terms, and it signals to the employee's lawyer that the employer didn't understand the jurisdiction.
 
-- At-will language present and not undermined elsewhere (US only — see above)
-- Contingencies clear (background check, reference, I-9 if US / right-to-work verification for the applicable jurisdiction)
+- At-will language present and not undermined elsewhere (US only, see above)
+- Contingencies clear (background check, reference, I-9 if US, VEVO right-to-work check if Australia, equivalent right-to-work check for the applicable jurisdiction)
 - Start date, title, salary, reporting structure stated
 - Equity terms (if any) consistent with the plan
 - Integration clause so the letter is the whole deal
 - For non-US: notice period meets statutory minimum, jurisdiction's required written-statement particulars included, probation period compliant with local rules
+- For Australia: modern award coverage identified and remuneration meets award floor; Fair Work Information Statement to be provided; superannuation rate compliant; restraint enforceable under work state's doctrine
 
 ## Output
 
@@ -192,7 +262,7 @@ cited, or flagged as needing research.]
 > - What could go wrong (misclassification liability, unenforceable non-compete, missing required notice, conflicting at-will language)
 > - What to ask the attorney (is this the right form for this jurisdiction; can we use our standard non-compete here; what notices need to go with the letter)
 >
-> If you need to find an attorney, solicitor, barrister, or other authorised legal professional: contact your professional regulator (state bar in the US, SRA/Bar Standards Board in England & Wales, Law Society in Scotland/NI/Ireland/Canada/Australia, or your jurisdiction's equivalent) for a referral service.
+> If you need to find an attorney, solicitor, barrister, or other authorised legal professional: contact your professional regulator (state bar in the US, SRA/Bar Standards Board in England & Wales, Law Society in Scotland/NI/Ireland/Canada, Law Society of [state] or Bar Association of [state] in Australia, or your jurisdiction's equivalent) for a referral service. In Australia, the Law Society of NSW, Law Institute of Victoria, Queensland Law Society, Law Society of WA, Law Society of SA, Law Society of Tasmania, ACT Law Society, and Law Society NT each run a Find-a-Lawyer or referral service.
 
 Do not produce a "Clear to send" output past this gate without an explicit yes. A marked-DRAFT flagged for attorney review is fine.
 

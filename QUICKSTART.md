@@ -2,6 +2,9 @@
 
 **60 seconds.** This gets you to using your plugins.
 
+> [!CAUTION]
+> **Australian localisation in progress, AI-generated content.** This fork is being adapted for Australia and the Australian legal context. Every output from these plugins is AI-generated and may include hallucinated statutes, sections, citations, and procedural rules. The original plugins assume United States law; some plugins are not yet localised and continue to apply US-default framing. An Australian legal practitioner must review and verify before relying on anything. See [AU-LOCALISATION.md](AU-LOCALISATION.md) for status and limitations.
+
 ## Install in Claude Cowork
 1. [Install Claude Desktop](https://claude.com/download)
 2. Get access to Claude Cowork

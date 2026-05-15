@@ -1,5 +1,8 @@
 # AI Governance Plugin
 
+> [!CAUTION]
+> **Australian localisation: PILOT IN PROGRESS, AI-generated content.** Localised for Australia: Voluntary AI Safety Standard 2024 (DISR), Australian AI Ethics Framework (8 AI Ethics Principles), proposed Mandatory Guardrails for High-Risk AI (consultation 2024), Privacy Act 1988 (Cth) automated decision-making notice obligations (in force from December 2026 `[verify-au]`), Online Safety Act 2021 (Cth) and eSafety Commissioner, ASIC AI guidance for financial services, ACCC focus on AI and consumer harm. There is no AU "AI Act" yet. The regulatory framework is sectoral overlay (Privacy Act, ACL, Corporations Act, Online Safety Act, Anti-Discrimination Acts) plus voluntary standards. All AU content must be reviewed by an Australian legal practitioner. See [AU-LOCALISATION.md](../AU-LOCALISATION.md).
+
 In-house AI governance counsel workflows: use case triage, AI impact assessments,
 vendor AI review, and regulation-to-policy gap analysis. Built around a team practice profile
 learned from your AI policy, a reference impact assessment, and your key vendor AI

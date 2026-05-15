@@ -2,6 +2,15 @@
 
 In-house privacy counsel workflows: DPA review, DSAR response drafting, PIA generation, and regulation-to-policy gap analysis. Built around a team practice profile learned from your actual privacy policy, DPA template, and a reference PIA.
 
+> [!CAUTION]
+> **Australian localisation: PILOT IN PROGRESS, AI-generated content.** This plugin has been partially localised for Australia. AU-specific content has been added for the Privacy Act 1988 (Cth), the 13 Australian Privacy Principles (APPs), the Notifiable Data Breaches scheme, OAIC enforcement, and the Privacy and Other Legislation Amendment Act 2024 (Cth) penalty regime. The Privacy Act tranche 2 reforms are in progress and the position changes; verify currency before relying on any specific rule. The plugin's default framing is GDPR/CCPA and remains the operative analysis when those regimes are in the practice profile. All AU content must be reviewed by an Australian legal practitioner. See [AU-LOCALISATION.md](../AU-LOCALISATION.md) at the repository root.
+>
+> **Known caveats specific to this plugin:**
+> - The Privacy Act's "controller/processor" distinction does not exist. AU uses "APP entity". Service-provider obligations are contractual rather than statutory.
+> - There is no AU equivalent of GDPR Article 35 mandatory DPIA. PIAs are mandatory for Commonwealth agencies for high privacy risk projects under the Privacy (Australian Government Agencies — Governance) APP Code 2017; voluntary best practice for private sector (proposed to become mandatory in tranche 2).
+> - The Notifiable Data Breaches scheme uses an "eligible data breach" trigger different from GDPR Art 33-34.
+> - The employee records exemption (s 7B(3)) is significant and contested; it does not extend to job candidates.
+
 **Every output is a draft for attorney review — cited, flagged, and gated — not a legal conclusion.** The plugin does the work: reads the documents, applies your playbook, finds the issues, drafts the memo. A lawyer reviews, verifies, and decides. Citations are tagged by source so you know which ones came from a research tool and which ones need checking. Privilege markers are applied conservatively so nothing waives by accident. Consequential actions — filing, sending, executing — are gated behind explicit confirmation.
 
 ## Who this is for

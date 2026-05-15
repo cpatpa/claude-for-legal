@@ -252,6 +252,59 @@ Size the response to the question. A product name check needs 3 sentences and a 
 
 Over-lawyering is a failure mode. It buries the answer, it trains the PM to route around legal, and it makes the next "this actually needs a full review" land like crying wolf. A product counsel's main job is sorting "which kind of problem is this" before doctrine applies. Do the sort first.
 
+## Australian framework
+
+> Active when the practice profile's jurisdiction footprint includes Australia. AI-generated; verify against the Australian Consumer Law and current ACCC guidance.
+
+### Marketing claims under ACL
+
+- **ACL s 18 (misleading or deceptive conduct)**: strict liability. Conduct (including marketing) likely to mislead or deceive is actionable regardless of intent.
+- **ACL s 29 (false or misleading representations about goods or services)**: specific prohibited representations including standard/quality/grade, place of origin, need for goods, royal/government approvals.
+- **ACL ss 30-37**: false representations about sales, employment, education, country of origin.
+- **ACL s 33**: misleading conduct as to the nature of goods.
+- **Penalties** (post 2022 reforms): civil penalty up to greater of A$50M, 3x benefit, or 30% adjusted turnover (for body corporates) per contravention.
+- ACCC takes enforcement action; private parties can also sue for damages (ACL s 236).
+
+### Substantiation expectations
+
+- ACCC has issued guidance on green claims, AI claims, comparison claims. The substantiation standard is fact-specific.
+- For comparative claims: must be objectively verifiable, current at time of publication, fair comparison.
+- For health/medicinal claims: TGA approval/listing may be required (Therapeutic Goods Act 1989 (Cth)).
+- For environmental/green claims: ACCC Guidance "Making environmental claims" (June 2023) provides 8 principles; superlative and unsubstantiated claims increasingly scrutinised.
+
+### Country of origin claims (ACL Pt 5-3)
+
+- Country of Origin Labelling for food and other goods.
+- "Made in Australia", "Product of Australia", "Australian Made" are regulated representations with specific substantive thresholds.
+- AMAG (Australian Made, Australian Grown) logo licensed by Australian Made Campaign Ltd.
+
+### Direct marketing
+
+- **Spam Act 2003 (Cth)**: commercial electronic messages (email, SMS, IM) require consent + identification + unsubscribe. Penalties enforced by ACMA.
+- **Do Not Call Register Act 2006 (Cth)**: unsolicited marketing calls to numbers on the register prohibited. Some exemptions (charities, political, government, registered businesses with existing customer relationships).
+
+### Mandatory product safety
+
+- ACL Pt 3-3: mandatory standards, recall, reporting of injury. ACCC administers.
+- Mandatory reporting of consumer goods that may have caused death, serious injury, or illness (ACL s 131).
+- Mandatory standards for various product categories.
+
+### Children's products and content
+
+- Online Safety Act 2021 (Cth): eSafety Commissioner has powers over harmful online content, cyberbullying of children, image-based abuse.
+- OAIC Children's Online Privacy Code in development `[verify-au]`.
+- Privacy Act amendments introduced ADM notice obligations from December 2026 `[verify-au]`.
+
+### Common AU-specific launch flags
+
+- **Consumer guarantees disclosure**: the ACL non-excludable guarantees apply regardless of any "limited warranty" or "AS IS" drafting. Marketing must not imply the guarantees are excluded.
+- **Comparison shopping representations**: "the best", "cheapest", "no other" claims must be substantiable.
+- **AI feature claims**: emerging ACCC focus on AI-related claims. "Powered by AI" or "AI-driven" without explanation has been flagged.
+- **Subscription auto-renewal**: ACL UCT regime applies; auto-renewal traps with no clear unsubscribe increasingly challenged.
+- **Influencer disclosure**: ACL s 18; AANA Code of Ethics; ACCC enforcement of #ad / #sponsored disclosures.
+
+---
+
 ## Jurisdiction recognition
 
 The skill's default frameworks, tests, statutes, and procedures are often US-centric. When the user, the matter, or the facts involve a non-US jurisdiction, recognize it and act on it — don't silently apply US doctrine to non-US facts.

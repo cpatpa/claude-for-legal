@@ -54,6 +54,33 @@ Read `~/.claude/plugins/config/claude-for-legal/privacy-legal/CLAUDE.md` → `##
 
 If the systems list is empty or stale, flag it — can't do a complete DSAR without knowing where to look.
 
+## Australian framework (if Privacy Act in footprint)
+
+> AI-generated. Verify against APP 12, APP 13, and OAIC guidance. The AU regime is functionally similar to GDPR DSAR but the legal source and exceptions differ.
+
+When the requester is in Australia or the data is governed by the Privacy Act 1988 (Cth):
+
+- The request is an **APP 12 access request** (not a GDPR DSAR). Treat as a statutory right.
+- **Identity verification**: APP 12.6 requires the entity to take reasonable steps to verify the requester's identity before disclosing.
+- **Response time**: a **reasonable period**, generally **within 30 days** of the request `[verify-au]`. Not the 1-month GDPR clock; the OAIC has consistently treated 30 days as a working benchmark.
+- **Format**: provide in the manner requested if reasonable and practicable; otherwise in a manner that is reasonable in the circumstances (APP 12.5).
+- **Exceptions**: APP 12.3 (organisations) and APP 12.2 (agencies) list grounds for refusal, including: frivolous or vexatious; serious threat to life, health, or safety; unreasonable impact on others' privacy; commercially sensitive decision-making process; legal proceedings privilege; enforcement-related concealment; risk of unlawful activity.
+- **Refusal mechanics**: if access refused, must give written notice with reasons (APP 12.10), including the mechanisms available to complain about the refusal (OAIC complaint pathway).
+- **Fees**: no statutory fee for access. Reasonable processing costs may be charged for collation if not excessive (APP 12.8). Do NOT charge for the request itself.
+- **APP 13 correction**: a separate, related right. Individuals can request correction; if refused, the entity must give written reasons and (if requested) include a statement of correction with the personal information.
+- **No statutory right to portability**, except for **CDR data** (banking, energy as of 2025 `[verify-au]`) under the CDR Privacy Safeguards.
+- **No general right to erasure** under the current Privacy Act, but APP 11.2 requires destruction or de-identification when no longer needed. Tranche 2 reforms may introduce a right to erasure `[verify-au]`.
+- **Employee records exemption** (s 7B(3)): personal information about a current or former employee in the context of the employment relationship is exempt from APPs. The exemption does NOT extend to job candidates. The exemption is contested in tranche 2 reforms.
+
+**OAIC complaint pathway**: if the requester is not satisfied with the response, they may complain to the OAIC under Part V of the Privacy Act. The OAIC will typically require the entity to have been given a reasonable opportunity to deal with the complaint first.
+
+**Output adjustments for AU requests:**
+- Use "access request under APP 12" rather than "DSAR".
+- Cite APP 12 (and the relevant subsection for any exception relied on) rather than GDPR Art 15.
+- Refer the requester to the OAIC for complaint mechanisms rather than a Data Protection Authority.
+
+---
+
 ## Workflow
 
 ### Step 1: Classify the request

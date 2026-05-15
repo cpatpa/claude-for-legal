@@ -77,6 +77,24 @@ The answers drive tone verb choice, the consequence language, the `Without preju
 
 This draft assumes the jurisdiction identified in the intake and the forum's applicable settlement-communication rule (FRE 408 in federal, the state equivalent otherwise). Legal rules, deadlines, fee-shifting, and statutory hooks vary materially by jurisdiction. If the underlying facts touch a different forum, a different counterparty's home state, or a choice-of-law question, the draft may not apply as written — confirm before sending.
 
+## Australian framework (if AU is the relevant jurisdiction)
+
+> AI-generated. Verify against current Federal Court Rules 2011 (Cth), state Supreme Court rules, and the uniform Evidence Acts. Replace US framing wholesale; do NOT label an AU demand "FRE 408 protected".
+
+- **Settlement protection**: use **"WITHOUT PREJUDICE"** as the heading on settlement communications (not "FRE 408 protected"). The rule operates by common law and (in uniform-evidence-Act jurisdictions Cth/NSW/Vic/Tas/ACT/NT) s 131 of the Evidence Act 1995.
+- **Calderbank offer**: mark "**WITHOUT PREJUDICE SAVE AS TO COSTS**" to preserve costs consequences (*Calderbank v Calderbank* [1976] Fam 93, adopted in AU). If the offeree rejects and ultimately does no better at trial, indemnity costs from the date of the offer are available.
+- **Court-rule offers of compromise**: distinct from Calderbank, with specific costs consequences in the relevant court rules (e.g. UCPR Part 20 (NSW); Federal Court Rules Part 25). Use the court-rule form when proceedings are on foot for predictable costs effect.
+- **Groundless threats** (IP matters): unjustified threats of infringement proceedings are actionable under Patents Act 1990 s 128, Trade Marks Act 1995 s 129, Copyright Act 1968 s 202, Designs Act 2003 s 77. Scope IP demand letters carefully.
+- **Australian Consumer Law overlay**: if the demand turns on consumer-facing supply, plead ACL s 18 (misleading and deceptive conduct), s 29 (false representations), and unconscionable conduct ss 20-22 alongside any common law claim. The statutory claim often pleads better than common law misrepresentation.
+- **Limitation periods**: state-specific. Most state Limitation Acts apply to contract and tort. AU does not have a US-style "discovery rule" universally; commencement of time depends on the cause of action. Verify against the applicable state Act before relying on a deadline.
+- **Costs warning**: AU costs follow the event. Mention this in pre-action correspondence to anchor the costs argument later.
+- **Currency**: AUD, not USD. Use "A$" if there is any ambiguity.
+- **Terminology**: "solicitor"/"barrister"/"legal practitioner" not "attorney"; "the Court" not "the District Court"; "plaintiff"/"applicant" not "petitioner".
+
+Tag every AU-specific cite `[verify-au]` until checked.
+
+---
+
 ## Load context
 
 - `~/.claude/plugins/config/claude-for-legal/litigation-legal/demand-letters/[slug]/intake.md` — required; refuse to proceed if missing

@@ -47,6 +47,36 @@ Read `~/.claude/plugins/config/claude-for-legal/product-legal/CLAUDE.md`:
 
 The calibration table is the difference between this skill and a generic checklist. If the table says "new data collection → PIA, ships in 1-2 days," don't write "this might require a full DPIA and regulatory consultation." Match the team's actual practice.
 
+## Australian framework (if AU is the relevant jurisdiction)
+
+> AI-generated. Verify against the Australian Consumer Law, Privacy Act 1988 (Cth), and ACCC/OAIC guidance.
+
+When reviewing a launch for AU markets, apply these overlays in addition to the standard framework:
+
+- **Australian Consumer Law (ACL)**: any consumer-facing aspect must comply. Marketing claims (s 18 misleading and deceptive conduct, s 29 false or misleading representations); non-excludable consumer guarantees (ss 51-59) on goods and services; unfair contract terms (ss 23-28) on standard form contracts. Penalties (since 2022): greater of A$50M / 3x benefit / 30% adjusted turnover per contravention.
+- **Privacy Act 1988 (Cth) and APPs**: if personal information is collected, used, or disclosed. APP 1 (privacy policy), APP 3 (collection necessity), APP 5 (collection notice), APP 6 (use and disclosure), APP 8 (cross-border accountability), APP 11 (security). NDB scheme readiness.
+- **Automated decision-making (ADM) notice**: from December 2026 `[verify-au]`, APP entities must include in APP 5 collection notices and APP 1 policies information about substantially automated decisions significantly affecting individuals.
+- **Online Safety Act 2021 (Cth)**: if the launch involves user-generated content or affects under-18 users, eSafety Commissioner powers apply. Industry codes for app stores, social media services.
+- **Spam Act 2003 (Cth) and Do Not Call Register Act 2006 (Cth)**: if the launch includes direct marketing.
+- **Therapeutic Goods Act 1989 (Cth)**: if the launch involves health/wellness claims, TGA listing or registration may be required.
+- **Country of origin labelling (ACL Pt 5-3)**: if making "Australian Made" / "Made in Australia" claims, comply with the statutory thresholds.
+- **Modern Slavery Act 2018 (Cth)**: if the company has revenue > A$100M, supply chain due diligence flows through to new products.
+- **Mandatory reporting**: ACL s 131 (consumer goods that may have caused death/serious injury/illness) requires mandatory reporting to ACCC within 2 days.
+
+**Common AU-specific launch flags**:
+
+- "AI-powered" or "AI-driven" claims: ACCC increasingly scrutinising. Substantiate or qualify.
+- Green / environmental / sustainability claims: ACCC "Making environmental claims" (June 2023) guidance applies. Avoid vague superlatives.
+- Subscription auto-renewal: UCT regime catches one-sided auto-renewal traps.
+- Influencer marketing: ACL s 18 + AANA Code of Ethics + ACCC enforcement of disclosure (#ad / #sponsored).
+- Children's data and content: pending OAIC Children's Online Privacy Code `[verify-au]`.
+
+**Privilege framing**: launch reviews in AU typically do NOT attract LPP unless prepared for the dominant purpose of obtaining legal advice. Internal business-purpose launch reviews are discoverable. Use `CONFIDENTIAL. INTERNAL ANALYSIS. NOT LEGAL ADVICE` rather than asserting "ATTORNEY WORK PRODUCT".
+
+Tag every AU-specific point `[verify-au]` until checked.
+
+---
+
 ## Workflow
 
 ### Step 1: Get the inputs

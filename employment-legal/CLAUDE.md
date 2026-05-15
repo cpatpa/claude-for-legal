@@ -21,6 +21,9 @@ Rules for every skill, command, and agent in this plugin:
 # Employment Law Practice Profile
 *Written by cold-start on [DATE]. If `[PLACEHOLDER]`, run `/employment-legal:cold-start-interview`.*
 
+> [!CAUTION]
+> **AU localisation pilot, AI-generated content.** This plugin has been partially localised for Australia. When the Jurisdictional footprint below includes "AU" or any Australian state, skills must read `references/au-localisation/` at the repository root and prefer Australian frameworks (Fair Work Act 2009 (Cth), NES, modern awards, unfair dismissal, general protections, state long service leave, state anti-discrimination law) over the US defaults retained in this template. Every Australian-specific output must be verified by an Australian legal practitioner. See the `## Australian framework` section below for the operative AU rules and the AU work-product header.
+
 ---
 
 ## Who we are
@@ -68,8 +71,10 @@ The deliverable should read like a partner wrote it. The meta-commentary goes in
 
 **Work-product header** (prepended to every analysis, memo, review, or draft this plugin generates):
 
-- If Role is **Lawyer / legal professional**: `PRIVILEGED & CONFIDENTIAL — ATTORNEY WORK PRODUCT — PREPARED AT THE DIRECTION OF COUNSEL`
+- If Role is **Lawyer / legal professional** AND primary jurisdiction is US: `PRIVILEGED & CONFIDENTIAL — ATTORNEY WORK PRODUCT — PREPARED AT THE DIRECTION OF COUNSEL`
+- If Role is **Lawyer / legal professional** AND primary jurisdiction is **Australia**: `PRIVILEGED AND CONFIDENTIAL: PREPARED AT THE REQUEST OF [AU LEGAL PRACTITIONER] FOR THE DOMINANT PURPOSE OF OBTAINING LEGAL ADVICE` (or for litigation work: `PRIVILEGED AND CONFIDENTIAL: PREPARED FOR THE DOMINANT PURPOSE OF [EXISTING / ANTICIPATED] LITIGATION`). Do NOT apply the "ATTORNEY WORK PRODUCT" header in Australian contexts. See `references/au-localisation/privilege.md`.
 - If Role is **Non-lawyer** (either type): `RESEARCH NOTES — NOT LEGAL ADVICE — REVIEW WITH A LICENSED ATTORNEY, SOLICITOR, BARRISTER, OR OTHER AUTHORISED LEGAL PROFESSIONAL IN YOUR JURISDICTION BEFORE ACTING`
+- If Role is **Non-lawyer** AND primary jurisdiction is **Australia**: `RESEARCH NOTES — NOT LEGAL ADVICE — REVIEW WITH AN AUSTRALIAN LEGAL PRACTITIONER BEFORE ACTING`
 
 **The header's protection is jurisdiction-specific.** "Attorney work product" is a US doctrine (FRCP 26(b)(3)). It does not exist in most other legal systems, and asserting it on a document does not create it:
 
@@ -308,12 +313,122 @@ When a skill doesn't know which matter is active and workspaces are enabled, it 
 
 ## Jurisdictional footprint
 
-**US states with employees:** [PLACEHOLDER — list]
+**Primary jurisdiction:** [PLACEHOLDER — US / Australia / UK / EU / Other]
+**US states with employees:** [PLACEHOLDER — list, or N/A]
+**Australian states/territories with employees:** [PLACEHOLDER — NSW, VIC, QLD, WA, SA, TAS, ACT, NT, or N/A]
 **Countries with employees:** [PLACEHOLDER — list]
 **Remote-first or office-based:** [PLACEHOLDER]
 
 **High-attention jurisdictions** (most employees, most restrictive law, or most litigation):
-- [PLACEHOLDER — e.g., California, New York, UK]
+- [PLACEHOLDER — e.g., California, New South Wales, Victoria, UK]
+
+---
+
+## Australian framework
+
+> Active when Primary jurisdiction is Australia OR Australian states are listed in the footprint above. Apply this framework first; fall back to US framing only where the practice profile makes US the primary jurisdiction.
+>
+> All content in this section is AI-generated and must be verified against the Fair Work Act 2009 (Cth), the National Employment Standards, the applicable modern award or enterprise agreement, and the relevant state Acts before relying on it.
+
+### Source of obligations (the AU stack)
+
+Australian employment obligations come from a layered stack. Skills must check each layer:
+
+1. **Fair Work Act 2009 (Cth)** including the NES (Part 2-2), general protections (Part 3-1), unfair dismissal (Part 3-2), and sexual harassment (Part 3-5A from 6 March 2023).
+2. **National Employment Standards (NES)** as 11 minimum entitlements: max weekly hours, requests for flexible working, parental leave, annual leave, personal/carer's leave and compassionate leave, family and domestic violence leave (10 days paid since 1 Feb 2023 / 1 Aug 2023 for small business), community service leave, long service leave (referred to state law), public holidays, notice of termination and redundancy pay, Fair Work Information Statement and Casual Employment Information Statement.
+3. **Modern award** (industry or occupation-specific) or **enterprise agreement** if one applies. Modern awards set minimum pay and conditions above NES floor. Coverage is fact-specific.
+4. **State long service leave Acts** (e.g. *Long Service Leave Act 1955* (NSW), *Long Service Leave Act 2018* (Vic)). Entitlements and portability vary.
+5. **State anti-discrimination Acts** (e.g. *Anti-Discrimination Act 1977* (NSW), *Equal Opportunity Act 2010* (Vic)) alongside Commonwealth Acts (*Sex Discrimination Act 1984* (Cth), *Racial Discrimination Act 1975* (Cth), *Disability Discrimination Act 1992* (Cth), *Age Discrimination Act 2004* (Cth)).
+6. **State WHS legislation** (model WHS laws in all jurisdictions except Vic; Vic has *Occupational Health and Safety Act 2004* (Vic)).
+7. **State workers' compensation** (icare in NSW, WorkSafe Vic, etc.).
+8. **Contract**, including any restrictive covenants (governed by common law restraint of trade doctrine in most states; *Restraints of Trade Act 1976* (NSW) modifies the doctrine in NSW).
+
+### Key terminology (US to AU)
+
+- "At-will" does not exist. Default minimum notice on termination is set by NES s 117 and modern award / contract.
+- "Wrongful termination" maps roughly to unfair dismissal (FWA s 385) and general protections (FWA Part 3-1).
+- "PIP" is informal; performance management must comply with procedural fairness obligations to support a fair dismissal defence.
+- "RIF" / "layoff" → redundancy. Genuine redundancy is a defence to unfair dismissal (s 389) but requires consultation under the applicable award.
+- "Severance" → notice + redundancy pay (NES s 119 scale, capped by years of service) + any contractual entitlements. Modern awards may exceed the NES.
+- "PTO" → annual leave (NES s 87: 4 weeks, 5 weeks for shift workers; accrues progressively, paid out on termination).
+- "Sick leave" → personal/carer's leave (NES s 95: 10 days per year for full-time; not paid out on termination).
+- "Paid family leave" → unpaid parental leave (NES s 70: up to 12 months, extendable to 24 months) plus separate government-funded Paid Parental Leave (Services Australia).
+- "Contractor" / "1099" → independent contractor; classification governed by Fair Work Act s 15AA (effective 26 August 2024 multi-factor test) and ATO superannuation guarantee tests.
+
+### Restrictive covenants
+
+- Governed by the common law doctrine of restraint of trade. The starting point is that restraints are unenforceable unless reasonable to protect a legitimate interest (confidential information, customer connection, staff stability).
+- NSW: *Restraints of Trade Act 1976* (NSW) s 4 allows courts to read down an unreasonable restraint to the extent it is reasonable (unique to NSW).
+- Other states: courts will sever (blue pencil) but not rewrite an unreasonable restraint.
+- **Federal reform alert**: the *Competition and Consumer Amendment (Non-Compete Clauses and Other Provisions) Bill* and related reform proposals announced by the Commonwealth in 2024-2025 may ban or restrict non-compete clauses below an income threshold. Verify current status before advising on enforceability of a new non-compete. `[verify-au]`
+- Consideration: contractually adequate consideration is required to support a restraint introduced mid-employment (a payment or a clear benefit beyond continued employment).
+
+### Unfair dismissal eligibility (s 382 FWA)
+
+An employee can apply to the FWC for unfair dismissal if:
+- They completed the **minimum employment period**: 6 months, or 12 months if employed by a small business employer (fewer than 15 employees on a head count basis at dismissal).
+- AND either: covered by a modern award or enterprise agreement, OR (if not covered) annual rate of earnings below the **high income threshold** (A$175,000 from 1 July 2024; indexed annually `[verify-au]`).
+- Application must be lodged within **21 days** of dismissal taking effect (s 394).
+
+### General protections (Part 3-1 FWA)
+
+Adverse action (dismissal, demotion, prejudicial alteration of position) taken because of a workplace right, industrial activity, or a protected attribute is unlawful. Burden of proof reverses (s 361): once the employee establishes the action and the alleged reason, the employer must prove the action was NOT for that reason. No income threshold and no minimum employment period; 21 days for dismissal-related claims, otherwise 6 years.
+
+### Notice and redundancy pay (NES ss 117, 119)
+
+Minimum notice (s 117) scales with continuous service:
+- ≤ 1 year: 1 week
+- 1-3 years: 2 weeks
+- 3-5 years: 3 weeks
+- > 5 years: 4 weeks
+- Plus 1 additional week if over 45 years old AND ≥ 2 years' service.
+
+Redundancy pay (s 119) scales 4-16 weeks for 1-10+ years of service. Small business employers (<15) are exempt from redundancy pay obligations under s 121.
+
+Modern awards and contracts may provide more; never less than NES.
+
+### Final pay and accrued leave
+
+- No state-by-state "final pay deadline" equivalent to California Labor Code s 201. NES and modern awards address timing through usual pay cycle and termination payment.
+- Annual leave: any untaken balance is paid out at the employee's base rate of pay (NES s 90), plus any award-prescribed loading.
+- Long service leave: paid out per the applicable state Act; pro-rata thresholds vary (typically pro-rata after 5-7 years depending on state and reason for termination).
+- Personal/carer's leave: not paid out.
+
+---
+
+## Australian high-risk termination flags
+
+When the practice profile includes Australian jurisdictions, the high-risk flag set is the following (in addition to or instead of the US flags above):
+
+| Flag | Why it's high-risk | Check |
+|---|---|---|
+| **Unfair dismissal eligibility** | FWC reinstatement or compensation order | Has the employee passed the minimum employment period (6 months, 12 months small business)? Are they award-covered or under the high income threshold? |
+| **General protections** | Adverse action claim with reverse burden of proof | Has the employee recently exercised a workplace right (made a complaint, raised an entitlement, joined a union, made a flexible work request)? Are they in a protected class? |
+| **Discrimination (Cth or state)** | Discrimination claim under SDA, RDA, DDA, ADA, or state Act | Protected attribute and timing (pregnancy, disability disclosure, recent return from leave)? |
+| **Recent complaint or whistleblower** | Adverse action / corporate whistleblower protections (Part 9.4AAA Corporations Act) | Recent complaint to FWO, regulator, ASIC whistleblower, public interest disclosure (Cth or state)? |
+| **Genuine redundancy test** | Defence to unfair dismissal at risk if redeployment not considered | Has consultation under the applicable award occurred? Is redeployment available in the business or an associated entity? |
+| **Award consultation breached** | Procedural unfairness | Has the consultation clause of the applicable modern award been triggered and followed? |
+| **Sexual harassment / respect at work** | Positive duty under s 47C SDA + adverse action | Open complaint or recent investigation? |
+| **Workers comp / WHS** | Claims and prohibited discriminatory conduct under WHS legislation | Open workers comp claim, recent WHS incident, recent return to work plan? |
+| **Long service leave pro-rata trigger** | Entitlement crystallising on termination | Service approaching the state's pro-rata threshold (typically 5-7 years)? |
+| **Sham contracting** | Civil penalty + restitution under FWA s 357 | Misclassified as contractor when in substance an employee? See FWA s 15AA multi-factor test |
+
+Any flag fires: escalate to GC and consider external employment counsel before the dismissal proceeds. The 21-day FWC clock does not start until the dismissal takes effect, but pre-dismissal advice prevents most claims.
+
+---
+
+## Australian jurisdiction-specific escalation rules
+
+| Jurisdiction | Special rules | Escalate when |
+|---|---|---|
+| NSW | *Restraints of Trade Act 1976* (NSW): courts may read down unreasonable restraints (unique to NSW). State long service leave triggers pro-rata at 5 years in certain circumstances. | Any restrictive covenant, any termination of an employee with 5+ years' service |
+| VIC | Owner-driver and forestry contractor protections; portable long service leave for some industries (community services, contract cleaning, security). Group costs orders permitted in class actions (Supreme Court only). | Industry covered by a state portable LSL scheme |
+| QLD | Industrial Relations Act 2016 (Qld) for state and local government employees; *Public Interest Disclosure Act 2010* (Qld) protections. | State or local government employees, public interest disclosures |
+| WA | State industrial system continues to operate alongside the Fair Work Act for non-national-system employers (unincorporated employers, state and local government); *Industrial Relations Act 1979* (WA). | Non-national-system employer (most private sector is national system; check) |
+| SA | *Equal Opportunity Act 1984* (SA); *Long Service Leave Act 1987* (SA). | Restrictive covenant, anti-discrimination matters |
+| TAS | *Long Service Leave Act 1976* (Tas); *Anti-Discrimination Act 1998* (Tas). | State-specific entitlements |
+| ACT | *Long Service Leave Act 1976* (ACT); portable LSL in cleaning, security, community services, construction. | Industry covered by a state portable LSL scheme |
+| NT | *Long Service Leave Act 1981* (NT); *Anti-Discrimination Act 1992* (NT). | State-specific entitlements |
 
 ---
 

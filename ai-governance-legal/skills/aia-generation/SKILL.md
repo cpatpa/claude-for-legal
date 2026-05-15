@@ -78,6 +78,56 @@ If none of the above and the house trigger isn't met:
 
 ---
 
+## Australian framework (if AU is the relevant jurisdiction)
+
+> AI-generated. Verify against DISR Voluntary AI Safety Standard 2024, OAIC and ASIC current guidance.
+
+AU has **no single AI Act**. Replace EU AI Act framing (provider/deployer/importer; prohibited/high-risk/limited/minimal tiers) with the AU sectoral overlay + voluntary standards approach.
+
+**Standards to map the AIA against (in priority order):**
+
+1. **Voluntary AI Safety Standard 2024 (DISR)** — 10 Guardrails:
+   1. Accountability process for AI governance, decision-making, and risk management.
+   2. Risk management process across the AI lifecycle.
+   3. Data governance, privacy, and security measures.
+   4. Test AI models and systems to evaluate performance.
+   5. Enable human control or intervention in AI systems.
+   6. Inform end users about AI-enabled decisions.
+   7. Establish processes for people affected to contest outcomes.
+   8. Transparency with other organisations across the AI supply chain.
+   9. Keep records to enable third-party assessment.
+   10. Engage stakeholders and evaluate their needs and circumstances.
+2. **Australia's AI Ethics Principles (8)**: human/societal/environmental wellbeing; human-centred values; fairness; privacy protection and security; reliability and safety; transparency and explainability; contestability; accountability.
+3. **Proposed Mandatory Guardrails for High-Risk AI** (DISR consultation 2024). Status: not enacted `[verify-au]`. Watch for legislation 2025-2026.
+
+**Substantive legal overlays for AU AIA**:
+
+- **Privacy Act 1988 (Cth)** and APPs: especially APP 1 (transparency), APP 3 (collection necessity), APP 6 (use and disclosure), APP 8 (cross-border training data flows), APP 11 (security of model and inference data).
+- **Automated decision-making notice** (from December 2026 `[verify-au]`): APP entities must include in APP 5 collection notices and APP 1 privacy policies information about substantially automated decisions significantly affecting individuals.
+- **Australian Consumer Law**: marketing claims about AI (s 18 misleading and deceptive conduct, s 29 false representations); unfair contract terms in AI agreements.
+- **Anti-discrimination law**: Sex Discrimination Act 1984 (Cth), Racial Discrimination Act 1975 (Cth), Disability Discrimination Act 1992 (Cth), Age Discrimination Act 2004 (Cth), state equivalents. Indirect discrimination by AI systems is an active enforcement area.
+- **Corporations Act 2001 (Cth)**: directors' duties ss 180-184 attach to AI-related decisions; ASIC INFO 271 on algorithmic trading.
+- **Online Safety Act 2021 (Cth)**: AI-generated synthetic content (image-based abuse, basic online safety expectations). eSafety Commissioner powers.
+- **Therapeutic Goods Act 1989 (Cth)**: AI as medical device.
+- **Sectoral overlays**: APRA CPS 230 (operational risk, from 1 July 2025) for financial services; ACMA for telecommunications; AER for energy.
+
+**AIA structure for AU**:
+
+1. **Use case description**: what the AI system does, who uses it, who is affected.
+2. **Risk classification under proposed Mandatory Guardrails**: would this be "high-risk" if the proposed framework were in force? Significant adverse impact on individuals (physical, psychological, financial)? Vulnerable populations? Critical decisions? Document the assessment.
+3. **Guardrail-by-guardrail compliance** against the 10 Voluntary AI Safety Standard Guardrails.
+4. **Privacy Act analysis**: APP-by-APP, with attention to APP 8 (data location, recipient law), APP 11 (security), and ADM notice obligations.
+5. **Anti-discrimination analysis**: protected attribute exposure; testing for disparate impact.
+6. **ACL analysis**: any consumer-facing AI claims, AI-powered marketing, AI in decisions affecting consumers.
+7. **Sectoral analysis**: ASIC, APRA, TGA, eSafety as applicable.
+8. **Recommendations**: prioritised, with owners and dates.
+
+**Privilege framing**: an AU AIA is typically prepared for business compliance reasons, not for the dominant purpose of obtaining legal advice. It does NOT attract LPP unless engaged by AU legal counsel for the dominant purpose of advice. Use `CONFIDENTIAL. INTERNAL ANALYSIS. NOT LEGAL ADVICE` rather than asserting "ATTORNEY WORK PRODUCT".
+
+Tag every AU-specific reference `[verify-au]` until checked.
+
+---
+
 ## Step 1: Risk track
 
 Before intake, determine which track to run. The tier definitions and the fast-track criteria come from `~/.claude/plugins/config/claude-for-legal/ai-governance-legal/CLAUDE.md` (`## Use case registry` and `## Governance tiers`), not from any hardcoded regime-specific framework.

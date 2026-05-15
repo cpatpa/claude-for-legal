@@ -43,6 +43,54 @@ Check for a practice-area guide at `~/.claude/plugins/config/claude-for-legal/le
 
 When the intake starts before the practice area is routed (Step 1 of the workflow below), re-check for the guide after routing — the guide path depends on which practice area the intake landed in.
 
+## Australian framework (if the clinic operates in Australia)
+
+> AI-generated. Verify against the Legal Profession Uniform Law (NSW/Vic/WA) or the relevant state Legal Profession Act, and the clinic's own supervision protocol.
+
+**Supervision and authority**:
+
+- Clinic students may NOT engage in legal practice independently. Intake outputs must be reviewed by the supervising Australian legal practitioner before being acted on or communicated to the client.
+- The clinic relies on the supervisor's practising certificate, not the student's status. Document supervision in the intake record.
+
+**Conflict checks**:
+
+- Check current and former clients against the new intake. Australian Solicitors' Conduct Rules (ASCR) Rule 10 (former client) and Rule 11 (concurrent client) apply.
+- Where the prospective client is on the opposing side of any current matter, or where the clinic has previously acted for them on a related matter, decline and document.
+- Check the supervising attorney's other engagements (private practice, board positions, advisory roles) for indirect conflicts.
+
+**Intake content for AU clinics**:
+
+- **Client identification**: full name, contact, language requirements, accessibility needs. Note any aliases or previous names.
+- **Eligibility for clinic**: most AU clinics serve people who do not qualify for Legal Aid but cannot afford private representation. Means/merits/jurisdiction test per clinic guide.
+- **Concise statement of facts** in the client's words first, then a lawyer-structured summary.
+- **Documents provided**: list, scan, secure. Privacy Act 1988 (Cth) APP 11 applies to clinic data handling.
+- **Legal issues identified**: with `[verify-au]` tags on every statute or rule cited until confirmed by supervisor.
+- **Jurisdiction**: state/territory the matter sits in. Note which court or tribunal (NCAT, VCAT, QCAT, ART, etc.) would have jurisdiction.
+- **Limitation period / deadline**: most state Limitation Acts apply. Family Law Act has its own limits. Immigration has visa-condition deadlines and merits-review windows.
+- **Existing representation**: ASCR Rule 33 (communicating with a represented party). If the prospective client is represented elsewhere, scope carefully.
+- **Conflicts**: searched and confirmed clear OR identified and addressed.
+- **Costs disclosure**: clinics typically operate on a pro bono basis. Confirm in writing.
+
+**Common AU clinic practice areas with intake-specific considerations**:
+
+- **Tenancy**: state Residential Tenancies Acts; deadlines to dispute bond, eviction notice, repair orders.
+- **Family**: Family Law Act 1975 (Cth); domestic violence (state-specific Acts); urgency around interim orders, exclusion orders.
+- **Migration**: ONLY a Registered Migration Agent or Australian legal practitioner may give immigration assistance. Confirm supervising practitioner can give advice in this matter. Visa cancellation 35-day clock to apply for review.
+- **Consumer / consumer credit**: Australian Consumer Law; National Consumer Credit Protection Act 2009 (Cth); AFCA complaint pathway; state Consumer Affairs offices.
+- **Employment**: Fair Work Act 2009 (Cth); 21-day FWC clock for unfair dismissal / general protections.
+- **Social security**: Social Security Act 1991 (Cth); ART (replaced AAT 14 October 2024) review pathways with strict deadlines.
+- **Criminal**: state Crimes Acts / Criminal Codes; Legal Aid duty solicitor schemes for serious matters.
+
+**Confidentiality and privilege**:
+
+- ASCR Rule 9 (confidentiality) and equivalents.
+- Legal professional privilege attaches to clinic communications where the dominant purpose is legal advice. Pedagogical artifacts (training notes, retrospectives) typically do NOT attract LPP.
+- Use `CONFIDENTIAL. PREPARED UNDER SUPERVISION OF [AU LEGAL PRACTITIONER] FOR THE DOMINANT PURPOSE OF OBTAINING LEGAL ADVICE` for AU intakes.
+
+Tag every AU-specific point `[verify-au]` until checked by supervisor.
+
+---
+
 ## Workflow
 
 ### Step 1: Practice area routing

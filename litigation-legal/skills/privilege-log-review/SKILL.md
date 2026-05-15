@@ -124,6 +124,29 @@ Only for the unambiguous cases. The output still records the assessment rational
 
 If any of these is *close* — the third party might be an agent, the lawyer's CC might actually be on a legal request — it's uncertain, not ❌. Route it to the uncertain bucket and flag.
 
+## Australian framework (if AU is the relevant jurisdiction)
+
+> AI-generated. Verify against the applicable Evidence Act (Cth/NSW/Vic/Tas/ACT/NT uniform; Qld/WA/SA non-uniform) and current case law. AU privilege analysis is fundamentally different from FRCP 26(b)(3); replace US framing.
+
+- **Australian legal professional privilege (LPP)** has two limbs: **legal advice privilege** and **litigation privilege**. There is NO separate "work product" doctrine.
+- **Dominant purpose test** (*Esso Australia Resources Ltd v Commissioner of Taxation* (1999) 201 CLR 49): a confidential communication or document attracts LPP only if its dominant purpose, at creation, was either (a) giving or obtaining legal advice from a qualified legal practitioner, or (b) use in existing or reasonably anticipated litigation.
+- **In uniform-evidence-Act jurisdictions**: see s 117 (definitions), ss 118-119 (advice and litigation privilege), s 120 (unrepresented party), s 121-126 (loss of privilege).
+- **Categories to map US → AU**:
+  - "Attorney-client privileged" → legal advice privilege.
+  - "Work product" / "anticipation of litigation" → litigation privilege (with dominant purpose).
+  - "Common interest" → recognised in AU but narrower (*ABA v Smith Kline & French Laboratories (Aust)* line).
+  - "Joint defence" → operates through common interest doctrine.
+  - "Self-evaluative" → not recognised in AU.
+- **In-house counsel**: LPP available if counsel is acting in a legal capacity and has sufficient independence (*Waterford v Commonwealth* (1987) 163 CLR 54).
+- **Waiver** (*Mann v Carnell* (1999) 201 CLR 1): conduct inconsistent with maintaining the confidentiality the privilege protects. Issue waiver: where privileged material is put in issue.
+- **Documents NOT typically privileged in AU**: internal compliance assessments, investigation reports created in the ordinary course (unless dominant purpose was legal advice), PIAs, launch reviews. Confirm contemporaneous purpose, not retrospective claim.
+- **Output**: use "LPP claimed" or "Privilege claimed" rather than "AWP" or "WP". Note the limb (advice or litigation) and the dominant purpose basis.
+- **Regulator powers**: ASIC s 19 / s 33 ASIC Act, ACCC s 155 Competition and Consumer Act, OAIC s 44 Privacy Act cannot generally compel privileged material, but disputes over privilege claims are common.
+
+Tag every AU-specific application `[verify-au]` until checked against primary case law.
+
+---
+
 ## Workflow
 
 ### Step 1: Format check
