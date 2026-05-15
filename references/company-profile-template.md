@@ -3,6 +3,9 @@
 *Shared by all Claude for Legal plugins. The first plugin you set up writes this; the rest read it.
 Edit directly or re-run any plugin's `/setup` to update.*
 
+> [!NOTE]
+> **Australian localisation**: this fork is being localised for Australia. If your primary jurisdiction is Australia, select "AU" below and the relevant state(s) (NSW, VIC, QLD, WA, SA, TAS, ACT, NT). Plugins that have been localised will then load Australian reference materials from `references/au-localisation/`. Plugins that have not yet been localised will continue to apply US-default framing. See [AU-LOCALISATION.md](../AU-LOCALISATION.md) for status. All AI output requires verification by an Australian legal practitioner.
+
 **Practice setting:** [Solo/small firm | Midsize/large firm | In-house | Government/legal aid/clinic]
 **Name:** [Company or firm name]
 **Industry:** [What the company does / the firm's primary practice areas]

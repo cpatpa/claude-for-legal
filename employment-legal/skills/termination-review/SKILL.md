@@ -113,6 +113,50 @@ this scaffold prevents.
 **Any flag fires → escalate per `~/.claude/plugins/config/claude-for-legal/employment-legal/CLAUDE.md` before the term proceeds.** Not
 after. Before.
 
+### Step 2A: Australian framework (if work jurisdiction is in Australia)
+
+> When the employee's work jurisdiction is in Australia, apply this framework in addition to the high-risk flag scan in Step 2 and before the jurisdiction-specific requirements in Step 3. This block is AI-generated and must be reviewed by an Australian legal practitioner. Tag every Australian-specific claim `[verify-au]` until verified.
+
+**Read** the `## Australian framework` section of `~/.claude/plugins/config/claude-for-legal/employment-legal/CLAUDE.md` and the `## Australian high-risk termination flags` table. Run the Australian flag set in addition to (or instead of) the US flags above.
+
+**Pre-dismissal checks specific to Australia:**
+
+1. **Unfair dismissal eligibility (FWA s 382)**: confirm whether the employee has completed the minimum employment period (6 months, 12 months small business), whether they are award-covered or under the high income threshold (A$175,000 from 1 July 2024 `[verify-au]`). If eligible, the dismissal must be NOT harsh, unjust, or unreasonable; the FWC will assess the s 387 criteria (valid reason, notification of reason, opportunity to respond, support person, warnings for performance, size of employer, HR expertise).
+2. **General protections (FWA Part 3-1)**: identify whether any "workplace right" has been recently exercised by the employee (made a complaint, raised an entitlement, requested flexible work, taken leave, joined a union). Adverse action because of a workplace right is unlawful; burden of proof reverses (s 361). No minimum employment period or income threshold; 21-day FWC clock for dismissal claims.
+3. **Discrimination**: identify any protected attribute (sex, race, disability, age, pregnancy, family responsibility, marital status, religion, political opinion, social origin, sexual orientation, gender identity, intersex status) and whether timing or treatment suggests connection.
+4. **Genuine redundancy (FWA s 389)**: if the dismissal is positioned as redundancy, confirm (a) the role is genuinely no longer required because of operational changes, (b) consultation under the applicable modern award has occurred, and (c) redeployment within the employer and any associated entities has been considered. Failure on any limb defeats the genuine redundancy defence to unfair dismissal.
+5. **Award consultation**: most modern awards require consultation about major workplace change. Identify the applicable award and its consultation clause. Document consultation steps.
+6. **Procedural fairness for performance**: written warnings, opportunity to improve, opportunity to respond to allegations, support person at meetings, clear and current performance evidence. The FWC weighs procedural fairness heavily in s 387 assessments.
+7. **Sexual harassment / respect at work**: positive duty under s 47C *Sex Discrimination Act 1984* (Cth) in force since 12 December 2023. AHRC has compliance powers. FWC has sexual harassment jurisdiction under FWA Part 3-5A.
+8. **Sham contracting (FWA s 357)**: if dismissing a "contractor", confirm the relationship was in substance a contractor relationship under FWA s 15AA multi-factor test. Misrepresenting an employee as a contractor attracts civil penalties.
+
+**Notice and redundancy pay (NES floor):**
+
+- Notice (s 117): 1 week (<1 yr), 2 weeks (1-3 yrs), 3 weeks (3-5 yrs), 4 weeks (>5 yrs). Plus 1 week if over 45 with 2+ years' service. Modern award may exceed.
+- Redundancy pay (s 119): 4-16 weeks scale for 1-10+ years' service. Small business (<15) exempt under s 121.
+- Final pay must include accrued annual leave (s 90), pro-rata long service leave per state Act if threshold met, plus any contractual entitlements.
+- No state-by-state "final pay deadline" akin to US states; payment in usual pay cycle after termination, or earlier if award or contract requires.
+
+**Release / deed of release:**
+
+- A deed of release in exchange for a separation payment above NES entitlements is standard practice.
+- Cannot release statutory minima (NES floor, accrued leave, superannuation) but can release general protections, unfair dismissal, discrimination, and contract claims for genuine consideration.
+- **NDAs in sexual harassment matters**: the Australian Human Rights Commission's *Respect@Work* report (2020) recommended restrictions on NDAs that suppress sexual harassment allegations. State legislation in some jurisdictions (e.g. Victoria) prohibits or restricts such NDAs without the complainant's request `[verify-au]`. Federal legislation has been considered.
+- Consideration must reflect the foregone claims; a nominal payment for a release is open to challenge.
+- The deed should specifically reference any FWC, AHRC, state anti-discrimination body, or other proceedings that are intended to be released.
+
+**State long service leave:**
+
+- Check the applicable state Act. Most states allow pro-rata LSL on termination after 5-7 years' service in specified circumstances. Pro-rata is owed on death, certain resignations after the threshold, and (in some states) any termination after the threshold.
+- Portable LSL schemes apply in specific industries (construction, contract cleaning, security, community services, coal mining) in some states.
+
+**21-day FWC clock:**
+
+- Unfair dismissal applications must be lodged within 21 days of the dismissal taking effect (FWA s 394).
+- General protections dismissal applications: 21 days (FWA s 366).
+- Discrimination applications (AHRC): no general statutory time limit but the AHRC President may decline late complaints; state Acts have varying limits.
+- The 21-day clock starts when the dismissal takes effect, not when notice is given.
+
 ### Step 3: Jurisdiction-specific requirements
 
 > **Research the applicable rules for the employee's jurisdiction before
@@ -264,7 +308,7 @@ Match the memo format from seed term memos referenced in `~/.claude/plugins/conf
 > - What could go wrong (the claim theory this fact pattern supports)
 > - What to ask the attorney (is this a clean term; do we need more documentation first; does the release need specific language; do we need to stagger decisional units)
 >
-> If you need to find an attorney, solicitor, barrister, or other authorised legal professional: contact your professional regulator (state bar in the US, SRA/Bar Standards Board in England & Wales, Law Society in Scotland/NI/Ireland/Canada/Australia, or your jurisdiction's equivalent) for a referral service. Employment is one of the practice areas where a short consult before the termination meeting consistently outvalues a post-termination claim defense.
+> If you need to find an attorney, solicitor, barrister, or other authorised legal professional: contact your professional regulator (state bar in the US, SRA/Bar Standards Board in England & Wales, Law Society in Scotland/NI/Ireland/Canada, Law Society of [state] or Bar Association of [state] in Australia, or your jurisdiction's equivalent) for a referral service. In Australia, the state Law Society or Bar Association runs a referral service; the Fair Work Ombudsman also publishes general information for employees and employers. Employment is one of the practice areas where a short consult before the termination meeting consistently outvalues a post-termination claim defence.
 
 Do not produce a "Clear to proceed" output past this gate without an explicit yes. A marked-DRAFT flagged for attorney review is fine.
 

@@ -1,6 +1,15 @@
 # Employment Counsel Plugin
 
-In-house employment law workflows: hiring review, termination review, policy drafting, handbook updates, jurisdiction-aware wage & hour Q&A. Built around a jurisdictional footprint learned at cold-start — the plugin knows which states you're in and what's different about each.
+In-house employment law workflows: hiring review, termination review, policy drafting, handbook updates, jurisdiction-aware wage and hour Q&A. Built around a jurisdictional footprint learned at cold-start so the plugin knows which states and countries you're in and what's different about each.
+
+> [!CAUTION]
+> **Australian localisation: PILOT IN PROGRESS, AI-generated content.** This plugin is the first vertical being localised for Australia. Australian-specific content has been added for the Fair Work Act 2009 (Cth), the National Employment Standards (NES), modern awards, unfair dismissal, the general protections regime, state long service leave, and state-based anti-discrimination law. **All Australian content is AI-generated and must be reviewed by an Australian legal practitioner before relying on it.** US content remains in this plugin and is the default; selecting Australia at cold-start prioritises Australian frameworks but does not remove US framing from every line. See [AU-LOCALISATION.md](../AU-LOCALISATION.md) and [references/au-localisation/](../references/au-localisation/) at the repository root.
+>
+> **Known caveats specific to this plugin:**
+> - Long service leave is state-by-state. The plugin does not store the specific entitlements; they are researched per jurisdiction.
+> - Modern award coverage is fact-specific. A skill cannot definitively determine award coverage; it can flag the question.
+> - The Fair Work Commission unfair dismissal regime has eligibility thresholds and process rules that change. Verify against current FWC information.
+> - State legal profession rules govern who may give legal advice. A non-lawyer using this plugin must not present its output as legal advice.
 
 **Every output is a draft for attorney review — cited, flagged, and gated — not a legal conclusion.** The plugin does the work: reads the documents, applies your playbook, finds the issues, drafts the memo. A lawyer reviews, verifies, and decides. Citations are tagged by source so you know which ones came from a research tool and which ones need checking. Privilege markers are applied conservatively so nothing waives by accident. Consequential actions — filing, sending, executing — are gated behind explicit confirmation.
 
@@ -66,6 +75,17 @@ Your practice profile at `~/.claude/plugins/config/claude-for-legal/employment-l
 
 ## Notes
 
-- Jurisdiction awareness is the whole point. The plugin knows California final pay is due on the last day and New York's is the next regular payday.
+- Jurisdiction awareness is the whole point. The plugin knows California final pay is due on the last day and New York's is the next regular payday. For Australia, the plugin knows the NES minimum notice scale, that there is no at-will employment, that long service leave varies by state, and that unfair dismissal sits in the Fair Work Commission rather than a court.
 - Termination review is NOT a replacement for the conversation with HR and the manager. It's a checklist that catches the thing everyone forgot.
 - Wage/hour Q&A cites the rule but flags close calls for human review. Classification decisions have consequences.
+
+## Australian localisation references
+
+When the practice profile selects Australia as the primary jurisdiction, skills should read the following before applying default US framing:
+
+- `references/au-localisation/regulators.md` (Fair Work Commission, Fair Work Ombudsman, AHRC, state anti-discrimination bodies)
+- `references/au-localisation/terminology.md` (annual leave, long service leave, redundancy, modern award, NES)
+- `references/au-localisation/privilege.md` (no work product doctrine; dominant purpose test for advice and litigation privilege)
+- `references/au-localisation/citation-aglc.md` (Fair Work Act 2009 (Cth) cite form)
+
+All output from Australian-localised skills must carry the `[verify-au]` flag against specific jurisdictional claims until an Australian legal practitioner has reviewed them.
